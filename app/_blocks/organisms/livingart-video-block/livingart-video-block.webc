@@ -1,0 +1,58 @@
+<section class="video-block">
+  <div class="section-header">
+    <div class="container section-header__container">
+      <div class="section-header__wrap">
+        <h2 class="section-header__title">
+          Bespoke
+        </h2>
+        <p class="section-header__text">
+          A unique style for kitchen systems with character: in the industry
+        </p>
+      </div>
+      <livingart-button class="button--with-arrow" href="/bespoke">
+        Explore all
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 16">
+          <path d="M17 1L24 8L17 15"/>
+          <path d="M24 8H0"/>
+        </svg>
+      </livingart-button>
+    </div>
+  </div>
+  <div class="video-block__video-wrap">
+    <video
+      id="bespoke-video"
+      class="video-block__video"
+      poster="./assets/images/bespoke/01-video.jpg"
+      muted
+      loop
+      autoplay
+    >
+      <source src="./assets/test.mp4" type="video/mp4">
+    </video>
+    <livingart-button
+      v-on:click="store.toggleBespokeStateVideo"
+      @is-button="true"
+      class="video-block__video-button"
+      aria-label="Play/Pause video"
+    >
+      <span class="video-block__video-button-wrap">
+        <!-- play icon -->
+        <svg
+          v-bind:style="{ display: store.bespokeCurrentStateVideo === 'play' ? 'none' : 'block' }"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 384 512"
+        >
+          <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
+        </svg>
+        <!-- pause icon -->
+        <svg
+          v-bind:style="{ display: store.bespokeCurrentStateVideo === 'play' ? 'block' : 'none' }"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 320 512"
+        >
+          <path d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"/>
+        </svg>
+      </span>
+    </livingart-button>
+  </div>
+</section>

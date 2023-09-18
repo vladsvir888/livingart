@@ -1,0 +1,33 @@
+.button {
+  @include flex-center-y;
+
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &--with-arrow {
+    @include link;
+
+    column-gap: rem(12);
+    padding: rem(12) rem(18);
+    border: rem(0.5) solid var(--palette-alto);
+    border-radius: var(--bdrs50);
+    transition-property: border-color, background-color;
+    transition-duration: var(--transition300ms);
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--palette-black);
+        border-color: transparent;
+      }
+    }
+
+    > svg {
+      width: rem(25);
+      height: rem(16);
+      stroke: currentColor;
+      fill: transparent;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<div
+  class="hero"
+  :class="hero.class || ''"
+  :style="hero.bgimage"
+  >
+  <div
+    webc:if="hero.title"
+    class="container hero__container"
+  >
+    <h1
+      @text="hero.title"
+      class="hero__title"
+    ></h1>
+  </div>
+</div>

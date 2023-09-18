@@ -1,0 +1,23 @@
+.section-header {
+  padding-bottom: var(--indent40);
+
+  &__container {
+    @include flex-center-between;
+
+    column-gap: rem(20);
+  }
+
+  &__wrap {
+    @include flex-center-y;
+
+    column-gap: rem(160);
+  }
+
+  &__title {
+    @include h4;
+  }
+
+  &__text {
+    @include text24;
+  }
+}

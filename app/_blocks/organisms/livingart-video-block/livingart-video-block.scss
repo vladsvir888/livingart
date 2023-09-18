@@ -1,0 +1,48 @@
+.video-block {
+  $this: &;
+
+  padding-top: var(--indent240);
+
+  &__video-wrap {
+    position: relative;
+    height: rem(800);
+
+    @media (hover: hover) {
+      &:hover,
+      &:focus-within {
+        #{$this}__video-button {
+          opacity: 1;
+          outline: none
+        }
+      }
+    }
+  }
+
+  &__video-button {
+    @include flex-center;
+
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity var(--transition300ms);
+  }
+
+  &__video-button-wrap {
+    @include flex-center;
+
+    width: rem(64);
+    height: rem(64);
+    border-radius: 50%;
+    background-color: var(--palette-white);
+
+    > svg {
+      width: rem(12);
+      height: rem(16);
+      fill: var(--palette-cod-gray);
+    }
+  }
+
+  &__video {
+    @include img(cover);
+  }
+}

@@ -1,0 +1,30 @@
+<header class="header">
+  <div class="container header__container">
+    <a href="/" class="header__logo-link">
+      <img class="header__logo-img" src="./assets/images/icons/logo.svg" alt="" width="160" height="33">
+    </a>
+    <nav class="header__nav" aria-label="Main">
+      <ul class="header__list">
+        <li class="header__item">
+          <livingart-button href="/" class="header__link">home</livingart-button>
+        </li>
+        <li class="header__item">
+          <livingart-button href="/bespoke" class="header__link">Bespoke</livingart-button>
+        </li>
+        <li class="header__item">
+          <livingart-button href="/projects" class="header__link">Projects</livingart-button>
+        </li>
+        <li class="header__item">
+          <livingart-button href="/materials" class="header__link">Materials</livingart-button>
+        </li>
+        <li class="header__item">
+          <livingart-button href="/about" class="header__link">About company</livingart-button>
+        </li>
+        <li class="header__item">
+          <livingart-button href="/contact" class="header__link">contact</livingart-button>
+        </li>
+      </ul>
+    </nav>
+    <livingart-button href="https://www.instagram.com/" class="header__link" target="_blank">Instagram</livingart-button>
+  </div>
+</header>

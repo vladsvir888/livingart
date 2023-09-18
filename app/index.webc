@@ -1,0 +1,13 @@
+<script webc:setup>
+  const hero = {
+    class: "hero--with-line",
+    bgimage: "background-image: url('./assets/images/hero/01.jpg');"
+  }
+</script>
+
+<livingart-base webc:nokeep>
+  <livingart-hero :hero="hero"></livingart-hero>
+  <livingart-video-block></livingart-video-block>
+  <livingart-materials></livingart-materials>
+  <livingart-about-home></livingart-about-home>
+</livingart-base>
