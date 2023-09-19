@@ -5,38 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Livingart</title>
   <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-  <link rel="manifest" href="assets/site.webmanifest">
-  <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="manifest" href="/assets/site.webmanifest">
+  <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <!-- my scripts -->
   <link rel="stylesheet" href="/styles/main.css" webc:keep>
   <script src="/scripts/main.js" defer webc:keep></script>
 </head>
-<body v-scope>
+<body
+  v-scope
+  v-on:mounted="store.handleScroll"
+>
   <livingart-header></livingart-header>
   <slot></slot>
+  <livingart-footer></livingart-footer>
 
   <script type="module" webc:keep>
     import { createApp, reactive  } from 'https://unpkg.com/petite-vue@0.2.2/dist/petite-vue.es.js';
+    import lodash from 'https://cdn.jsdelivr.net/npm/lodash@4.17.21/+esm';
 
     const store = reactive({
-      bespokeCurrentStateVideo: 'play',
-      toggleBespokeStateVideo(state) {
-        const video = document.getElementById('bespoke-video');
-
-        if (!video) return;
-
-        if (this.bespokeCurrentStateVideo === 'play') {
-          this.bespokeCurrentStateVideo = 'pause';
-          video.pause();
-        } else {
-          this.bespokeCurrentStateVideo = 'play';
-          video.play();
+      isBespokeVideoPlay: true,
+      isHeroVideoPlay: true,
+      isHeaderHasActiveClass: false,
+      handleScroll() {
+        const changeColorHeader = () => {
+          if (window.pageYOffset > 0) {
+            this.isHeaderHasActiveClass = true;
+          } else {
+            this.isHeaderHasActiveClass = false;
+          }
         }
+
+        window.addEventListener('scroll', lodash.throttle(changeColorHeader, 250));
       }
     });
 

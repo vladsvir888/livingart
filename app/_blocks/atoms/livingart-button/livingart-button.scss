@@ -4,7 +4,6 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  cursor: pointer;
 
   &--with-arrow {
     @include link;
@@ -13,7 +12,7 @@
     padding: rem(12) rem(18);
     border: rem(0.5) solid var(--palette-alto);
     border-radius: var(--bdrs50);
-    transition-property: border-color, background-color;
+    transition-property: border-color, background-color, color;
     transition-duration: var(--transition300ms);
 
     @media (hover: hover) {
@@ -26,8 +25,34 @@
     > svg {
       width: rem(25);
       height: rem(16);
-      stroke: currentColor;
+      stroke: currentcolor;
       fill: transparent;
+    }
+  }
+
+  &--with-decoration {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      bottom: rem(-4);
+      left: 0;
+      width: 100%;
+      height: rem(1);
+      background-color: var(--palette-white);
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform var(--transition500ms);
+      content: "";
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        &::before {
+          transform-origin: left;
+          transform: scaleX(1);
+        }
+      }
     }
   }
 }

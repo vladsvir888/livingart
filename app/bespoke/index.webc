@@ -1,0 +1,46 @@
+<script webc:setup>
+  const hero = {
+    class: 'hero--video',
+    title: 'Bespoke',
+    video: true
+  }
+
+  const slider1 = {
+    title: 'pure line',
+    slides: [
+      {
+        img: {
+          src: './app/_images/bespoke/02.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/bespoke/05.jpg'
+        }
+      }
+    ]
+  }
+
+  const slider2 = {
+    title: 'art line',
+    slides: [
+      {
+        img: {
+          src: './app/_images/bespoke/05.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/bespoke/02.jpg'
+        }
+      }
+    ]
+  }
+</script>
+
+<livingart-base webc:nokeep>
+  <livingart-hero :hero="hero"></livingart-hero>
+  <livingart-bespoke-slider :slider="slider1"></livingart-bespoke-slider>
+  <livingart-bespoke-slider-two></livingart-bespoke-slider-two>
+  <livingart-bespoke-slider :slider="slider2"></livingart-bespoke-slider>
+</livingart-base>

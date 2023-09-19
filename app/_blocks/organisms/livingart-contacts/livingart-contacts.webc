@@ -1,0 +1,9 @@
+<div class="contacts" style="background-image: url('/assets/images/address/01.jpg');">
+  <div class="contacts__content">
+    <p class="contacts__item">
+      325 Eddystone Ave, North York, ON M3N 1H8
+    </p>
+    <livingart-button class="button--with-decoration contacts__item contacts__phone" href="tel:19057619090">+1 905-761-9090</livingart-button>
+    <livingart-button class="button--with-decoration contacts__item" href="mailto:info@livingart.ca">info@livingart.ca</livingart-button>
+  </div>
+</div>

@@ -1,4 +1,4 @@
-<section class="video-block">
+<section class="section video-block">
   <div class="section-header">
     <div class="container section-header__container">
       <div class="section-header__wrap">
@@ -9,7 +9,7 @@
           A unique style for kitchen systems with character: in the industry
         </p>
       </div>
-      <livingart-button class="button--with-arrow" href="/bespoke">
+      <livingart-button class="button--with-arrow button--with-arrow-white" href="/bespoke">
         Explore all
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 16">
           <path d="M17 1L24 8L17 15"/>
@@ -20,17 +20,17 @@
   </div>
   <div class="video-block__video-wrap">
     <video
-      id="bespoke-video"
+      v-bind="store.isBespokeVideoPlay ? $el.play() : $el.pause()"
       class="video-block__video"
-      poster="./assets/images/bespoke/01-video.jpg"
+      poster="/assets/images/bespoke/01-video.jpg"
       muted
       loop
       autoplay
     >
-      <source src="./assets/test.mp4" type="video/mp4">
+      <source src="/assets/test.mp4" type="video/mp4">
     </video>
     <livingart-button
-      v-on:click="store.toggleBespokeStateVideo"
+      v-on:click="store.isBespokeVideoPlay = !store.isBespokeVideoPlay"
       @is-button="true"
       class="video-block__video-button"
       aria-label="Play/Pause video"
@@ -38,7 +38,7 @@
       <span class="video-block__video-button-wrap">
         <!-- play icon -->
         <svg
-          v-bind:style="{ display: store.bespokeCurrentStateVideo === 'play' ? 'none' : 'block' }"
+          v-bind:style="{ display: store.isBespokeVideoPlay ? 'none' : 'block' }"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 384 512"
         >
@@ -46,7 +46,7 @@
         </svg>
         <!-- pause icon -->
         <svg
-          v-bind:style="{ display: store.bespokeCurrentStateVideo === 'play' ? 'block' : 'none' }"
+          v-bind:style="{ display: store.isBespokeVideoPlay ? 'block' : 'none' }"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 320 512"
         >

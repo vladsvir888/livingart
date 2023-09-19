@@ -1,4 +1,6 @@
 .hero {
+  $this: &;
+
   @include center;
 
   position: relative;
@@ -10,8 +12,14 @@
   &::before {
     position: absolute;
     inset: 0;
-    background: linear-gradient(0deg, var(--palette-black-a60) 0%, var(--palette-black-a60) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%);
     content: '';
+  }
+
+  &--home {
+    &::before {
+      background: linear-gradient(0deg, var(--palette-black-a60) 0%, var(--palette-black-a60) 100%);
+    }
   }
 
   &--with-line {
@@ -24,6 +32,62 @@
       height: rem(200);
       background-color: var(--palette-white-a80);
       content: '';
+    }
+  }
+
+  &--video {
+    #{$this} {
+      &__container {
+        display: grid;
+      }
+
+      &__title {
+        position: relative;
+        grid-area: 1 / 1;
+      }
+
+      &__video-wrap {
+        grid-area: 1 / 1;
+
+        @media (hover: hover) {
+          &:hover,
+          &:focus-within {
+            #{$this}__video-button {
+              opacity: 1;
+              outline: none
+            }
+          }
+        }
+      }
+
+      &__video {
+        @include img(cover);
+      }
+
+      &__video-button {
+        @include flex-center;
+
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        cursor: pointer;
+        transition: opacity var(--transition300ms);
+      }
+
+      &__video-button-wrap {
+        @include flex-center;
+
+        width: rem(64);
+        height: rem(64);
+        border-radius: 50%;
+        background-color: var(--palette-white);
+
+        > svg {
+          width: rem(12);
+          height: rem(16);
+          fill: var(--palette-cod-gray);
+        }
+      }
     }
   }
 

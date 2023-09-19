@@ -1,0 +1,64 @@
+<section class="section projects-home">
+  <div class="container projects-home__container">
+    <div class="section-header">
+      <div class="section-header__container">
+        <div class="section-header__wrap">
+          <h2 class="section-header__title">
+            Projects
+          </h2>
+          <p class="section-header__text">
+            A unique style for kitchen systems with character: in the industry
+          </p>
+        </div>
+        <livingart-button class="button--with-arrow button--with-arrow-white" href="/bespoke">
+          Explore all
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 16">
+            <path d="M17 1L24 8L17 15"/>
+            <path d="M24 8H0"/>
+          </svg>
+        </livingart-button>
+      </div>
+    </div>
+    <swiper-container class="projects-home__slider" init="false">
+      <swiper-slide class="projects-home__slide projects-home__slide--big">
+        <eleventy-image src="./app/_images/projects-home/01.jpg" alt="" loading="lazy"></eleventy-image>
+      </swiper-slide>
+      <swiper-slide class="projects-home__slide">
+        <eleventy-image src="./app/_images/projects-home/02.jpg" alt="" loading="lazy"></eleventy-image>
+      </swiper-slide>
+      <swiper-slide class="projects-home__slide">
+        <eleventy-image src="./app/_images/projects-home/03.jpg" alt="" loading="lazy"></eleventy-image>
+      </swiper-slide>
+      <swiper-slide class="projects-home__slide">
+        <eleventy-image src="./app/_images/projects-home/04.jpg" alt="" loading="lazy"></eleventy-image>
+      </swiper-slide>
+      <swiper-slide class="projects-home__slide projects-home__slide--big">
+        <eleventy-image src="./app/_images/projects-home/01.jpg" alt="" loading="lazy"></eleventy-image>
+      </swiper-slide>
+      <swiper-slide class="projects-home__slide">
+        <eleventy-image src="./app/_images/projects-home/02.jpg" alt="" loading="lazy"></eleventy-image>
+      </swiper-slide>
+      <swiper-slide class="projects-home__slide">
+        <eleventy-image src="./app/_images/projects-home/03.jpg" alt="" loading="lazy"></eleventy-image>
+      </swiper-slide>
+      <swiper-slide class="projects-home__slide">
+        <eleventy-image src="./app/_images/projects-home/04.jpg" alt="" loading="lazy"></eleventy-image>
+      </swiper-slide>
+    </swiper-container>
+    <div class="projects-home__slider-controls">
+      <livingart-button @is-button="true" class="projects-home__nav-button projects-home__nav-button--prev">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 16">
+          <path d="M8 1L1 8L8 15"/>
+          <path d="M1 8H25"/>
+        </svg>
+      </livingart-button>
+      <div class="projects-home__pagination"></div>
+      <livingart-button @is-button="true" class="projects-home__nav-button projects-home__nav-button--next">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 16">
+          <path d="M17 1L24 8L17 15"/>
+          <path d="M24 8H0"/>
+        </svg>
+      </livingart-button>
+    </div>
+  </div>
+</section>

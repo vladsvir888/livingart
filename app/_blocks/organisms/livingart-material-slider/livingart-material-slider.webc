@@ -1,0 +1,14 @@
+<section class="section section--inner materials-slider" :class="slider.class || ''">
+  <div class="container">
+    <div class="section-header">
+      <h2 @text="slider.title" class="section-header__title"></h2>
+    </div>
+    <swiper-container class="materials-slider__slider" init="false">
+      <swiper-slide webc:for="slide of slider.slides" class="materials-slider__slide">
+        <div class="img-hover-effect">
+          <eleventy-image class="materials-slider__img" :src="slide.img.src" alt="" loading="lazy"></eleventy-image>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+</section>

@@ -3,8 +3,14 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
-  padding-top: rem(20);
+  z-index: 10;
+  padding: rem(20) 0;
+  transition: background-color var(--transition300ms);
+
+  &.active {
+    background-color: var(--palette-black-a60);
+    backdrop-filter: blur(10px);
+  }
 
   &__container {
     @include flex-center-between;

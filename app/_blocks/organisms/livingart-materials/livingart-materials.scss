@@ -1,5 +1,5 @@
 .materials {
-  padding-top: var(--indent240);
+  $this: &;
 
   &__grid {
     display: grid;

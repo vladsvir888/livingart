@@ -1,0 +1,23 @@
+.contacts {
+  margin-top: rem(176);
+  padding: rem(60) rem(178);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &__content {
+    @include h6;
+    @include flex-column;
+
+    row-gap: rem(40);
+    padding: rem(60);
+    min-height: rem(634);
+    width: rem(620);
+    background-color: var(--palette-cod-gray);
+    align-items: flex-start;
+  }
+
+  &__phone {
+    margin-top: auto;
+  }
+}

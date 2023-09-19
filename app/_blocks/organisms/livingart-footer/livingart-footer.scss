@@ -1,0 +1,85 @@
+.footer {
+  @include text20;
+
+  padding: rem(187) 0 rem(40);
+
+  &__grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-areas:
+      'follow follow follow text text posts posts posts posts posts posts posts'
+      'logo logo logo . . info info info links links links links';
+    gap: rem(80) rem(10);
+
+    &::before {
+      position: absolute;
+      top: rem(160);
+      left: 0;
+      width: 100%;
+      height: rem(1);
+      background-color: var(--palette-tundora);
+      content: '';
+    }
+  }
+
+  &__follow {
+    @include font-size(60, 60);
+
+    grid-area: follow;
+    font-weight: 300;
+    letter-spacing: rem(-2.4);
+    text-transform: uppercase;
+  }
+
+  &__text {
+    grid-area: text;
+    max-width: rem(268);
+  }
+
+  &__posts {
+    grid-area: posts;
+    display: flex;
+    column-gap: rem(19);
+
+    &-img {
+      height: rem(120);
+      object-fit: cover;
+    }
+  }
+
+  &__logo {
+    grid-area: logo;
+
+    &-img {
+      width: rem(390);
+      height: rem(80);
+    }
+  }
+
+  &__info {
+    grid-area: info;
+  }
+
+  &__phone {
+    display: inline-flex;
+    margin-bottom: rem(86);
+  }
+
+  &__address {
+    margin-bottom: rem(18);
+  }
+
+  &__developer {
+    display: flex;
+    column-gap: rem(2);
+  }
+
+  &__links {
+    display: flex;
+    align-self: start;
+    justify-self: end;
+    column-gap: rem(50);
+    grid-area: links;
+  }
+}

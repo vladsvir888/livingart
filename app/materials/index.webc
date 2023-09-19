@@ -1,0 +1,179 @@
+<script webc:setup>
+  const hero = {
+    title: 'materials',
+    bgimage: "background-image: url('/assets/images/hero/04.jpg');"
+  }
+
+  const slider1 = {
+    title: 'Stone',
+    slides: [
+      {
+        img: {
+          src: './app/_images/materials/stone/01.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/stone/02.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/stone/03.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/stone/04.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/stone/05.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/stone/06.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/stone/01.jpg'
+        }
+      },
+    ]
+  }
+
+  const slider2 = {
+    title: 'Metal',
+    slides: [
+      {
+        img: {
+          src: './app/_images/materials/metal/01.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/metal/02.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/metal/03.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/metal/04.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/metal/05.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/metal/06.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/metal/01.jpg'
+        }
+      },
+    ]
+  }
+
+  const slider3 = {
+    title: 'Glass',
+    slides: [
+      {
+        img: {
+          src: './app/_images/materials/glass/01.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/glass/02.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/glass/03.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/glass/04.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/glass/05.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/glass/06.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/glass/01.jpg'
+        }
+      },
+    ]
+  }
+
+  const slider4 = {
+    class: 'materials-slider--last',
+    title: 'wood',
+    slides: [
+      {
+        img: {
+          src: './app/_images/materials/wood/01.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/wood/02.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/wood/03.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/wood/04.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/wood/05.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/wood/06.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/wood/01.jpg'
+        }
+      },
+    ]
+  }
+</script>
+
+<livingart-base webc:nokeep>
+  <livingart-hero :hero="hero"></livingart-hero>
+  <livingart-material-slider :slider="slider1"></livingart-material-slider>
+  <livingart-material-slider :slider="slider2"></livingart-material-slider>
+  <livingart-material-slider :slider="slider3"></livingart-material-slider>
+  <livingart-material-slider :slider="slider4"></livingart-material-slider>
+</livingart-base>

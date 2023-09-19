@@ -1,0 +1,27 @@
+<section class="section section--inner bespoke-slider-two">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-header__title">nature line</h2>
+    </div>
+    <swiper-container class="bespoke-slider-two__slider" init="false">
+      <div slot="container-start">
+        <livingart-button @is-button="true" class="cursor-nav-button cursor-nav-button--prev"></livingart-button>
+      </div>
+      <swiper-slide class="bespoke-slider-two__slide bespoke-slider-two__slide--big">
+        <eleventy-image class="bespoke-slider-two__img" src="./app/_images/bespoke/03.jpg" alt="" loading="lazy"></eleventy-image>
+      </swiper-slide>
+      <swiper-slide class="bespoke-slider-two__slide">
+        <eleventy-image class="bespoke-slider-two__img" src="./app/_images/bespoke/04.jpg" alt="" loading="lazy"></eleventy-image>
+      </swiper-slide>
+      <swiper-slide class="bespoke-slider-two__slide bespoke-slider-two__slide--big">
+        <eleventy-image class="bespoke-slider-two__img" src="./app/_images/bespoke/03.jpg" alt="" loading="lazy"></eleventy-image>
+      </swiper-slide>
+      <swiper-slide class="bespoke-slider-two__slide">
+        <eleventy-image class="bespoke-slider-two__img" src="./app/_images/bespoke/04.jpg" alt="" loading="lazy"></eleventy-image>
+      </swiper-slide>
+      <div slot="container-end">
+        <livingart-button @is-button="true" class="cursor-nav-button cursor-nav-button--next"></livingart-button>
+      </div>
+    </swiper-container>
+  </div>
+</section>

@@ -1,0 +1,75 @@
+.projects-home {
+  $this: &;
+
+  &__container {
+    position: relative;
+  }
+
+  &__slide {
+    width: rem(305);
+    height: rem(520);
+
+    &--big {
+      width: rem(935);
+      height: rem(725);
+    }
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__slider-controls {
+    @include flex-center-y;
+
+    position: absolute;
+    bottom: 0;
+    right: var(--container-padding);
+    z-index: 10;
+    column-gap: rem(30);
+  }
+
+  &__nav-button {
+    @include flex-center;
+
+    padding: rem(7) rem(18);
+    border: rem(1) solid var(--palette-white);
+    border-radius: var(--bdrs50);
+    transition-property: border-color, background-color;
+    transition-duration: var(--transition300ms);
+    cursor: pointer;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--palette-black);
+        border-color: transparent;
+      }
+    }
+
+    > svg {
+      width: rem(25);
+      height: rem(16);
+      stroke: currentcolor;
+      fill: transparent;
+    }
+  }
+
+  &__pagination {
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bullet-inactive-color: var(--palette-white);
+    --swiper-pagination-color: var(--palette-white);
+
+    @include flex-center-y;
+
+    .swiper-pagination-bullet {
+      width: rem(4);
+      height: rem(4);
+
+      &-active {
+        width: rem(6);
+        height: rem(6);
+      }
+    }
+  }
+}

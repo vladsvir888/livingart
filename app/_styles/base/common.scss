@@ -179,3 +179,69 @@ body {
 .container {
   @include container;
 }
+
+.img-hover-effect {
+  overflow: hidden;
+
+  @media (hover: hover) {
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  img {
+    transition: transform var(--transition800ms);
+  }
+}
+
+.section {
+  padding-top: var(--indent240);
+
+  &--inner {
+    padding-top: var(--indent140);
+  }
+}
+
+.section-header {
+  padding-bottom: var(--indent40);
+
+  &__container {
+    @include flex-center-between;
+
+    column-gap: rem(20);
+  }
+
+  &__wrap {
+    @include flex-center-y;
+
+    column-gap: rem(160);
+  }
+
+  &__title {
+    @include h4;
+  }
+
+  &__text {
+    @include text24;
+  }
+}
+
+.cursor-nav-button {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  z-index: 10;
+
+  &--prev {
+    left: 0;
+    cursor: url('../assets/images/icons/arrow-left.svg'), auto;
+  }
+
+  &--next {
+    right: 0;
+    cursor: url('../assets/images/icons/arrow-right.svg'), auto;
+  }
+}

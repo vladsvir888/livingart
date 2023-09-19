@@ -1,11 +1,10 @@
 .video-block {
   $this: &;
 
-  padding-top: var(--indent240);
-
   &__video-wrap {
+    @include center;
+
     position: relative;
-    height: rem(800);
 
     @media (hover: hover) {
       &:hover,
@@ -24,6 +23,7 @@
     position: absolute;
     inset: 0;
     opacity: 0;
+    cursor: pointer;
     transition: opacity var(--transition300ms);
   }
 

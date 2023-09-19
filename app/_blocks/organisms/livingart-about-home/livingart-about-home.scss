@@ -1,3 +1,55 @@
 .about-home {
-  padding-top: var(--indent240);
+  $this: &;
+
+  padding-bottom: rem(58);
+
+  &__content {
+    display: flex;
+    column-gap: rem(88);
+    margin-top: rem(60);
+  }
+
+  &__content-wrap {
+    margin-left: rem(70);
+  }
+
+  &__text {
+    @include text24;
+
+    max-width: rem(472);
+  }
+
+  &__button {
+    @include flex-center-y;
+    @include link;
+
+    column-gap: rem(72);
+    margin-top: rem(100);
+
+    @media (hover: hover) {
+      &:hover {
+        > svg {
+          transform: translateX(4px);
+        }
+      }
+    }
+
+    > svg {
+      width: rem(48);
+      height: rem(20);
+      stroke: currentcolor;
+      transition: transform var(--transition300ms);
+    }
+  }
+
+  &__img-wrap {
+    &--1 {
+      width: calc(100% + var(--container-padding) * 2);
+      margin-left: calc(var(--container-padding) * -1);
+    }
+
+    &--2 {
+      margin-top: rem(-350);
+    }
+  }
 }
