@@ -1,11 +1,11 @@
-function bespokeSlider2() {
-  const sliderElement = document.querySelector('.bespoke-slider-two__slider');
+function projectsCabinetrySlider() {
+  const sliderElement = document.querySelector('.projects-cabinetry__slider');
 
   if (!sliderElement) return;
 
   const sliderParams = {
-    slidesPerView: 'auto',
-    spaceBetween: 30,
+    spaceBetween: 20,
+    slidesPerView: 3,
     navigation: {
       prevEl: sliderElement?.querySelector('.cursor-nav-button--prev'),
       nextEl: sliderElement?.querySelector('.cursor-nav-button--next'),
@@ -16,4 +16,4 @@ function bespokeSlider2() {
   sliderElement.initialize();
 }
 
-export default bespokeSlider2;
+export default projectsCabinetrySlider;

@@ -12,15 +12,6 @@
     padding: rem(12) rem(18);
     border: rem(0.5) solid var(--palette-alto);
     border-radius: var(--bdrs50);
-    transition-property: border-color, background-color, color;
-    transition-duration: var(--transition300ms);
-
-    @media (hover: hover) {
-      &:hover {
-        background-color: var(--palette-black);
-        border-color: transparent;
-      }
-    }
 
     > svg {
       width: rem(25);
@@ -43,7 +34,7 @@
       transform-origin: right;
       transform: scaleX(0);
       transition: transform var(--transition500ms);
-      content: "";
+      content: '';
     }
 
     @media (hover: hover) {
@@ -52,6 +43,18 @@
           transform-origin: left;
           transform: scaleX(1);
         }
+      }
+    }
+  }
+
+  &--with-hover {
+    transition-property: border-color, background-color, color;
+    transition-duration: var(--transition300ms);
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--palette-black);
+        border-color: transparent;
       }
     }
   }

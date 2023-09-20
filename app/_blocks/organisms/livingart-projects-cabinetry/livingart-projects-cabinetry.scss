@@ -1,0 +1,7 @@
+.projects-cabinetry {
+  padding: rem(179) 0 rem(190);
+
+  &__slider {
+    width: calc(100% + var(--container-padding));
+  }
+}

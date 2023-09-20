@@ -36,16 +36,7 @@
     padding: rem(7) rem(18);
     border: rem(1) solid var(--palette-white);
     border-radius: var(--bdrs50);
-    transition-property: border-color, background-color;
-    transition-duration: var(--transition300ms);
     cursor: pointer;
-
-    @media (hover: hover) {
-      &:hover {
-        background-color: var(--palette-black);
-        border-color: transparent;
-      }
-    }
 
     > svg {
       width: rem(25);

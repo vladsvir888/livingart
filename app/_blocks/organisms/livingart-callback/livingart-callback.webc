@@ -1,0 +1,45 @@
+<section class="callback">
+  <div class="container callback__container">
+    <h2 class="callback__title">
+      contact us
+    </h2>
+    <livingart-callback webc:keep>
+      <form action="/" method="post" class="callback__form">
+        <div class="callback__input-wrap">
+          <input class="input" type="text" name="name" placeholder="Name *" required data-pristine-required-message="This is a required field.">
+        </div>
+        <div class="callback__input-wrap">
+          <input class="input" type="text" name="surname" placeholder="Surname *" required data-pristine-required-message="This is a required field.">
+        </div>
+        <div class="callback__input-wrap">
+          <input class="input" type="text" name="company" placeholder="Company">
+        </div>
+        <div class="callback__input-wrap">
+          <input class="input" type="text" name="occupation" placeholder="Occupation">
+        </div>
+        <div class="callback__input-wrap">
+          <input class="input" type="text" name="city" placeholder="City *" required data-pristine-required-message="This is a required field.">
+        </div>
+        <div class="callback__input-wrap">
+          <input class="input" type="text" name="address" placeholder="Address">
+        </div>
+        <div class="callback__input-wrap">
+          <input class="input" type="email" name="email" placeholder="Email *" required data-pristine-required-message="This is a required field." data-pristine-email-message="Please, enter correct email. For example, test-email123@gmail.com">
+        </div>
+        <div class="callback__input-wrap">
+          <input class="input" type="tel" name="phone" placeholder="Phone">
+        </div>
+        <div class="callback__input-wrap callback__textarea-wrap">
+          <textarea class="input" name="message" placeholder="Message" rows="7"></textarea>
+        </div>
+        <div class="callback__input-wrap callback__checkbox-wrap">
+          <div class="form-checkbox">
+            <input :id="uid" class="form-checkbox__check" type="checkbox" name="privacy policy" checked>
+            <label :for="uid" class="form-checkbox__text">I have read the <a class="form-checkbox__link" href="/policy">PRIVACY POLICY</a> and I consent to the processing of personal information for the purposes indicated.</label>
+          </div>
+        </div>
+        <livingart-button @is-button="true" class="callback__button" type="submit">Send message</livingart-button>
+      </form>
+    </livingart-callback>
+  </div>
+</section>

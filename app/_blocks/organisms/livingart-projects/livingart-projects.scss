@@ -1,0 +1,43 @@
+.projects-block {
+  &__nav-buttons {
+    @include flex-center-x;
+
+    column-gap: rem(60);
+    margin-top: rem(60);
+  }
+
+  &__nav-button {
+    @include h6;
+
+    column-gap: rem(12);
+    padding: rem(11) rem(18);
+    border-radius: var(--bdrs50);
+    border: rem(1) solid var(--palette-alto);
+    cursor: pointer;
+
+    > svg {
+      width: rem(26);
+      height: rem(16);
+      fill: transparent;
+      stroke: var(--palette-alto);
+    }
+  }
+}
+
+.projects {
+  &__slide {
+    margin-top: rem(80) !important;
+  }
+
+  &__card {
+    display: flex;
+    column-gap: rem(10);
+
+    &-title {
+      margin-bottom: rem(31);
+      font-size: rem(16);
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+}

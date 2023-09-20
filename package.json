@@ -35,7 +35,6 @@
     "extends @shopify/browserslist-config"
   ],
   "dependencies": {
-    "@shoelace-style/shoelace": "^2.7.0",
     "core-js": "^3.20.0",
     "lodash.throttle": "^4.1.1",
     "pristinejs": "^1.1.0",

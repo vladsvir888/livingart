@@ -1,0 +1,29 @@
+<section class="section section--inner projects-cabinetry">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-header__title">
+        project cabinetry
+      </h2>
+    </div>
+    <swiper-container class="projects-cabinetry__slider" init="false">
+      <div slot="container-start">
+        <livingart-button @is-button="true" class="cursor-nav-button cursor-nav-button--prev"></livingart-button>
+      </div>
+      <swiper-slide class="projects-cabinetry__slide">
+        <eleventy-image class="projects-cabinetry__img" src="./app/_images/project-cabinetry/01.jpg" alt="" loading="lazy"></eleventy-image>
+      </swiper-slide>
+      <swiper-slide class="projects-cabinetry__slide">
+        <eleventy-image class="projects-cabinetry__img" src="./app/_images/project-cabinetry/02.jpg" alt="" loading="lazy"></eleventy-image>
+      </swiper-slide>
+      <swiper-slide class="projects-cabinetry__slide">
+        <eleventy-image class="projects-cabinetry__img" src="./app/_images/project-cabinetry/03.jpg" alt="" loading="lazy"></eleventy-image>
+      </swiper-slide>
+      <swiper-slide class="projects-cabinetry__slide">
+        <eleventy-image class="projects-cabinetry__img" src="./app/_images/project-cabinetry/01.jpg" alt="" loading="lazy"></eleventy-image>
+      </swiper-slide>
+      <div slot="container-end">
+        <livingart-button @is-button="true" class="cursor-nav-button cursor-nav-button--next"></livingart-button>
+      </div>
+    </swiper-container>
+  </div>
+</section>

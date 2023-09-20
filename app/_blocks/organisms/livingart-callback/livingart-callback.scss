@@ -1,0 +1,40 @@
+.callback {
+  padding-top: rem(394);
+
+  &__container {
+    @include flex-between;
+
+    gap: rem(20);
+  }
+
+  &__title {
+    @include h2;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: rem(10);
+    width: rem(936);
+  }
+
+  &__textarea-wrap {
+    grid-column: span 2;
+  }
+
+  &__checkbox-wrap {
+    grid-column: span 2;
+    margin-top: rem(20);
+  }
+
+  &__button {
+    @include link;
+
+    justify-self: start;
+    margin-top: rem(50);
+    padding: rem(18) rem(32);
+    border-radius: var(--bdrs50);
+    border: rem(0.5) solid var(--palette-alto);
+    cursor: pointer;
+  }
+}

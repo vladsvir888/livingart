@@ -1,0 +1,26 @@
+<section class="section section--inner factory">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-header__title">
+        factory
+      </h2>
+    </div>
+    <div class="factory__grid">
+      <div class="factory__grid-item factory__grid-item--big">
+        <eleventy-image class="factory__img" src="./app/_images/factory/01.jpg" alt="" loading="lazy"></eleventy-image>
+      </div>
+      <div class="factory__grid-item">
+        <eleventy-image class="factory__img" src="./app/_images/factory/02.jpg" alt="" loading="lazy"></eleventy-image>
+      </div>
+      <div class="factory__grid-item">
+        <eleventy-image class="factory__img" src="./app/_images/factory/03.jpg" alt="" loading="lazy"></eleventy-image>
+      </div>
+      <div class="factory__grid-item">
+        <eleventy-image class="factory__img" src="./app/_images/factory/04.jpg" alt="" loading="lazy"></eleventy-image>
+      </div>
+      <div class="factory__grid-item">
+        <eleventy-image class="factory__img" src="./app/_images/factory/05.jpg" alt="" loading="lazy"></eleventy-image>
+      </div>
+    </div>
+  </div>
+</section>

@@ -26,19 +26,11 @@
     column-gap: rem(72);
     margin-top: rem(100);
 
-    @media (hover: hover) {
-      &:hover {
-        > svg {
-          transform: translateX(4px);
-        }
-      }
-    }
-
     > svg {
       width: rem(48);
       height: rem(20);
       stroke: currentcolor;
-      transition: transform var(--transition300ms);
+      fill: transparent;
     }
   }
 

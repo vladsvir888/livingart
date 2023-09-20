@@ -1,0 +1,15 @@
+.office {
+  &__text {
+    @include text24;
+
+    max-width: rem(1093);
+  }
+
+  &__images {
+    width: calc(100% + var(--container-padding));
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: rem(20);
+    margin-bottom: rem(60);
+  }
+}

@@ -1,0 +1,44 @@
+.input {
+  width: 100%;
+  padding: rem(20) rem(24);
+  background-color: transparent;
+  border: rem(1) solid var(--palette-dove-gray);
+  color: var(--palette-gray);
+
+  &::placeholder {
+    color: var(--palette-gray);
+  }
+}
+
+.form-checkbox {
+  @include flex-center-y;
+
+  column-gap: rem(16);
+
+  &__check {
+    width: rem(18);
+    height: rem(18);
+    margin: 0;
+    border-radius: rem(2);
+    border: rem(0.5) solid var(--palette-white);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: rem(12);
+    appearance: none;
+
+    &:checked {
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEyIiByeD0iMSIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==');
+    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+}
+
+.input-error-text {
+  font-size: rem(12);
+  margin-top: rem(5);
+  color: var(--palette-coral-red);
+}

@@ -1,13 +1,15 @@
 :root {
   // palette
   --palette-white: #fff;
-  --palette-cod-gray: #0F0F0F;
+  --palette-cod-gray: #0f0f0f;
   --palette-gray: #858585;
   --palette-black: #000;
-  --palette-alto: #D3D3D3;
+  --palette-alto: #d3d3d3;
   --palette-black-a60: color-mix(in srgb, var(--palette-black), transparent 60%);
   --palette-white-a80: color-mix(in srgb, var(--palette-white), transparent 80%);
   --palette-tundora: #464646;
+  --palette-dove-gray: #686868;
+  --palette-coral-red: #fe4343;
 
   // containers
   --container-width: #{rem(1920)};

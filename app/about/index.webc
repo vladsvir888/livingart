@@ -1,0 +1,14 @@
+<script webc:setup>
+  const hero = {
+    title: 'about livingart',
+    bgimage: "background-image: url('/assets/images/hero/05.jpg');"
+  }
+</script>
+
+<livingart-base webc:nokeep>
+  <livingart-hero :hero="hero"></livingart-hero>
+  <livingart-info-block></livingart-info-block>
+  <livingart-office></livingart-office>
+  <livingart-factory></livingart-factory>
+  <livingart-numbers></livingart-numbers>
+</livingart-base>

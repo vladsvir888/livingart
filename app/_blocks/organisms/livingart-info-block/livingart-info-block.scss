@@ -1,0 +1,32 @@
+.info-block {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-areas:
+      'title title title title title title title . . . . .'
+      'text text text text text text text . logo logo logo logo';
+    gap: rem(120) rem(10);
+  }
+
+  &__title {
+    @include h5;
+
+    grid-area: title;
+  }
+
+  &__text {
+    @include text24;
+
+    grid-area: text;
+
+    > * {
+      &:not(:last-child) {
+        margin-bottom: rem(25);
+      }
+    }
+  }
+
+  &__logo {
+    grid-area: logo;
+  }
+}

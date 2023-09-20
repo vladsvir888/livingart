@@ -37,7 +37,7 @@
           <p class="materials__text">
             Beautiful to see and long-lasting, Arredo3 countertops “withstand” your lifestyle.
           </p>
-          <livingart-button class="button--with-arrow materials__button" href="/materials">
+          <livingart-button class="button--with-arrow button--with-hover materials__button" href="/materials">
             Go to catalog
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 16">
               <path d="M17 1L24 8L17 15"/>

@@ -1,0 +1,4 @@
+<article class="number-card">
+  <span @text="num" class="number-card__num"></span>
+  <p @text="text" class="number-card__text"></p>
+</article>

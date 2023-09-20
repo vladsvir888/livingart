@@ -12,13 +12,20 @@
   &::before {
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
     content: '';
   }
 
   &--home {
     &::before {
       background: linear-gradient(0deg, var(--palette-black-a60) 0%, var(--palette-black-a60) 100%);
+    }
+  }
+
+  &--projects {
+    &::before {
+      background: linear-gradient(229deg, #000 4.69%, rgba(0, 0, 0, 0) 66.66%),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
     }
   }
 
@@ -47,6 +54,8 @@
       }
 
       &__video-wrap {
+        width: calc(100% + var(--container-padding) * 2);
+        margin-left: calc(var(--container-padding) * -1);
         grid-area: 1 / 1;
 
         @media (hover: hover) {
@@ -54,7 +63,7 @@
           &:focus-within {
             #{$this}__video-button {
               opacity: 1;
-              outline: none
+              outline: none;
             }
           }
         }

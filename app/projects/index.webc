@@ -1,0 +1,78 @@
+<script webc:setup>
+  const hero = {
+    class: 'hero--projects',
+    title: 'projects',
+    bgimage: "background-image: url('/assets/images/hero/02.jpg');"
+  }
+
+  const projects = {
+    items: [
+      {
+        img: {
+          src: './app/_images/projects/01.jpg'
+        },
+        title: 'ONE BLOOR'
+      },
+      {
+        img: {
+          src: './app/_images/projects/02.jpg'
+        },
+        title: 'GARRISON POINT 1 & 2'
+      },
+      {
+        img: {
+          src: './app/_images/projects/03.jpg'
+        },
+        title: 'RUCH CONDOS'
+      },
+      {
+        img: {
+          src: './app/_images/projects/04.jpg'
+        },
+        title: 'CANARY BLOCK 16'
+      },
+      {
+        img: {
+          src: './app/_images/projects/01.jpg'
+        },
+        title: 'CANARY BLOCK 16'
+      },
+      {
+        img: {
+          src: './app/_images/projects/05.jpg'
+        },
+        title: 'FASHION HOUSE'
+      },
+      {
+        img: {
+          src: './app/_images/projects/06.jpg'
+        },
+        title: 'ONE BLOOR'
+      },
+      {
+        img: {
+          src: './app/_images/projects/07.jpg'
+        },
+        title: 'LAGO'
+      },
+      {
+        img: {
+          src: './app/_images/projects/08.jpg'
+        },
+        title: 'WONDER CONDOS'
+      },
+      {
+        img: {
+          src: './app/_images/projects/02.jpg'
+        },
+        title: 'WONDER CONDOS'
+      },
+    ]
+  }
+</script>
+
+<livingart-base webc:nokeep>
+  <livingart-hero :hero="hero"></livingart-hero>
+  <livingart-projects :projects="projects"></livingart-projects>
+  <livingart-projects-cabinetry></livingart-projects-cabinetry>
+</livingart-base>

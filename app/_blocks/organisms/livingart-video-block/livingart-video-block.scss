@@ -11,7 +11,7 @@
       &:focus-within {
         #{$this}__video-button {
           opacity: 1;
-          outline: none
+          outline: none;
         }
       }
     }
