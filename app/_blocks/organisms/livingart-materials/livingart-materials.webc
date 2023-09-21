@@ -39,7 +39,7 @@
           </p>
           <livingart-button class="button--with-arrow button--with-hover materials__button" href="/materials">
             Go to catalog
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 16">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 16" aria-hidden="true">
               <path d="M17 1L24 8L17 15"/>
               <path d="M24 8H0"/>
             </svg>

@@ -1,4 +1,6 @@
 .projects-block {
+  margin-top: rem(60);
+
   &__nav-buttons {
     @include flex-center-x;
 
@@ -30,11 +32,18 @@
   }
 
   &__card {
-    display: flex;
-    column-gap: rem(10);
+    position: relative;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: min-content 1fr;
+    gap: rem(31) rem(10);
+
+    &-button {
+      grid-row: span 2;
+      cursor: pointer;
+    }
 
     &-title {
-      margin-bottom: rem(31);
       font-size: rem(16);
       font-weight: 400;
       text-transform: uppercase;

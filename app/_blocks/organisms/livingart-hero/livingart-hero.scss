@@ -16,6 +16,17 @@
     content: '';
   }
 
+  &::after {
+    position: absolute;
+    left: 50%;
+    bottom: rem(20);
+    transform: translateX(-50%);
+    width: rem(1);
+    height: rem(200);
+    background-color: var(--palette-white-a80);
+    content: '';
+  }
+
   &--home {
     &::before {
       background: linear-gradient(0deg, var(--palette-black-a60) 0%, var(--palette-black-a60) 100%);
@@ -26,19 +37,6 @@
     &::before {
       background: linear-gradient(229deg, #000 4.69%, rgba(0, 0, 0, 0) 66.66%),
         linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
-    }
-  }
-
-  &--with-line {
-    &::after {
-      position: absolute;
-      left: 50%;
-      bottom: rem(20);
-      transform: translateX(-50%);
-      width: rem(1);
-      height: rem(200);
-      background-color: var(--palette-white-a80);
-      content: '';
     }
   }
 

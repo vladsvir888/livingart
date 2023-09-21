@@ -1,6 +1,9 @@
 // eslint-disable-next-line import/no-unresolved
 import { register } from 'swiper/element/bundle';
 
+// eslint-disable-next-line import/extensions
+import '@shoelace-style/shoelace/dist/components/dialog/dialog.js';
+
 import getScrollbarWidth from './helpers/getScrollbarWidth';
 
 import projectsHomeSlider from '../_blocks/organisms/livingart-projects-home/livingart-projects-home';
@@ -8,9 +11,9 @@ import materialSlider from '../_blocks/organisms/livingart-material-slider/livin
 import bespokeSlider from '../_blocks/organisms/livingart-bespoke-slider/livingrant-bespoke-slider';
 import bespokeSlider2 from '../_blocks/organisms/livingart-bespoke-slider-two/livingart-bespoke-slider-two';
 import projectsCabinetrySlider from '../_blocks/organisms/livingart-projects-cabinetry/livingart-projects-cabinetry';
+import projectsSlider from '../_blocks/organisms/livingart-projects/livingart-projects';
 // eslint-disable-next-line no-unused-vars
 import LivingartCallback from '../_blocks/organisms/livingart-callback/livingart-callback';
-import projectsSlider from '../_blocks/organisms/livingart-projects/livingart-projects';
 
 register();
 

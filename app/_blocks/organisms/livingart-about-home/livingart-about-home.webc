@@ -14,9 +14,9 @@
         <p class="about-home__text">
           But one must proceed in order; there’s a narrative thread leading back to a small artisan workshop in the province of Monza Brianza.
         </p>
-        <livingart-button href="/" class="about-home__button">
+        <livingart-button href="/about" class="about-home__button">
           read more
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 22"GG>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 22" aria-hidden="true">
             <path d="M38 1L48 11L38 21"/>
             <path d="M48 11H0"/>
           </svg>

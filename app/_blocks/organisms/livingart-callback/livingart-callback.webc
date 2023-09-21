@@ -3,7 +3,7 @@
     <h2 class="callback__title">
       contact us
     </h2>
-    <livingart-callback webc:keep>
+    <livingart-callback class="callback__wrap" webc:keep>
       <form action="/" method="post" class="callback__form">
         <div class="callback__input-wrap">
           <input class="input" type="text" name="name" placeholder="Name *" required data-pristine-required-message="This is a required field.">
@@ -38,7 +38,7 @@
             <label :for="uid" class="form-checkbox__text">I have read the <a class="form-checkbox__link" href="/policy">PRIVACY POLICY</a> and I consent to the processing of personal information for the purposes indicated.</label>
           </div>
         </div>
-        <livingart-button @is-button="true" class="callback__button" type="submit">Send message</livingart-button>
+        <livingart-button @is-button="true" class="button--with-hover callback__button" type="submit">Send message</livingart-button>
       </form>
     </livingart-callback>
   </div>

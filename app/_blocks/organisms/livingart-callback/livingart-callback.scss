@@ -1,30 +1,57 @@
 .callback {
   padding-top: rem(394);
 
+  @include media('1200', max) {
+    padding-top: rem(197);
+  }
+
+  @include media('600', max) {
+    padding-top: rem(100);
+  }
+
   &__container {
     @include flex-between;
 
     gap: rem(20);
+
+    @include media('1200', max) {
+      flex-direction: column;
+    }
   }
 
   &__title {
     @include h2;
   }
 
+  &__wrap {
+    width: 50%;
+
+    @include media('1200', max) {
+      width: 100%;
+    }
+  }
+
   &__form {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: rem(10);
-    width: rem(936);
+
+    @include media('600', max) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__textarea-wrap {
-    grid-column: span 2;
+    @include media('601', min) {
+      grid-column: span 2;
+    }
   }
 
   &__checkbox-wrap {
-    grid-column: span 2;
-    margin-top: rem(20);
+    @include media('601', min) {
+      grid-column: span 2;
+      margin-top: rem(20);
+    }
   }
 
   &__button {
@@ -36,5 +63,9 @@
     border-radius: var(--bdrs50);
     border: rem(0.5) solid var(--palette-alto);
     cursor: pointer;
+
+    @include media('600', max) {
+      margin-top: rem(20);
+    }
   }
 }

@@ -1,6 +1,6 @@
 <script webc:setup>
   const hero = {
-    class: "hero--with-line hero--home",
+    class: "hero--home",
     bgimage: "background-image: url('/assets/images/hero/01.jpg');"
   }
 </script>

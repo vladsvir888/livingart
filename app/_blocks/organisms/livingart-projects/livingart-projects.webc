@@ -1,27 +1,23 @@
-<section class="section section--inner projects-block">
+<section class="projects-block">
   <div class="container">
-    <div class="glightbox-desc custom-desc1">
-      <p>The content of this div will be used as the slide description</p>
-      <p>You can add links and any HTML you want</p>
-    </div>
     <swiper-container class="projects" init="false">
       <swiper-slide webc:for="project of projects.items" class="projects__slide">
         <article class="projects__card">
-          <eleventy-image class="projects__card-img" :src="project.img.src" alt="" loading="lazy"></eleventy-image>
-          <div class="projects__card-content">
-            <h2 @text="project.title" class="projects__card-title"></h2>
-            <div class="projects__card-texts">
-              <p>Toronto</p>
-              <p>76 Storeys</p>
-              <p>789 Units</p>
-            </div>
+          <livingart-button v-on:click="store.isProjectPopupShow = true" @is-button="true" class="projects__card-button">
+            <eleventy-image class="projects__card-img" :src="project.img.src" alt="" loading="lazy"></eleventy-image>
+          </livingart-button>
+          <h2 @text="project.title" class="projects__card-title"></h2>
+          <div class="projects__card-texts">
+            <p>Toronto</p>
+            <p>76 Storeys</p>
+            <p>789 Units</p>
           </div>
         </article>
       </swiper-slide>
     </swiper-container>
     <div class="projects-block__nav-buttons">
       <livingart-button @is-button="true" class="button--with-hover projects-block__nav-button projects-block__nav-button--prev">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 16">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 16" aria-hidden="true">
           <path d="M8.5 1L1.5 8L8.5 15" />
           <path d="M1.5 8H25.5" />
         </svg>
@@ -29,7 +25,7 @@
       </livingart-button>
       <livingart-button @is-button="true" class="button--with-hover projects-block__nav-button projects-block__nav-button--next">
         next
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 16" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 16" aria-hidden="true">
           <path d="M17.5 1L24.5 8L17.5 15"/>
           <path d="M24.5 8H0.5"/>
         </svg>

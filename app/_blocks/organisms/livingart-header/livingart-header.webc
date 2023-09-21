@@ -25,6 +25,16 @@
         </li>
       </ul>
     </nav>
-    <livingart-button href="https://www.instagram.com/" class="button--with-decoration header__link" target="_blank">Instagram</livingart-button>
+    <livingart-button href="https://www.instagram.com/" class="button--with-decoration header__link header__instagram" target="_blank">Instagram</livingart-button>
+    <livingart-button @is-button="true" class="header__burger" aria-label="Open mobile menu">
+      <svg class="header__burger-icon header__burger-icon--menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 8" aria-hidden="true">
+        <rect width="16" height="1"/>
+        <rect y="7" width="16" height="1"/>
+      </svg>
+      <svg class="header__burger-icon header__burger-icon--close" viewBox="0 0 13 14" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect y="12" width="16" height="1" transform="rotate(-45 0 12)"/>
+        <rect x="1" y="1" width="16" height="1" transform="rotate(45 1 1)"/>
+      </svg>
+    </livingart-button>
   </div>
 </header>

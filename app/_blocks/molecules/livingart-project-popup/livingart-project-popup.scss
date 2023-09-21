@@ -1,0 +1,73 @@
+.project-popup {
+  --width: #{rem(1410)};
+
+  color: var(--palette-gray-2);
+
+  ::selection {
+    color: var(--palette-white);
+    background-color: var(--palette-cod-gray);
+  }
+
+  &::part(overlay) {
+    --sl-overlay-background-color: var(--palette-black-a40);
+  }
+
+  &::part(panel) {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  &::part(body) {
+    padding: 0;
+  }
+
+  &__wrap {
+    @include h6;
+
+    display: grid;
+    grid-template-columns: 55% 1fr;
+  }
+
+  &__content {
+    @include flex-column;
+
+    padding: rem(60);
+  }
+
+  &__title {
+    @include h5;
+
+    padding-bottom: rem(40);
+    margin-bottom: rem(40);
+    color: var(--palette-black);
+    border-bottom: rem(1) solid var(--palette-gray-3);
+  }
+
+  &__subtitle {
+    margin-bottom: rem(20);
+  }
+
+  &__texts {
+    margin-top: auto;
+
+    > * {
+      &:not(:last-child) {
+        margin-bottom: rem(40);
+      }
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: rem(20);
+    right: rem(84);
+    cursor: pointer;
+    color: var(--palette-white);
+
+    > svg {
+      width: rem(44);
+      height: rem(44);
+      stroke: currentcolor;
+    }
+  }
+}

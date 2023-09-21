@@ -1,11 +1,17 @@
 .header {
+  $this: &;
+
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
-  padding: rem(20) 0;
+  padding: rem(20) 0 rem(10);
   transition: background-color var(--transition300ms);
+
+  @include media('600', max) {
+    padding: rem(10) 0;
+  }
 
   &.active {
     background-color: var(--palette-black-a60);
@@ -13,15 +19,61 @@
   }
 
   &__container {
-    @include flex-center-between;
+    @include flex-between;
+
+    align-items: flex-start;
+
+    @include media('1200', max) {
+      align-items: center;
+    }
   }
 
   &__list {
     display: flex;
     column-gap: rem(40);
+
+    @include media('1200', max) {
+      display: none;
+    }
   }
 
   &__link {
     @include link;
+  }
+
+  &__instagram {
+    @include media('1200', max) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: none;
+    min-width: rem(35);
+    min-height: rem(35);
+    border-radius: 50%;
+    background-color: var(--palette-white-a90);
+    color: var(--palette-white);
+
+    @include media('1200', max) {
+      @include flex-center;
+    }
+
+    #{$this}__burger {
+      &-icon {
+        fill: currentcolor;
+
+        &--menu {
+          width: rem(16);
+          height: rem(8);
+        }
+
+        &--close {
+          display: none;
+          width: rem(13);
+          height: rem(13);
+        }
+      }
+    }
   }
 }

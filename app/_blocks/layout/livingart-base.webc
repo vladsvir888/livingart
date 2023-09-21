@@ -21,7 +21,9 @@
   v-on:mounted="store.handleScroll"
 >
   <livingart-header></livingart-header>
-  <slot></slot>
+  <main class="main">
+    <slot></slot>
+  </main>
   <livingart-footer></livingart-footer>
 
   <script type="module" webc:keep>
@@ -32,6 +34,7 @@
       isBespokeVideoPlay: true,
       isHeroVideoPlay: true,
       isHeaderHasActiveClass: false,
+      isProjectPopupShow: false,
       handleScroll() {
         const changeColorHeader = () => {
           if (window.pageYOffset > 0) {

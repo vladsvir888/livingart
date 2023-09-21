@@ -75,4 +75,5 @@
   <livingart-hero :hero="hero"></livingart-hero>
   <livingart-projects :projects="projects"></livingart-projects>
   <livingart-projects-cabinetry></livingart-projects-cabinetry>
+  <livingart-project-popup></livingart-project-popup>
 </livingart-base>

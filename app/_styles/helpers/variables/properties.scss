@@ -5,15 +5,19 @@
   --palette-gray: #858585;
   --palette-black: #000;
   --palette-alto: #d3d3d3;
+  --palette-white-a90: color-mix(in srgb, var(--palette-white), transparent 90%);
+  --palette-black-a40: color-mix(in srgb, var(--palette-black), transparent 40%);
   --palette-black-a60: color-mix(in srgb, var(--palette-black), transparent 60%);
   --palette-white-a80: color-mix(in srgb, var(--palette-white), transparent 80%);
   --palette-tundora: #464646;
   --palette-dove-gray: #686868;
   --palette-coral-red: #fe4343;
+  --palette-gray-2: #7E7E7E;
+  --palette-gray-3: #8B8B8B;
 
   // containers
   --container-width: #{rem(1920)};
-  --container-padding: #{rem(20)};
+  --container-padding: #{rem(10)};
 
   // transitions
   --transition300ms: 0.3s;
@@ -46,6 +50,10 @@
   text-transform: uppercase;
   letter-spacing: rem(6.3);
   font-weight: 400;
+
+  @include media('600', max) {
+    @include font-size(56, 56);
+  }
 }
 
 @mixin h3 {
@@ -78,6 +86,10 @@
   text-transform: uppercase;
   letter-spacing: rem(-0.72);
   font-weight: 500;
+
+  @include media('600', max) {
+    @include font-size(24, 28.8);
+  }
 }
 
 @mixin text24 {
