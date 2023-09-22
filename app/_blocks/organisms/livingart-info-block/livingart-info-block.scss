@@ -6,6 +6,24 @@
       'title title title title title title title . . . . .'
       'text text text text text text text . logo logo logo logo';
     gap: rem(120) rem(10);
+
+    @include media('1200', max) {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      grid-template-areas:
+        'title title title title title title'
+        'text text text logo logo logo';
+      gap: rem(40) rem(10);
+    }
+
+    @include media('900', max) {
+      @include flex-column;
+
+      row-gap: rem(40);
+    }
+
+    @include media('600', max) {
+      row-gap: rem(20);
+    }
   }
 
   &__title {

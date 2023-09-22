@@ -1,11 +1,24 @@
 .numbers {
   padding-bottom: rem(79);
 
+  @include media('600', max) {
+    padding-bottom: 0;
+  }
+
   &__cards {
     display: grid;
     gap: rem(10);
-    grid-template-columns: repeat(auto-fill, minmax(#{rem(610)}, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     margin-bottom: rem(40);
+
+    @include media('1200', max) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @include media('600', max) {
+      grid-template-columns: 1fr;
+      margin-bottom: rem(20);
+    }
   }
 
   &__text {

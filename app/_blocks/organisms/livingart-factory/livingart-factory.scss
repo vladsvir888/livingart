@@ -3,6 +3,10 @@
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: rem(10);
+
+    @include media('600', max) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
   }
 
   &__grid-item {

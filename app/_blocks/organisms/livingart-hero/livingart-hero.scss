@@ -56,13 +56,11 @@
         margin-left: calc(var(--container-padding) * -1);
         grid-area: 1 / 1;
 
-        @media (hover: hover) {
-          &:hover,
-          &:focus-within {
-            #{$this}__video-button {
-              opacity: 1;
-              outline: none;
-            }
+        &:hover,
+        &:focus-within {
+          #{$this}__video-button {
+            opacity: 1;
+            outline: none;
           }
         }
       }

@@ -6,6 +6,11 @@
 
     column-gap: rem(60);
     margin-top: rem(60);
+
+    @include media('600', max) {
+      margin-top: rem(20);
+      column-gap: rem(20);
+    }
   }
 
   &__nav-button {
@@ -29,14 +34,22 @@
 .projects {
   &__slide {
     margin-top: rem(80) !important;
+
+    @include media('600', max) {
+      margin-top: rem(20) !important;
+    }
   }
 
   &__card {
     position: relative;
     display: grid;
-    grid-template-columns: max-content 1fr;
+    grid-template-columns: auto 1fr;
     grid-template-rows: min-content 1fr;
     gap: rem(31) rem(10);
+
+    @include media('1400', max) {
+      grid-template-columns: 70% 1fr;
+    }
 
     &-button {
       grid-row: span 2;

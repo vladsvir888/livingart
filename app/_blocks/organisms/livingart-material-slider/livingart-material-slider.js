@@ -5,8 +5,19 @@ function materialSlider() {
 
   sliderElements.forEach((sliderElement) => {
     const sliderParams = {
-      slidesPerView: 6,
+      slidesPerView: 2,
       spaceBetween: 10,
+      breakpoints: {
+        601: {
+          slidesPerView: 3,
+        },
+        1025: {
+          slidesPerView: 4,
+        },
+        1401: {
+          slidesPerView: 6,
+        },
+      },
     };
 
     Object.assign(sliderElement, sliderParams);

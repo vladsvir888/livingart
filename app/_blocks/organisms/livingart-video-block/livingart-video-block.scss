@@ -6,13 +6,11 @@
 
     position: relative;
 
-    @media (hover: hover) {
-      &:hover,
-      &:focus-within {
-        #{$this}__video-button {
-          opacity: 1;
-          outline: none;
-        }
+    &:hover,
+    &:focus-within {
+      #{$this}__video-button {
+        opacity: 1;
+        outline: none;
       }
     }
   }

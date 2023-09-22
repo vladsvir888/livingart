@@ -4,11 +4,17 @@ function bespokeSlider2() {
   if (!sliderElement) return;
 
   const sliderParams = {
-    slidesPerView: 'auto',
-    spaceBetween: 30,
+    slidesPerView: 2,
+    spaceBetween: 10,
     navigation: {
       prevEl: sliderElement?.querySelector('.cursor-nav-button--prev'),
       nextEl: sliderElement?.querySelector('.cursor-nav-button--next'),
+    },
+    breakpoints: {
+      1201: {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+      },
     },
   };
 

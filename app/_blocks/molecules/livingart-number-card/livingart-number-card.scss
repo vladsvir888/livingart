@@ -5,6 +5,14 @@
   padding: rem(36);
   border: rem(1) solid var(--palette-dove-gray);
 
+  @include media('900', max) {
+    padding: rem(12);
+  }
+
+  @include media('600', max) {
+    min-height: rem(200);
+  }
+
   &__num {
     @include h3;
 

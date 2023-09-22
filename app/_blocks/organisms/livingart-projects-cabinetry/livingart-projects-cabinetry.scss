@@ -1,6 +1,14 @@
 .projects-cabinetry {
   padding: rem(179) 0 rem(190);
 
+  @include media('1200', max) {
+    padding: rem(100) 0 0;
+  }
+
+  @include media('600', max) {
+    padding: rem(40) 0 0;
+  }
+
   &__slider {
     width: calc(100% + var(--container-padding));
   }

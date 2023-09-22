@@ -247,19 +247,27 @@ body {
 }
 
 .cursor-nav-button {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 50%;
-  z-index: 10;
+  @include media('1201', min) {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    z-index: 10;
 
-  &--prev {
-    left: 0;
-    cursor: url('../assets/images/icons/arrow-prev.svg'), auto;
+    &--prev {
+      left: 0;
+      cursor: url('../assets/images/icons/arrow-prev.svg'), auto;
+    }
+
+    &--next {
+      right: 0;
+      cursor: url('../assets/images/icons/arrow-next.svg'), auto;
+    }
   }
+}
 
-  &--next {
-    right: 0;
-    cursor: url('../assets/images/icons/arrow-next.svg'), auto;
+:is(.cursor-nav-button) {
+  @include media('1200', max) {
+    display: none;
   }
 }

@@ -1,8 +1,8 @@
 <section class="callback">
   <div class="container callback__container">
-    <h2 class="callback__title">
+    <h1 class="callback__title">
       contact us
-    </h2>
+    </h1>
     <livingart-callback class="callback__wrap" webc:keep>
       <form action="/" method="post" class="callback__form">
         <div class="callback__input-wrap">

@@ -7,8 +7,8 @@ function projectsSlider() {
 
   const sliderParams = {
     modules: [Grid],
+    slidesPerView: 1,
     spaceBetween: 11,
-    slidesPerView: 4,
     grid: {
       rows: 2,
       fill: 'row',
@@ -16,6 +16,29 @@ function projectsSlider() {
     navigation: {
       prevEl: '.projects-block__nav-button--prev',
       nextEl: '.projects-block__nav-button--next',
+    },
+    breakpoints: {
+      601: {
+        slidesPerView: 2,
+        grid: {
+          rows: 2,
+          fill: 'row',
+        },
+      },
+      901: {
+        slidesPerView: 3,
+        grid: {
+          rows: 2,
+          fill: 'row',
+        },
+      },
+      1201: {
+        slidesPerView: 4,
+        grid: {
+          rows: 2,
+          fill: 'row',
+        },
+      },
     },
   };
 

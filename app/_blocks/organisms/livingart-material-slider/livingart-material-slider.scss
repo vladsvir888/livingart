@@ -1,10 +1,9 @@
 .materials-slider {
   &--last {
     padding-bottom: rem(73);
-  }
 
-  &__img {
-    height: rem(305);
-    object-fit: cover;
+    @include media('600', max) {
+      padding-bottom: 0;
+    }
   }
 }

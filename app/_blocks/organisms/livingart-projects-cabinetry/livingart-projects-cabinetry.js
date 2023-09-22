@@ -4,11 +4,20 @@ function projectsCabinetrySlider() {
   if (!sliderElement) return;
 
   const sliderParams = {
-    spaceBetween: 20,
-    slidesPerView: 3,
+    spaceBetween: 10,
+    slidesPerView: 1,
     navigation: {
       prevEl: sliderElement?.querySelector('.cursor-nav-button--prev'),
       nextEl: sliderElement?.querySelector('.cursor-nav-button--next'),
+    },
+    breakpoints: {
+      601: {
+        slidesPerView: 2,
+      },
+      901: {
+        spaceBetween: 20,
+        slidesPerView: 3,
+      },
     },
   };
 
