@@ -1,8 +1,8 @@
 <div
   class="hero"
   :class="hero.class || ''"
-  :style="hero.bgimage || ''"
   >
+  <style @html="hero.bgimage" webc:if="!hero.video" webc:keep></style>
   <div
     webc:if="hero.title"
     class="container hero__container"

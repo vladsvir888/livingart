@@ -5,37 +5,46 @@
     </h1>
     <livingart-callback class="callback__wrap" webc:keep>
       <form action="/" method="post" class="callback__form">
-        <div class="callback__input-wrap">
-          <input class="input" type="text" name="name" placeholder="Name *" required data-pristine-required-message="This is a required field.">
+        <div class="input-wrap">
+          <input id="name-input" class="input input-wrap__input" type="text" name="name" placeholder="Name *" required data-pristine-required-message="This is a required field.">
+          <label for="name-input" class="input-wrap__label">Name *</label>
         </div>
-        <div class="callback__input-wrap">
-          <input class="input" type="text" name="surname" placeholder="Surname *" required data-pristine-required-message="This is a required field.">
+        <div class="input-wrap">
+          <input id="surname-input" class="input" type="text" name="surname" placeholder="Surname *" required data-pristine-required-message="This is a required field.">
+          <label for="surname-input" class="input-wrap__label">Surname *</label>
         </div>
-        <div class="callback__input-wrap">
-          <input class="input" type="text" name="company" placeholder="Company">
+        <div class="input-wrap">
+          <input id="company-input" class="input" type="text" name="company" placeholder="Company" autocomplete="organization">
+          <label for="company-input" class="input-wrap__label">Company</label>
         </div>
-        <div class="callback__input-wrap">
-          <input class="input" type="text" name="occupation" placeholder="Occupation">
+        <div class="input-wrap">
+          <input id="occupation-input" class="input" type="text" name="occupation" placeholder="Occupation">
+          <label for="occupation-input" class="input-wrap__label">Occupation</label>
         </div>
-        <div class="callback__input-wrap">
-          <input class="input" type="text" name="city" placeholder="City *" required data-pristine-required-message="This is a required field.">
+        <div class="input-wrap">
+          <input id="city-input" class="input" type="text" name="city" placeholder="City *" required data-pristine-required-message="This is a required field." autocomplete="street-address">
+          <label for="city-input" class="input-wrap__label">City *</label>
         </div>
-        <div class="callback__input-wrap">
-          <input class="input" type="text" name="address" placeholder="Address">
+        <div class="input-wrap">
+          <input id="address-input" class="input" type="text" name="address" placeholder="Address" autocomplete="street-address">
+          <label for="address-input" class="input-wrap__label">Address</label>
         </div>
-        <div class="callback__input-wrap">
-          <input class="input" type="email" name="email" placeholder="Email *" required data-pristine-required-message="This is a required field." data-pristine-email-message="Please, enter correct email. For example, test-email123@gmail.com">
+        <div class="input-wrap">
+          <input id="email-input" class="input" type="email" name="email" placeholder="Email *" required data-pristine-required-message="This is a required field." data-pristine-email-message="Please, enter correct email. For example, test-email123@gmail.com">
+          <label for="email-input" class="input-wrap__label">Email *</label>
         </div>
-        <div class="callback__input-wrap">
-          <input class="input" type="tel" name="phone" placeholder="Phone">
+        <div class="input-wrap">
+          <input id="phone-input" class="input" type="tel" name="phone" placeholder="Phone">
+          <label for="phone-input" class="input-wrap__label">Phone</label>
         </div>
-        <div class="callback__input-wrap callback__textarea-wrap">
-          <textarea class="input" name="message" placeholder="Message" rows="7"></textarea>
+        <div class="input-wrap callback__textarea-wrap">
+          <textarea id="message-input" class="input" name="message" placeholder="Message" rows="7"></textarea>
+          <label for="message-input" class="input-wrap__label">Message</label>
         </div>
-        <div class="callback__input-wrap callback__checkbox-wrap">
+        <div class="input-wrap callback__checkbox-wrap">
           <div class="form-checkbox">
-            <input :id="uid" class="form-checkbox__check" type="checkbox" name="privacy policy" checked>
-            <label :for="uid" class="form-checkbox__text">I have read the <a class="form-checkbox__link" href="/policy">PRIVACY POLICY</a> and I consent to the processing of personal information for the purposes indicated.</label>
+            <input id="privacy-check" class="form-checkbox__check" type="checkbox" name="privacy policy" checked>
+            <label for="privacy-check" class="form-checkbox__text">I have read the <a class="form-checkbox__link" href="/policy">PRIVACY POLICY</a> and I consent to the processing of personal information for the purposes indicated.</label>
           </div>
         </div>
         <livingart-button @is-button="true" class="button--with-hover callback__button" type="submit">Send message</livingart-button>

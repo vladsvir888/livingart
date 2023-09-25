@@ -4,10 +4,10 @@ export default class LivingartCallback extends HTMLElement {
   connectedCallback() {
     this.form = this.querySelector('.callback__form');
     this.validationConfig = {
-      classTo: 'callback__input-wrap',
+      classTo: 'input-wrap',
       errorClass: 'input-error',
       successClass: 'success',
-      errorTextParent: 'callback__input-wrap',
+      errorTextParent: 'input-wrap',
       errorTextTag: 'div',
       errorTextClass: 'input-error-text',
     };

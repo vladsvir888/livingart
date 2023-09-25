@@ -1,5 +1,5 @@
 <section class="section video-block">
-  <div class="section-header">
+  <header class="section-header">
     <div class="container section-header__container">
       <div class="section-header__wrap">
         <h2 class="section-header__title">
@@ -17,12 +17,11 @@
         </svg>
       </livingart-button>
     </div>
-  </div>
+  </header>
   <div class="video-block__video-wrap">
     <video
       v-bind="store.isBespokeVideoPlay ? $el.play() : $el.pause()"
       class="video-block__video"
-      poster="/assets/images/bespoke/01-video.jpg"
       muted
       loop
       autoplay

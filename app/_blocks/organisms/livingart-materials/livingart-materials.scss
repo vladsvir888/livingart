@@ -8,6 +8,21 @@
       'img-1 img-1 img-3 img-3 img-3 img-3 img-4 img-4 img-5 img-5 img-6 img-6'
       'img-2 img-2 img-3 img-3 img-3 img-3 img-4 img-4 img-7 img-7 img-7 img-7';
     gap: rem(10);
+
+    @include media('1200', max) {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      grid-template-areas:
+        'img-1 img-1 img-2 img-2 img-3 img-3'
+        'img-4 img-5 img-6 img-7 img-7 img-7';
+    }
+
+    @include media('600', max) {
+      grid-template-areas:
+        'img-1 img-1 img-1 img-2 img-2 img-2'
+        'img-3 img-3 img-3 img-4 img-4 img-4'
+        'img-5 img-5 img-5 img-6 img-6 img-6'
+        'img-7 img-7 img-7 img-7 img-7 img-7';
+    }
   }
 
   &__item {
@@ -51,6 +66,11 @@
     row-gap: rem(57);
     grid-area: 1 / 1;
     padding: rem(30);
+
+    @include media('1700', max) {
+      padding: rem(15);
+      row-gap: rem(25);
+    }
   }
 
   &__text {
@@ -61,5 +81,13 @@
 
   &__button {
     align-self: center;
+  }
+
+  &__img {
+    @include img(cover);
+
+    @include media('600', max) {
+      height: rem(165);
+    }
   }
 }

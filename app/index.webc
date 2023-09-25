@@ -1,7 +1,15 @@
 <script webc:setup>
   const hero = {
     class: "hero--home",
-    bgimage: "background-image: url('/assets/images/hero/01.jpg');"
+    bgimage: `
+      .hero {
+        background-image: url('/assets/images/hero/01.jpg');
+        background-image: image-set(
+          url('/assets/images/hero/01.webp'),
+          url('/assets/images/hero/01.jpg')
+        );
+      }
+    `
   }
 </script>
 

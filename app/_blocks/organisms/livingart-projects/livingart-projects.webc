@@ -3,7 +3,7 @@
     <swiper-container class="projects" init="false">
       <swiper-slide webc:for="project of projects.items" class="projects__slide">
         <article class="projects__card">
-          <livingart-button v-on:click="store.isProjectPopupShow = true" @is-button="true" class="projects__card-button">
+          <livingart-button v-on:click="store.isProjectPopupShow = true" @is-button="true" class="projects__card-button" aria-label="Open a project">
             <eleventy-image class="projects__card-img" :src="project.img.src" alt="" loading="lazy"></eleventy-image>
           </livingart-button>
           <h2 @text="project.title" class="projects__card-title"></h2>

@@ -1,8 +1,9 @@
+/* eslint-disable import/extensions */
 // eslint-disable-next-line import/no-unresolved
 import { register } from 'swiper/element/bundle';
 
-// eslint-disable-next-line import/extensions
 import '@shoelace-style/shoelace/dist/components/dialog/dialog.js';
+import '@shoelace-style/shoelace/dist/components/drawer/drawer.js';
 
 import getScrollbarWidth from './helpers/getScrollbarWidth';
 
@@ -14,6 +15,7 @@ import projectsCabinetrySlider from '../_blocks/organisms/livingart-projects-cab
 import projectsSlider from '../_blocks/organisms/livingart-projects/livingart-projects';
 // eslint-disable-next-line no-unused-vars
 import LivingartCallback from '../_blocks/organisms/livingart-callback/livingart-callback';
+import './vue';
 
 register();
 

@@ -1,0 +1,33 @@
+.menu {
+  color: var(--palette-white);
+
+  @include media('600', max) {
+    --size: 100%;
+  }
+
+  &::part(close-button) {
+    --sl-color-primary-600: currentcolor;
+    --sl-color-primary-700: currentcolor;
+
+    color: currentcolor;
+  }
+
+  &::part(panel) {
+    backdrop-filter: blur(10px);
+    background-color: var(--palette-black-a60);
+  }
+
+  &__links {
+    @include flex-column;
+
+    row-gap: rem(20);
+  }
+
+  &__link {
+    text-transform: uppercase;
+
+    &--instagram {
+      margin-top: rem(20);
+    }
+  }
+}

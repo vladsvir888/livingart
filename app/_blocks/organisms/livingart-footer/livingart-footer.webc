@@ -8,33 +8,33 @@
         For more references and updates join our intagram
       </p>
       <div class="footer__posts">
-        <a href="/">
+        <a href="/" aria-label="Post 1">
           <eleventy-image class="footer__posts-img" src="./app/_images/footer/01.jpg" alt="" loading="lazy"></eleventy-image>
         </a>
-        <a href="/">
+        <a href="/" aria-label="Post 2">
           <eleventy-image class="footer__posts-img" src="./app/_images/footer/02.jpg" alt="" loading="lazy"></eleventy-image>
         </a>
-        <a href="/">
+        <a href="/" aria-label="Post 3">
           <eleventy-image class="footer__posts-img" src="./app/_images/footer/03.jpg" alt="" loading="lazy"></eleventy-image>
         </a>
-        <a href="/">
+        <a href="/" aria-label="Post 4">
           <eleventy-image class="footer__posts-img" src="./app/_images/footer/04.jpg" alt="" loading="lazy"></eleventy-image>
         </a>
-        <a href="/">
+        <a href="/" aria-label="Post 5">
           <eleventy-image class="footer__posts-img" src="./app/_images/footer/05.jpg" alt="" loading="lazy"></eleventy-image>
         </a>
-        <a href="/">
+        <a href="/" aria-label="Post 6">
           <eleventy-image class="footer__posts-img" src="./app/_images/footer/06.jpg" alt="" loading="lazy"></eleventy-image>
         </a>
-        <a href="/">
+        <a href="/" aria-label="Post 7">
           <eleventy-image class="footer__posts-img" src="./app/_images/footer/07.jpg" alt="" loading="lazy"></eleventy-image>
         </a>
-        <a href="/">
+        <a href="/" aria-label="Post 8">
           <eleventy-image class="footer__posts-img" src="./app/_images/footer/08.jpg" alt="" loading="lazy"></eleventy-image>
         </a>
       </div>
       <a href="/" class="footer__logo">
-        <eleventy-image class="footer__logo-img" src="./app/_images/icons/logo.svg" alt="" loading="lazy" width="390" height="80"></eleventy-image>
+        <eleventy-image class="footer__logo-img" src="./app/_images/icons/logo.svg" alt="Home" loading="lazy" width="390" height="80"></eleventy-image>
       </a>
       <div class="footer__info">
         <p class="footer__address">

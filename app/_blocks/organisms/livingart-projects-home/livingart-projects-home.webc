@@ -1,6 +1,6 @@
 <section class="section projects-home">
   <div class="container projects-home__container">
-    <div class="section-header">
+    <header class="section-header">
       <div class="section-header__container">
         <div class="section-header__wrap">
           <h2 class="section-header__title">
@@ -18,7 +18,7 @@
           </svg>
         </livingart-button>
       </div>
-    </div>
+    </header>
     <swiper-container class="projects-home__slider" init="false">
       <swiper-slide class="projects-home__slide projects-home__slide--big">
         <eleventy-image src="./app/_images/projects-home/01.jpg" alt="" loading="lazy"></eleventy-image>

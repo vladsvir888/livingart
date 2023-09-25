@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Livingart</title>
+  <meta name="description" content="Livingart">
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
@@ -13,6 +14,12 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <!-- my scripts -->
+  <style webc:keep>
+    @font-face{font-family:Manrope;src:url("/assets/Manrope-300.woff2") format("woff2");font-weight:300;font-display:swap;font-style:normal;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Manrope;src:url("/assets/Manrope-400.woff2") format("woff2");font-weight:400;font-display:swap;font-style:normal;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Manrope;src:url("/assets/Manrope-500.woff2") format("woff2");font-weight:500;font-display:swap;font-style:normal;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+  </style>
+    <link rel="preload" href="/assets/Manrope-300.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/Manrope-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/Manrope-500.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/styles/main.css" webc:keep>
   <script src="/scripts/main.js" defer webc:keep></script>
 </head>
@@ -25,32 +32,6 @@
     <slot></slot>
   </main>
   <livingart-footer></livingart-footer>
-
-  <script type="module" webc:keep>
-    import { createApp, reactive  } from 'https://unpkg.com/petite-vue@0.2.2/dist/petite-vue.es.js';
-    import lodash from 'https://cdn.jsdelivr.net/npm/lodash@4.17.21/+esm';
-
-    const store = reactive({
-      isBespokeVideoPlay: true,
-      isHeroVideoPlay: true,
-      isHeaderHasActiveClass: false,
-      isProjectPopupShow: false,
-      handleScroll() {
-        const changeColorHeader = () => {
-          if (window.pageYOffset > 0) {
-            this.isHeaderHasActiveClass = true;
-          } else {
-            this.isHeaderHasActiveClass = false;
-          }
-        }
-
-        window.addEventListener('scroll', lodash.throttle(changeColorHeader, 250));
-      }
-    });
-
-    createApp({
-      store
-    }).mount()
-  </script>
+  <livingart-menu></livingart-menu>
 </body>
 </html>

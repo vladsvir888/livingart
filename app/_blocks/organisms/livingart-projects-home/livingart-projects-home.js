@@ -4,7 +4,7 @@ function projectsHomeSlider() {
   if (!sliderElement) return;
 
   const sliderParams = {
-    slidesPerView: 'auto',
+    slidesPerView: 2,
     spaceBetween: 10,
     navigation: {
       prevEl: '.projects-home__nav-button--prev',
@@ -12,6 +12,11 @@ function projectsHomeSlider() {
     },
     pagination: {
       el: '.projects-home__pagination',
+    },
+    breakpoints: {
+      901: {
+        slidesPerView: 'auto',
+      },
     },
   };
 
