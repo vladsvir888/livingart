@@ -67,6 +67,8 @@
 
       &__video {
         @include img(cover);
+
+        pointer-events: none;
       }
 
       &__video-button {

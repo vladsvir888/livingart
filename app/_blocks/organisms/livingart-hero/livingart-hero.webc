@@ -17,10 +17,10 @@
       <video
         v-bind="store.isHeroVideoPlay ? $el.play() : $el.pause()"
         class="hero__video"
-        poster="/assets/images/bespoke/01-video.jpg"
         muted
         loop
         autoplay
+        playsinline
       >
         <source src="/assets/test.mp4" type="video/mp4">
       </video>

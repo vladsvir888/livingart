@@ -42,5 +42,7 @@
 
   &__video {
     @include img(cover);
+
+    pointer-events: none;
   }
 }
