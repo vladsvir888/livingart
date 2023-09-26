@@ -13,6 +13,7 @@
     @include flex-between;
 
     gap: rem(20);
+    align-items: flex-start;
 
     @include media('1200', max) {
       flex-direction: column;

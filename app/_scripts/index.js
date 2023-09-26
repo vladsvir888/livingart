@@ -4,6 +4,7 @@ import { register } from 'swiper/element/bundle';
 
 import '@shoelace-style/shoelace/dist/components/dialog/dialog.js';
 import '@shoelace-style/shoelace/dist/components/drawer/drawer.js';
+import sal from 'sal.js';
 
 import getScrollbarWidth from './helpers/getScrollbarWidth';
 
@@ -18,6 +19,7 @@ import LivingartCallback from '../_blocks/organisms/livingart-callback/livingart
 import './vue';
 
 register();
+sal();
 
 document.addEventListener('DOMContentLoaded', () => {
   document.documentElement.style.setProperty('--scrollbar-width', `${getScrollbarWidth()}px`);

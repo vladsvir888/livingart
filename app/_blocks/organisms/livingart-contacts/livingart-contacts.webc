@@ -1,4 +1,13 @@
-<div class="contacts" style="background-image: url('/assets/images/address/01.jpg');">
+<div class="contacts">
+  <style webc:keep>
+    .contacts {
+      background-image: url('/assets/images/address/01.jpg');
+      background-image: image-set(
+        url('/assets/images/address/01.webp'),
+        url('/assets/images/address/01.jpg')
+      );
+    }
+  </style>
   <div class="contacts__content">
     <p class="contacts__item contacts__address">
       325 Eddystone Ave, North York, ON M3N 1H8

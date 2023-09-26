@@ -2,14 +2,14 @@
   <header class="section-header">
     <div class="container section-header__container">
       <div class="section-header__wrap">
-        <h2 class="section-header__title">
+        <h2 class="section-header__title" data-sal="slide-up">
           Bespoke
         </h2>
-        <p class="section-header__text">
+        <p class="section-header__text" data-sal="slide-up">
           A unique style for kitchen systems with character: in the industry
         </p>
       </div>
-      <livingart-button class="button--with-arrow button--with-hover" href="/bespoke">
+      <livingart-button class="button--with-arrow button--with-hover" href="/bespoke" data-sal="slide-up">
         Explore all
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 16" aria-hidden="true">
           <path d="M17 1L24 8L17 15"/>

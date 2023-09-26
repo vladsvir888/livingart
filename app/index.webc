@@ -14,6 +14,7 @@
 </script>
 
 <livingart-base webc:nokeep>
+  <h1 class="visually-hidden">Livingart - Home</h1>
   <livingart-hero :hero="hero"></livingart-hero>
   <livingart-video-block></livingart-video-block>
   <livingart-projects-home></livingart-projects-home>

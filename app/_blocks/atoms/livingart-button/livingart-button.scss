@@ -47,22 +47,37 @@
 
     @media (hover: hover) {
       &:hover {
-        &::before {
-          transform-origin: left;
-          transform: scaleX(1);
+        &[href] {
+          &::before {
+            transform-origin: left;
+            transform: scaleX(1);
+          }
         }
       }
+    }
+
+    &:not([href]) {
+      opacity: 0.5;
+      cursor: default;
     }
   }
 
   &--with-hover {
-    transition-property: border-color, background-color, color;
+    // opacity, transform
+    transition-property: border-color, background-color, color, opacity, transform;
     transition-duration: var(--transition300ms);
+
+    &:is(.swiper-button-disabled) {
+      opacity: 0.5;
+      cursor: default;
+    }
 
     @media (hover: hover) {
       &:hover {
-        background-color: var(--palette-black);
-        border-color: transparent;
+        &:not(:disabled) {
+          background-color: var(--palette-black);
+          border-color: transparent;
+        }
       }
     }
   }

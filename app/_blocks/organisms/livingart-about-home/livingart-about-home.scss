@@ -9,6 +9,7 @@
 
   &__content {
     display: flex;
+    align-items: flex-start;
     gap: rem(40) rem(88);
     margin-top: rem(60);
 
@@ -55,9 +56,10 @@
   }
 
   &__button {
-    @include flex-center-y;
     @include link;
 
+    display: inline-flex;
+    align-items: center;
     column-gap: rem(72);
     margin-top: rem(100);
 

@@ -1,6 +1,6 @@
 <section class="callback">
   <div class="container callback__container">
-    <h1 class="callback__title">
+    <h1 class="callback__title" data-sal="slide-up">
       contact us
     </h1>
     <livingart-callback class="callback__wrap" webc:keep>

@@ -1,31 +1,31 @@
 <header v-bind:class="{ active: store.isHeaderHasActiveClass }" class="header">
   <div class="container header__container">
-    <a href="/" class="header__logo-link">
+    <a href="/" class="header__logo-link" data-sal="slide-up">
       <img class="header__logo-img" src="/assets/images/icons/logo.svg" alt="Home" width="160" height="33">
     </a>
     <nav class="header__nav" aria-label="Main">
       <ul class="header__list">
         <li class="header__item">
-          <livingart-button href="/" class="button--with-decoration header__link">home</livingart-button>
+          <livingart-button href="/" class="button--with-decoration header__link" data-sal="slide-up">home</livingart-button>
         </li>
         <li class="header__item">
-          <livingart-button href="/bespoke" class="button--with-decoration header__link">Bespoke</livingart-button>
+          <livingart-button href="/bespoke" class="button--with-decoration header__link" data-sal="slide-up">Bespoke</livingart-button>
         </li>
         <li class="header__item">
-          <livingart-button href="/projects" class="button--with-decoration header__link">Projects</livingart-button>
+          <livingart-button href="/projects" class="button--with-decoration header__link" data-sal="slide-up">Projects</livingart-button>
         </li>
         <li class="header__item">
-          <livingart-button href="/materials" class="button--with-decoration header__link">Materials</livingart-button>
+          <livingart-button href="/materials" class="button--with-decoration header__link" data-sal="slide-up">Materials</livingart-button>
         </li>
         <li class="header__item">
-          <livingart-button href="/about" class="button--with-decoration header__link">About company</livingart-button>
+          <livingart-button href="/about" class="button--with-decoration header__link" data-sal="slide-up">About company</livingart-button>
         </li>
         <li class="header__item">
-          <livingart-button href="/contact" class="button--with-decoration header__link">contact</livingart-button>
+          <livingart-button href="/contact" class="button--with-decoration header__link" data-sal="slide-up">contact</livingart-button>
         </li>
       </ul>
     </nav>
-    <livingart-button href="https://www.instagram.com/livingart_kitchens/" class="button--with-decoration header__link header__instagram" target="_blank">Instagram</livingart-button>
+    <livingart-button href="https://www.instagram.com/livingart_kitchens/" class="button--with-decoration header__link header__instagram" target="_blank" data-sal="slide-up">Instagram</livingart-button>
     <livingart-button v-on:click="store.isMenuShow = true" @is-button="true" class="header__burger" aria-label="Open">
       <svg class="header__burger-icon header__burger-icon--menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 8" aria-hidden="true">
         <rect width="16" height="1"/>

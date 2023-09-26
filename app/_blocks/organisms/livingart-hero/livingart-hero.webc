@@ -10,6 +10,7 @@
     <h1
       @text="hero.title"
       class="hero__title"
+      data-sal="slide-up"
     ></h1>
 
     <div webc:if="hero.video" class="hero__video-wrap">

@@ -35,6 +35,10 @@
   --indent140: #{rem(140)};
   --indent40: #{rem(40)};
 
+  // sal
+  --sal-duration: 700ms;
+  --sal-delay: 200ms;
+
   @include media('900', max) {
     --indent240: #{rem(80)};
     --indent140: #{rem(80)};

@@ -1,9 +1,9 @@
 <section class="section section--inner info-block">
   <div class="container info-block__container">
-    <h2 class="info-block__title">
+    <h2 class="info-block__title" data-sal="slide-up">
       From design kitchens to modern living and bathrooms
     </h2>
-    <div class="info-block__text">
+    <div class="info-block__text" data-sal="slide-up" style="--sal-delay: 300ms;">
       <p>
         Modulnova, in continuous search of quality and innovation, designs and manufactures contemporary kitchens, modern living and bathrooms, improving the life within the living spaces.
       </p>
@@ -11,7 +11,7 @@
         From the beginning, the company has expressed a strong tailoring concept and total flexibility in proposing a customized 'made to measure' kitchen system for the customer, thanks to an exceptional design vocabulary and a wide choice of materials and finishes. Over the years it has expanded the range of proposals, demonstrating a great ability to meet the needs and tastes of a diverse and international public. In 2000 the company created a line of bathroom furniture and in 2011 completed its offer with Modulnova Living, born as a natural continuation of an entrepreneurial path and acquired know-how.
       </p>
     </div>
-    <div class="info-block__logo">
+    <div class="info-block__logo" data-sal="slide-up" style="--sal-delay: 400ms;">
       <img src="/assets/images/icons/logo.svg" alt="" width="620" height="128">
     </div>
   </div>

@@ -1,21 +1,21 @@
 <section class="section about-home">
   <div class="container">
     <div class="section-header">
-      <h2 class="section-header__title">About Livingart</h2>
+      <h2 class="section-header__title" data-sal="slide-up">About Livingart</h2>
     </div>
     <div class="about-home__img-wrap about-home__img-wrap--1">
       <eleventy-image class="about-home__img" src="./app/_images/about-home/01.jpg" loading="lazy" alt=""></eleventy-image>
     </div>
     <div class="about-home__content">
-      <p class="about-home__text about-home__text--1">
+      <p class="about-home__text about-home__text--1" data-sal="slide-up">
         The history of Italian design is, in part, also the history of the Boffi family, who were able to establish connections with what would later become iconic names in the international landscape of interior systems.
       </p>
       <div class="about-home__content-wrap">
-        <p class="about-home__text">
+        <p class="about-home__text" data-sal="slide-up">
           But one must proceed in order; there’s a narrative thread leading back to a small artisan workshop in the province of Monza Brianza.
         </p>
-        <livingart-button href="/about" class="about-home__button">
-          read more
+        <livingart-button href="/about" class="button--with-decoration about-home__button" data-sal="slide-up">
+          read about livingart
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 22" aria-hidden="true">
             <path d="M38 1L48 11L38 21"/>
             <path d="M48 11H0"/>

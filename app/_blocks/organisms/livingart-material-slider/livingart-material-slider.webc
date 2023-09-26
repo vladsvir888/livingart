@@ -1,7 +1,7 @@
 <section class="section section--inner materials-slider" :class="slider.class || ''">
   <div class="container">
     <div class="section-header">
-      <h2 @text="slider.title" class="section-header__title"></h2>
+      <h2 @text="slider.title" class="section-header__title" data-sal="slide-up"></h2>
     </div>
     <swiper-container class="materials-slider__slider" init="false">
       <swiper-slide webc:for="slide of slider.slides" class="materials-slider__slide">
