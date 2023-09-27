@@ -179,7 +179,7 @@ body {
 .img-hover-effect {
   overflow: hidden;
 
-  @media (hover: hover) {
+  @media #{$mouse-device} {
     &:hover {
       img {
         transform: scale(1.1);
@@ -236,6 +236,8 @@ body {
 
 .cursor-nav-button {
   @include media('1201', min) {
+    $this: &;
+
     position: absolute;
     top: 0;
     height: 100%;
@@ -250,6 +252,18 @@ body {
     &--next {
       right: 0;
       cursor: url('../assets/images/icons/arrow-next.svg'), auto;
+    }
+
+    &--secondary {
+      &#{$this} {
+        &--prev {
+          cursor: url('../assets/images/icons/arrow-prev-2.svg'), auto;
+        }
+
+        &--next {
+          cursor: url('../assets/images/icons/arrow-next-2.svg'), auto;
+        }
+      }
     }
   }
 }

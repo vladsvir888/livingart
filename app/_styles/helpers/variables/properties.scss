@@ -51,6 +51,8 @@
   }
 }
 
+$mouse-device: '(hover: hover)';
+
 @mixin h1 {
   @include font-size(128, 128);
 

@@ -54,6 +54,13 @@
     &-button {
       grid-row: span 2;
       cursor: pointer;
+      transition: filter var(--transition300ms);
+
+      @media #{$mouse-device} {
+        &:hover {
+          filter: brightness(0.75);
+        }
+      }
     }
 
     &-title {

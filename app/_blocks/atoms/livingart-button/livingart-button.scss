@@ -45,7 +45,7 @@
       content: '';
     }
 
-    @media (hover: hover) {
+    @media #{$mouse-device} {
       &:hover {
         &[href] {
           &::before {
@@ -63,8 +63,7 @@
   }
 
   &--with-hover {
-    // opacity, transform
-    transition-property: border-color, background-color, color, opacity, transform;
+    transition-property: border-color, background-color, color;
     transition-duration: var(--transition300ms);
 
     &:is(.swiper-button-disabled) {
@@ -72,7 +71,7 @@
       cursor: default;
     }
 
-    @media (hover: hover) {
+    @media #{$mouse-device} {
       &:hover {
         &:not(:disabled) {
           background-color: var(--palette-black);

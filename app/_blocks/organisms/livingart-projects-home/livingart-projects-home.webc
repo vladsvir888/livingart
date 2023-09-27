@@ -10,13 +10,15 @@
             A unique style for kitchen systems with character: in the industry
           </p>
         </div>
-        <livingart-button class="button--with-arrow button--with-hover" href="/bespoke" data-sal="slide-up">
-          Explore all
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 16" aria-hidden="true">
-            <path d="M17 1L24 8L17 15"/>
-            <path d="M24 8H0"/>
-          </svg>
-        </livingart-button>
+        <div class="section-header__button-wrap" data-sal="slide-up">
+          <livingart-button class="button--with-arrow button--with-hover" href="/projects">
+            Explore all
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 16" aria-hidden="true">
+              <path d="M17 1L24 8L17 15"/>
+              <path d="M24 8H0"/>
+            </svg>
+          </livingart-button>
+        </div>
       </div>
     </header>
     <swiper-container class="projects-home__slider" init="false">
