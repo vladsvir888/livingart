@@ -14,7 +14,7 @@
     }
 
     &--big {
-      width: rem(935);
+      width: rem(940);
       height: rem(725);
 
       @include media('1400', max) {
@@ -53,7 +53,7 @@
   &__nav-button {
     @include flex-center;
 
-    padding: rem(7) rem(18);
+    padding: rem(5) rem(18);
     border: rem(1) solid var(--palette-white);
     border-radius: var(--bdrs50);
     cursor: pointer;

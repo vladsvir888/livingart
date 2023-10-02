@@ -106,4 +106,9 @@
       }
     }
   }
+
+  &__img {
+    max-height: 93vh;
+    object-fit: cover;
+  }
 }

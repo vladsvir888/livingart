@@ -138,8 +138,8 @@ html {
   scroll-behavior: smooth;
 
   &::-webkit-scrollbar {
-    width: rem(12);
-    height: rem(12);
+    width: rem(6);
+    height: rem(6);
     background-color: transparent;
   }
 
@@ -204,8 +204,9 @@ body {
   padding-bottom: var(--indent40);
 
   &__container {
-    @include flex-center-between;
-
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: rem(20);
 
@@ -215,8 +216,8 @@ body {
   }
 
   &__wrap {
-    @include flex-center-y;
-
+    display: flex;
+    align-items: flex-end;
     flex-wrap: wrap;
     gap: rem(20) rem(160);
 

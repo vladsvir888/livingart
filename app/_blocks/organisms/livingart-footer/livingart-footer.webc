@@ -18,7 +18,7 @@
         <eleventy-image class="footer__posts-img" src="./app/_images/footer/08.jpg" alt="" loading="lazy"></eleventy-image>
       </div>
       <a href="/" class="footer__logo">
-        <eleventy-image class="footer__logo-img" src="./app/_images/icons/logo.svg" alt="Home" loading="lazy" width="390" height="80"></eleventy-image>
+        <img class="footer__logo-img" src="/assets/images/icons/logo.svg" alt="Home" loading="lazy" width="390" height="80">
       </a>
       <div class="footer__info">
         <p class="footer__address">
