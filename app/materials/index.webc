@@ -13,89 +13,54 @@
   }
 
   const slider1 = {
-    title: 'Stone',
+    title: 'wood',
+    header: {
+      type: 1
+    },
     slides: [
       {
         img: {
-          src: './app/_images/materials/stone/01.jpg'
+          src: './app/_images/materials/wood/01.jpg'
         }
       },
       {
         img: {
-          src: './app/_images/materials/stone/02.jpg'
+          src: './app/_images/materials/wood/02.jpg'
         }
       },
       {
         img: {
-          src: './app/_images/materials/stone/03.jpg'
+          src: './app/_images/materials/wood/03.jpg'
         }
       },
       {
         img: {
-          src: './app/_images/materials/stone/04.jpg'
+          src: './app/_images/materials/wood/04.jpg'
         }
       },
       {
         img: {
-          src: './app/_images/materials/stone/05.jpg'
+          src: './app/_images/materials/wood/05.jpg'
         }
       },
       {
         img: {
-          src: './app/_images/materials/stone/06.jpg'
+          src: './app/_images/materials/wood/06.jpg'
         }
       },
       {
         img: {
-          src: './app/_images/materials/stone/01.jpg'
+          src: './app/_images/materials/wood/01.jpg'
         }
       },
     ]
   }
 
   const slider2 = {
-    title: 'Metal',
-    slides: [
-      {
-        img: {
-          src: './app/_images/materials/metal/01.jpg'
-        }
-      },
-      {
-        img: {
-          src: './app/_images/materials/metal/02.jpg'
-        }
-      },
-      {
-        img: {
-          src: './app/_images/materials/metal/03.jpg'
-        }
-      },
-      {
-        img: {
-          src: './app/_images/materials/metal/04.jpg'
-        }
-      },
-      {
-        img: {
-          src: './app/_images/materials/metal/05.jpg'
-        }
-      },
-      {
-        img: {
-          src: './app/_images/materials/metal/06.jpg'
-        }
-      },
-      {
-        img: {
-          src: './app/_images/materials/metal/01.jpg'
-        }
-      },
-    ]
-  }
-
-  const slider3 = {
     title: 'Glass',
+    header: {
+      type: 1
+    },
     slides: [
       {
         img: {
@@ -135,43 +100,90 @@
     ]
   }
 
-  const slider4 = {
-    class: 'materials-slider--last',
-    title: 'wood',
+  const slider3 = {
+    title: 'Stone',
+    header: {
+      type: 1
+    },
     slides: [
       {
         img: {
-          src: './app/_images/materials/wood/01.jpg'
+          src: './app/_images/materials/stone/01.jpg'
         }
       },
       {
         img: {
-          src: './app/_images/materials/wood/02.jpg'
+          src: './app/_images/materials/stone/02.jpg'
         }
       },
       {
         img: {
-          src: './app/_images/materials/wood/03.jpg'
+          src: './app/_images/materials/stone/03.jpg'
         }
       },
       {
         img: {
-          src: './app/_images/materials/wood/04.jpg'
+          src: './app/_images/materials/stone/04.jpg'
         }
       },
       {
         img: {
-          src: './app/_images/materials/wood/05.jpg'
+          src: './app/_images/materials/stone/05.jpg'
         }
       },
       {
         img: {
-          src: './app/_images/materials/wood/06.jpg'
+          src: './app/_images/materials/stone/06.jpg'
         }
       },
       {
         img: {
-          src: './app/_images/materials/wood/01.jpg'
+          src: './app/_images/materials/stone/01.jpg'
+        }
+      },
+    ]
+  }
+
+  const slider4 = {
+    title: 'Metal',
+    class: 'materials-slider--last',
+    header: {
+      type: 1
+    },
+    slides: [
+      {
+        img: {
+          src: './app/_images/materials/metal/01.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/metal/02.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/metal/03.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/metal/04.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/metal/05.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/metal/06.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/materials/metal/01.jpg'
         }
       },
     ]

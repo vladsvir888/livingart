@@ -1,7 +1,7 @@
 <section class="section section--inner bespoke-slider-two">
   <div class="container">
     <div class="section-header">
-      <h2 class="section-header__title" data-sal="slide-up">nature line</h2>
+      <h2 class="section-header__title" data-sal="slide-up"><b>nature</b> line</h2>
     </div>
     <swiper-container class="bespoke-slider-two__slider" init="false">
       <div slot="container-start">

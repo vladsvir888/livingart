@@ -1,0 +1,31 @@
+<sl-dialog
+  v-bind="{ open: store.isPopupShow }"
+  v-on:sl-request-close="store.isPopupShow = false"
+  no-header
+  class="popup"
+>
+  <div class="popup__wrap">
+    <div class="popup__img-wrap">
+      <eleventy-image class="popup__img" :src="popup.image.src" alt="" loading="lazy"></eleventy-image>
+    </div>
+    <div class="popup__content">
+      <h2 @text="popup.title" class="popup__title"></h2>
+      <p @text="popup.text1" class="popup__subtitle"></p>
+      <div class="popup__texts">
+        <p @text="popup.text2"></p>
+        <p @text="popup.text3"></p>
+      </div>
+    </div>
+    <livingart-button
+      v-on:click="store.isPopupShow = false"
+      @is-button="true"
+      class="popup__close"
+      aria-label="Close"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" aria-hidden="true">
+        <path d="M1 1L43 43"/>
+        <path d="M43 1L0.999999 43"/>
+      </svg>
+    </livingart-button>
+  </div>
+</sl-dialog>

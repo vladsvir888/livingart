@@ -1,0 +1,25 @@
+<section class="section section--inner grid-block">
+  <div class="container">
+    <header class="section-header">
+      <div class="section-header__container">
+        <div class="section-header__wrap">
+          <h2 @text="gridBlock.title" class="section-header__title" data-sal="slide-up"></h2>
+        </div>
+        <div webc:if="gridBlock.link" class="section-header__button-wrap" data-sal="slide-up">
+          <livingart-button class="button--with-arrow button--with-hover" href="/production">
+            Explore
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 16" aria-hidden="true">
+              <path d="M17 1L24 8L17 15"/>
+              <path d="M24 8H0"/>
+            </svg>
+          </livingart-button>
+        </div>
+      </div>
+    </header>
+    <div class="grid-block__wrapper">
+      <div webc:for="(item, index) of [1, 2, 3, 4, 5]" class="grid-block__item" :class="index === 0 ? 'grid-block__item--big' : ''">
+        <eleventy-image class="grid-block__img" :src="`./app/_images/${gridBlock.nameFolderImage}/0${index + 1}.jpg`" alt="" loading="lazy"></eleventy-image>
+      </div>
+    </div>
+  </div>
+</section>

@@ -3,14 +3,13 @@
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     grid-template-areas:
-      'img-1 img-1 img-3 img-3 img-3 img-3 img-4 img-4 img-5 img-5 img-6 img-6'
-      'img-2 img-2 img-3 img-3 img-3 img-3 img-4 img-4 img-7 img-7 img-7 img-7';
+      'img-1 img-3 img-3 img-4 img-5 img-6'
+      'img-2 img-3 img-3 img-4 img-7 img-7';
     gap: rem(10);
 
     @include media('1200', max) {
-      grid-template-columns: repeat(6, minmax(0, 1fr));
       grid-template-areas:
         'img-1 img-1 img-2 img-2 img-3 img-3'
         'img-4 img-5 img-6 img-7 img-7 img-7';

@@ -6,7 +6,7 @@ const store = reactive({
   isBespokeVideoPlay: true,
   isHeroVideoPlay: true,
   isHeaderHasActiveClass: false,
-  isProjectPopupShow: false,
+  isPopupShow: false,
   isMenuShow: false,
   handleScroll() {
     const changeColorHeader = () => {

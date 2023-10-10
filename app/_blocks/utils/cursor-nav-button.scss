@@ -1,0 +1,36 @@
+.cursor-nav-button {
+  display: none;
+
+  @include media('1201', min) {
+    $this: &;
+
+    position: absolute;
+    top: 0;
+    display: flex;
+    height: 100%;
+    width: 50%;
+    z-index: 10;
+
+    &--prev {
+      left: 0;
+      cursor: url('../assets/images/icons/arrow-prev.svg'), auto;
+    }
+
+    &--next {
+      right: 0;
+      cursor: url('../assets/images/icons/arrow-next.svg'), auto;
+    }
+
+    &--secondary {
+      &#{$this} {
+        &--prev {
+          cursor: url('../assets/images/icons/arrow-prev-2.svg'), auto;
+        }
+
+        &--next {
+          cursor: url('../assets/images/icons/arrow-next-2.svg'), auto;
+        }
+      }
+    }
+  }
+}

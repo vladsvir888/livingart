@@ -1,13 +1,47 @@
 <section class="section section--inner materials-slider" :class="slider.class || ''">
   <div class="container">
-    <div class="section-header">
-      <h2 @text="slider.title" class="section-header__title" data-sal="slide-up"></h2>
+    <header webc:if="slider.header.type === 1" class="section-header">
+      <div class="section-header__container">
+        <div class="section-header__wrap">
+          <h2 @text="slider.title" class="section-header__title" data-sal="slide-up"></h2>
+        </div>
+        <div class="section-header__button-wrap" data-sal="slide-up">
+          <livingart-button class="button--with-arrow button--with-hover" href="/materials/detail">
+            Explore
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 16" aria-hidden="true">
+              <path d="M17 1L24 8L17 15"/>
+              <path d="M24 8H0"/>
+            </svg>
+          </livingart-button>
+        </div>
+      </div>
+    </header>
+    <div webc:else class="section-header">
+      <div class="section-header__container section-header__container--2">
+        <div class="section-header__button-wrap" data-sal="slide-up">
+          <livingart-button class="button--with-arrow button--with-hover section-header__back-button" href="/materials">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 16" aria-hidden="true">
+              <path d="M8 1L1 8L8 15"/>
+              <path d="M1 8H25"/>
+            </svg>
+            Back
+          </livingart-button>
+        </div>
+        <p class="section-header__text" data-sal="slide-up">
+          Laminates are hot pressed impregnated papers.The avant-garde of the Cleaf’s laminates collection is given by the various typology (HPL – CPL – Hyperflex), sizes and thicknesses available in the same textures and decoratives of the faced panels.
+        </p>
+      </div>
     </div>
     <swiper-container class="materials-slider__slider" init="false">
       <swiper-slide webc:for="slide of slider.slides" class="materials-slider__slide">
-        <div class="img-hover-effect">
+        <livingart-button webc:if="slide.button" @is-button="true" v-on:click="store.isPopupShow = true" class="materials-slider__popup-button" aria-label="Open popup">
+          <span class="img-hover-effect">
+            <eleventy-image class="materials-slider__img" :src="slide.img.src" alt="" loading="lazy"></eleventy-image>
+          </span>
+        </livingart-button>
+        <span webc:else class="img-hover-effect">
           <eleventy-image class="materials-slider__img" :src="slide.img.src" alt="" loading="lazy"></eleventy-image>
-        </div>
+        </span>
       </swiper-slide>
     </swiper-container>
   </div>

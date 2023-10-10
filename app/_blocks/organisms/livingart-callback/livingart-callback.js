@@ -27,7 +27,7 @@ export default class LivingartCallback extends HTMLElement {
 
       const headerHeight = document.querySelector(this.selectors.header).offsetHeight;
       // eslint-disable-next-line max-len
-      const rectTopElement = (this.form.getBoundingClientRect().top + window.scrollY) - headerHeight;
+      const rectTopElement = this.form.getBoundingClientRect().top + window.scrollY - headerHeight;
       window.scroll({
         top: rectTopElement,
       });

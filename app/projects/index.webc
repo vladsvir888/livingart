@@ -1,6 +1,5 @@
 <script webc:setup>
   const hero = {
-    class: 'hero--projects',
     title: 'projects',
     bgimage: `
       .hero {
@@ -77,11 +76,21 @@
       },
     ]
   }
+
+  const popup = {
+    title: 'GARRISON POINT 1 & 2 ',
+    text1: 'Toronto',
+    text2: '76 Storeys',
+    text3: '789 Units',
+    image: {
+      src: './app/_images/popup/01.jpg'
+    }
+  }
 </script>
 
 <livingart-base webc:nokeep>
   <livingart-hero :hero="hero"></livingart-hero>
   <livingart-projects :projects="projects"></livingart-projects>
   <livingart-projects-cabinetry></livingart-projects-cabinetry>
-  <livingart-project-popup></livingart-project-popup>
+  <livingart-popup :popup="popup"></livingart-popup>
 </livingart-base>

@@ -1,0 +1,48 @@
+.section-header {
+  $this: &;
+
+  padding-bottom: var(--indent40);
+
+  &__container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: rem(20);
+
+    &--2 {
+      align-items: flex-start;
+
+      #{$this}__text {
+        max-width: rem(935);
+      }
+    }
+
+    @include media('600', max) {
+      gap: rem(10);
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: rem(20) rem(160);
+
+    @include media('600', max) {
+      gap: rem(10);
+    }
+  }
+
+  &__title {
+    @include h4;
+  }
+
+  &__text {
+    @include text24;
+  }
+
+  &__back-button {
+    padding: rem(11) rem(18);
+  }
+}

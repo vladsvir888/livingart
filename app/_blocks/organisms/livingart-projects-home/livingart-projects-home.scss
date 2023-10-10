@@ -58,6 +58,11 @@
     border-radius: var(--bdrs50);
     cursor: pointer;
 
+    @include media('1200', max) {
+      background-color: var(--palette-white);
+      color: var(--palette-cod-gray);
+    }
+
     @include media('600', max) {
       padding: rem(4) rem(12);
     }

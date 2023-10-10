@@ -6,7 +6,7 @@
   }
 
   const slider1 = {
-    title: 'pure line',
+    title: '<b>pure</b> line',
     slides: [
       {
         img: {
@@ -22,7 +22,7 @@
   }
 
   const slider2 = {
-    title: 'art line',
+    title: '<b>art</b> line',
     slides: [
       {
         img: {

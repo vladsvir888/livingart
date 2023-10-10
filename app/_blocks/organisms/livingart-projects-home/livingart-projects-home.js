@@ -17,6 +17,10 @@ function projectsHomeSlider() {
       901: {
         slidesPerView: 'auto',
       },
+      1201: {
+        slidesPerView: 'auto',
+        slidesPerGroup: 4,
+      },
     },
   };
 

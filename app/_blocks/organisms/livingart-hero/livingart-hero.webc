@@ -16,19 +16,24 @@
     <div webc:if="hero.video" class="hero__video-wrap">
       <video
         v-bind="store.isHeroVideoPlay ? $el.play() : $el.pause()"
+        id="hero-video"
         class="hero__video"
+        src="/assets/test.mp4"
+        type="video/mp4"
+        width="1920"
+        height="1080"
         muted
         loop
         autoplay
         playsinline
-      >
-        <source src="/assets/test.mp4" type="video/mp4">
-      </video>
+      ></video>
       <livingart-button
         v-on:click="store.isHeroVideoPlay = !store.isHeroVideoPlay"
         @is-button="true"
         class="hero__video-button"
-        aria-label="Play/Pause video"
+        aria-label="Pause video"
+        v-bind:aria-pressed="store.isHeroVideoPlay ? false : true"
+        aria-controls="video-hero"
       >
         <span class="hero__video-button-wrap">
           <!-- play icon -->

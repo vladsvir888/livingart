@@ -1,6 +1,6 @@
 <script webc:setup>
   const hero = {
-    title: 'about livingart',
+    title: 'about us',
     bgimage: `
       .hero {
         background-image: url('/assets/images/hero/05.jpg');
@@ -11,12 +11,18 @@
       }
     `,
   }
+
+  const gridBlock = {
+    title: 'production',
+    link: true,
+    nameFolderImage: 'production'
+  }
 </script>
 
 <livingart-base webc:nokeep>
   <livingart-hero :hero="hero"></livingart-hero>
   <livingart-info-block></livingart-info-block>
-  <livingart-office></livingart-office>
-  <livingart-factory></livingart-factory>
+  <livingart-salon></livingart-salon>
+  <livingart-grid-block :grid-block="gridBlock"></livingart-grid-block>
   <livingart-numbers></livingart-numbers>
 </livingart-base>

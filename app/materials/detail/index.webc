@@ -1,0 +1,81 @@
+<script webc:setup>
+  const hero = {
+    title: 'Stone',
+    bgimage: `
+      .hero {
+        background-image: url('/assets/images/hero/07.jpg');
+        background-image: image-set(
+          url('/assets/images/hero/07.webp'),
+          url('/assets/images/hero/07.jpg')
+        );
+      }
+    `,
+  }
+
+  const slider = {
+    class: 'materials-slider--secondary',
+    header: {
+      type: 2
+    },
+    slides: [
+      {
+        button: true,
+        img: {
+          src: './app/_images/materials-detail/01.jpg'
+        }
+      },
+      {
+        button: true,
+        img: {
+          src: './app/_images/materials-detail/02.jpg'
+        }
+      },
+      {
+        button: true,
+        img: {
+          src: './app/_images/materials-detail/03.jpg'
+        }
+      },
+      {
+        button: true,
+        img: {
+          src: './app/_images/materials-detail/04.jpg'
+        }
+      },
+      {
+        button: true,
+        img: {
+          src: './app/_images/materials-detail/05.jpg'
+        }
+      },
+      {
+        button: true,
+        img: {
+          src: './app/_images/materials-detail/06.jpg'
+        }
+      },
+      {
+        button: true,
+        img: {
+          src: './app/_images/materials-detail/01.jpg'
+        }
+      },
+    ]
+  }
+
+  const popup = {
+    title: 'egger',
+    text1: 'chipboard',
+    text2: 'h3108',
+    text3: 'st22',
+    image: {
+      src: './app/_images/popup/02.jpg'
+    }
+  }
+</script>
+
+<livingart-base webc:nokeep>
+  <livingart-hero :hero="hero"></livingart-hero>
+  <livingart-material-slider :slider="slider"></livingart-material-slider>
+  <livingart-popup :popup="popup"></livingart-popup>
+</livingart-base>

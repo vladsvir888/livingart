@@ -1,6 +1,7 @@
 <sl-drawer
   v-bind:open="store.isMenuShow ? 'open' : ''"
   v-on:sl-request-close="store.isMenuShow = false"
+  id="menu"
   label="Menu"
   class="menu"
 >

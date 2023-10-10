@@ -27,19 +27,6 @@
     content: '';
   }
 
-  &--home {
-    &::before {
-      background: linear-gradient(0deg, var(--palette-black-a60) 0%, var(--palette-black-a60) 100%);
-    }
-  }
-
-  &--projects {
-    &::before {
-      background: linear-gradient(229deg, #000 4.69%, rgba(0, 0, 0, 0) 66.66%),
-        linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
-    }
-  }
-
   &--video {
     #{$this} {
       &__container {
@@ -110,5 +97,9 @@
     @include h2;
 
     margin-top: auto;
+
+    @include media('600', max) {
+      word-wrap: break-word;
+    }
   }
 }

@@ -16,10 +16,14 @@
 .input {
   width: 100%;
   padding: rem(20) rem(24);
-  background-color: transparent;
+  background-color: var(--palette-solid);
   border: rem(1) solid var(--palette-dove-gray);
   border-radius: 0;
   color: var(--palette-gray);
+
+  &:focus-visible {
+    outline-color: var(--palette-gray-3);
+  }
 
   &::placeholder {
     opacity: 0;

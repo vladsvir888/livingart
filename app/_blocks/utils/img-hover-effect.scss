@@ -1,0 +1,16 @@
+.img-hover-effect {
+  display: block;
+  overflow: hidden;
+
+  @media #{$mouse-device} {
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  img {
+    transition: transform var(--transition800ms);
+  }
+}

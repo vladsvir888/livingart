@@ -12,8 +12,9 @@
   --palette-tundora: #464646;
   --palette-dove-gray: #686868;
   --palette-coral-red: #fe4343;
-  --palette-gray-2: #7E7E7E;
-  --palette-gray-3: #8B8B8B;
+  --palette-gray-2: #7e7e7e;
+  --palette-gray-3: #8b8b8b;
+  --palette-solid: #efefef;
 
   // containers
   --container-width: #{rem(1920)};
@@ -69,7 +70,7 @@ $mouse-device: '(hover: hover)';
   font-weight: 400;
 
   @include media('600', max) {
-    @include font-size(42, 42);
+    @include font-size(38, 38);
   }
 }
 

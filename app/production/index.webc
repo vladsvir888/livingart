@@ -1,0 +1,30 @@
+<script webc:setup>
+  const hero = {
+    title: 'production',
+    bgimage: `
+      .hero {
+        background-image: url('/assets/images/hero/06.jpg');
+        background-image: image-set(
+          url('/assets/images/hero/06.webp'),
+          url('/assets/images/hero/06.jpg')
+        );
+      }
+    `,
+  }
+
+  const gridBlock1 = {
+    title: 'wood',
+    nameFolderImage: 'wood'
+  }
+
+  const gridBlock2 = {
+    title: 'stone',
+    nameFolderImage: 'production'
+  }
+</script>
+
+<livingart-base webc:nokeep>
+  <livingart-hero :hero="hero"></livingart-hero>
+  <livingart-grid-block :grid-block="gridBlock1"></livingart-grid-block>
+  <livingart-grid-block :grid-block="gridBlock2"></livingart-grid-block>
+</livingart-base>
