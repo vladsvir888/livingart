@@ -12,6 +12,10 @@
     --sl-overlay-background-color: var(--palette-black-a40);
   }
 
+  &:not(:defined) {
+    display: none;
+  }
+
   &::part(panel) {
     border-radius: 0;
     box-shadow: none;
