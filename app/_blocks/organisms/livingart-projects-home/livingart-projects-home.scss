@@ -5,6 +5,12 @@
     position: relative;
   }
 
+  &__slider {
+    @include media('1200', max) {
+      padding-bottom: rem(40);
+    }
+  }
+
   &__slide {
     width: rem(305);
     height: rem(520);
@@ -57,11 +63,6 @@
     border: rem(1) solid var(--palette-white);
     border-radius: var(--bdrs50);
     cursor: pointer;
-
-    @include media('1200', max) {
-      background-color: var(--palette-white);
-      color: var(--palette-cod-gray);
-    }
 
     @include media('600', max) {
       padding: rem(4) rem(12);

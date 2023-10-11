@@ -5,7 +5,7 @@
         @follow us
       </p>
       <p class="footer__text">
-        For more references and updates join our intagram
+        For more references and updates join our instagram
       </p>
       <div class="footer__posts">
         <eleventy-image class="footer__posts-img" src="./app/_images/footer/01.jpg" alt="" loading="lazy"></eleventy-image>

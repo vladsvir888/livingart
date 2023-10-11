@@ -34,10 +34,10 @@
           <eleventy-image class="materials__img" src="./app/_images/materials-home/07.jpg" alt="" loading="lazy"></eleventy-image>
         </div>
         <div class="materials__content">
-          <p class="materials__text" data-sal="slide-left">
+          <p class="materials__text" data-sal="slide-right">
             Beautiful to see and long-lasting, Arredo3 countertops “withstand” your lifestyle.
           </p>
-          <div class="materials__button-wrap" data-sal="slide-left">
+          <div class="materials__button-wrap" data-sal="slide-right">
             <livingart-button class="button--with-arrow button--with-hover materials__button" href="/materials">
               Go to catalog
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 16" aria-hidden="true">

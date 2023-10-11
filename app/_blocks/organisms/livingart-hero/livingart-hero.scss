@@ -43,14 +43,6 @@
         width: calc(100% + var(--container-padding) * 2);
         margin-left: calc(var(--container-padding) * -1);
         grid-area: 1 / 1;
-
-        &:hover,
-        &:focus-within {
-          #{$this}__video-button {
-            opacity: 1;
-            outline: none;
-          }
-        }
       }
 
       &__video {
@@ -64,6 +56,8 @@
 
         position: absolute;
         inset: 0;
+        width: 100%;
+        height: 100%;
         opacity: 0;
         cursor: pointer;
         transition: opacity var(--transition300ms);
