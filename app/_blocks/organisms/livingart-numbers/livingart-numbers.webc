@@ -6,9 +6,9 @@
       </h2>
     </div>
     <div class="numbers__cards">
-      <livingart-number-card num="300+" text="Projects"></livingart-number-card>
-      <livingart-number-card num="50+" text="Units" delay="300"></livingart-number-card>
-      <livingart-number-card num="1000+" text="Items per week" delay="400"></livingart-number-card>
+      <livingart-number-card num="300" text="Projects"></livingart-number-card>
+      <livingart-number-card num="50" text="Units" delay="300"></livingart-number-card>
+      <livingart-number-card num="1000" text="Items per week" delay="400"></livingart-number-card>
     </div>
     <p class="numbers__text" data-sal="slide-up">
       Modulnova, in continuous search of quality and innovation, designs and manufactures contemporary kitchens, modern living and bathrooms, improving the life within the living spaces.

@@ -18,7 +18,9 @@
     </header>
     <div class="grid-block__wrapper">
       <div webc:for="(item, index) of [1, 2, 3, 4, 5]" class="grid-block__item" :class="index === 0 ? 'grid-block__item--big' : ''">
-        <eleventy-image class="grid-block__img" :src="`./app/_images/${gridBlock.nameFolderImage}/0${index + 1}.jpg`" alt="" loading="lazy"></eleventy-image>
+        <span class="img-hover-effect">
+          <eleventy-image class="grid-block__img" :src="`./app/_images/${gridBlock.nameFolderImage}/0${index + 1}.jpg`" alt="" loading="lazy"></eleventy-image>
+        </span>
       </div>
     </div>
   </div>

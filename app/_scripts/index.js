@@ -14,6 +14,7 @@ import bespokeSlider from '../_blocks/organisms/livingart-bespoke-slider/livingr
 import bespokeSlider2 from '../_blocks/organisms/livingart-bespoke-slider-two/livingart-bespoke-slider-two';
 import projectsCabinetrySlider from '../_blocks/organisms/livingart-projects-cabinetry/livingart-projects-cabinetry';
 import projectsSlider from '../_blocks/organisms/livingart-projects/livingart-projects';
+import countStart from '../_blocks/molecules/livingart-number-card/livingart-number-card';
 // eslint-disable-next-line no-unused-vars
 import LivingartCallback from '../_blocks/organisms/livingart-callback/livingart-callback';
 import './vue';
@@ -30,4 +31,5 @@ document.addEventListener('DOMContentLoaded', () => {
   bespokeSlider2();
   projectsCabinetrySlider();
   projectsSlider();
+  countStart();
 });

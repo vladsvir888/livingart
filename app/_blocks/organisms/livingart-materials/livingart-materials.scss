@@ -79,7 +79,9 @@
   }
 
   &__button {
-    align-self: center;
+    &-wrap {
+      align-self: center;
+    }
   }
 
   &__img {

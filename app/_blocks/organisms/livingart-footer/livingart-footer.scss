@@ -88,6 +88,14 @@
     &-img {
       height: rem(120);
       object-fit: contain;
+      filter: blur(1px);
+      transition: filter var(--transition300ms);
+
+      @media #{$mouse-device} {
+        &:hover {
+          filter: unset;
+        }
+      }
 
       @include media('900', max) {
         height: rem(80);

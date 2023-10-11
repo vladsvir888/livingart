@@ -1,7 +1,7 @@
 <header v-bind:class="{ active: store.isHeaderHasActiveClass }" class="header">
   <div class="container header__container">
     <a href="/" class="header__logo-link" data-sal="slide-up">
-      <img class="header__logo-img" src="/assets/images/icons/logo.svg" alt="Home" width="160" height="33">
+      <img class="header__logo-img header__logo-img--1" src="/assets/images/icons/logo.svg" alt="Home" width="160" height="33">
     </a>
     <nav class="header__nav" aria-label="Main">
       <ul class="header__list">

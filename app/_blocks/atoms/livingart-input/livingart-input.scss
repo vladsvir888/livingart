@@ -65,8 +65,38 @@
   }
 
   &__link {
+    position: relative;
     text-transform: uppercase;
-    text-decoration: underline;
+    transition: color var(--transition300ms);
+
+    @media #{$mouse-device} {
+      &:hover {
+        &[href] {
+          color: var(--palette-cod-gray);
+
+          &::before {
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    &:not([href]) {
+      opacity: 0.5;
+      cursor: default;
+    }
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: rem(1);
+      background-color: var(--palette-white);
+      transition: height var(--transition300ms);
+      content: '';
+    }
   }
 }
 

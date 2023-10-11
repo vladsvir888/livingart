@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  background-attachment: fixed;
 
   @include media('1200', max) {
     padding: rem(60) rem(120);

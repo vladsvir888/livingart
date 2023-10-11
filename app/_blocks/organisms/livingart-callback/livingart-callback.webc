@@ -44,7 +44,7 @@
         <div class="input-wrap callback__checkbox-wrap">
           <div class="form-checkbox">
             <input id="privacy-check" class="form-checkbox__check" type="checkbox" name="privacy policy" checked>
-            <label for="privacy-check" class="form-checkbox__text">I have read the <a class="form-checkbox__link" href="/policy">PRIVACY POLICY</a> and I consent to the processing of personal information for the purposes indicated.</label>
+            <label for="privacy-check" class="form-checkbox__text">I have read the <a class="form-checkbox__link">PRIVACY POLICY</a> and I consent to the processing of personal information for the purposes indicated.</label>
           </div>
         </div>
         <livingart-button @is-button="true" class="button--with-hover callback__button" type="submit">Send message</livingart-button>

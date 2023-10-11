@@ -6,9 +6,15 @@
       </div>
     </div>
     <div class="salon__images">
-      <eleventy-image class="salon__img" src="./app/_images/salon/01.jpg" alt="" loading="lazy"></eleventy-image>
-      <eleventy-image class="salon__img" src="./app/_images/salon/02.jpg" alt="" loading="lazy"></eleventy-image>
-      <eleventy-image class="salon__img" src="./app/_images/salon/03.jpg" alt="" loading="lazy"></eleventy-image>
+      <span class="img-hover-effect">
+        <eleventy-image class="salon__img" src="./app/_images/salon/01.jpg" alt="" loading="lazy"></eleventy-image>
+      </span>
+      <span class="img-hover-effect">
+        <eleventy-image class="salon__img" src="./app/_images/salon/02.jpg" alt="" loading="lazy"></eleventy-image>
+      </span>
+      <span class="img-hover-effect">
+        <eleventy-image class="salon__img" src="./app/_images/salon/03.jpg" alt="" loading="lazy"></eleventy-image>
+      </span>
     </div>
     <p class="salon__text" data-sal="slide-up">
       Modulnova, in continuous search of quality and innovation, designs and manufactures contemporary kitchens, modern living and bathrooms, improving the life within the living spaces.

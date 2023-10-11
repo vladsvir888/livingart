@@ -14,7 +14,7 @@
         <p class="about-home__text" data-sal="slide-up">
           But one must proceed in order; there’s a narrative thread leading back to a small artisan workshop in the province of Monza Brianza.
         </p>
-        <livingart-button href="/about" class="button--with-decoration about-home__button" data-sal="slide-up">
+        <livingart-button href="/about" class="button--with-decoration about-home__button">
           read about livingart
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 22" aria-hidden="true">
             <path d="M38 1L48 11L38 21"/>
