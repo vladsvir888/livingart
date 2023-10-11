@@ -5,14 +5,6 @@
     @include center;
 
     position: relative;
-
-    &:hover,
-    &:focus-within {
-      #{$this}__video-button {
-        opacity: 1;
-        outline: none;
-      }
-    }
   }
 
   &__video-button {
