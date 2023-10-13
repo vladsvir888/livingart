@@ -13,22 +13,22 @@
 
     &--prev {
       left: 0;
-      cursor: url('../assets/images/icons/arrow-prev.svg'), auto;
+      cursor: url('../assets/images/icons/arrow-prev.svg') 0 64, auto;
     }
 
     &--next {
       right: 0;
-      cursor: url('../assets/images/icons/arrow-next.svg'), auto;
+      cursor: url('../assets/images/icons/arrow-next.svg') 84 64, auto;
     }
 
     &--secondary {
       &#{$this} {
         &--prev {
-          cursor: url('../assets/images/icons/arrow-prev-2.svg'), auto;
+          cursor: url('../assets/images/icons/arrow-prev-2.svg') 0 64, auto;
         }
 
         &--next {
-          cursor: url('../assets/images/icons/arrow-next-2.svg'), auto;
+          cursor: url('../assets/images/icons/arrow-next-2.svg') 93 64, auto;
         }
       }
     }

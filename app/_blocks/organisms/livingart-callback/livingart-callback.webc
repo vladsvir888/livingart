@@ -30,11 +30,11 @@
           <label for="address-input" class="input-wrap__label">Address</label>
         </div>
         <div class="input-wrap">
-          <input id="email-input" class="input" type="email" name="email" placeholder="Email *" required data-pristine-required-message="This is a required field." data-pristine-email-message="Please, enter correct email. For example, test-email123@gmail.com">
+          <input id="email-input" class="input input--email" type="text" name="email" placeholder="Email *" autocomplete="email" required data-pristine-required-message="This is a required field." data-pristine-livingart-email>
           <label for="email-input" class="input-wrap__label">Email *</label>
         </div>
         <div class="input-wrap">
-          <input id="phone-input" class="input" type="tel" name="phone" placeholder="Phone">
+          <input id="phone-input" class="input input--phone" type="tel" name="phone" placeholder="Phone" data-pristine-livingart-phone>
           <label for="phone-input" class="input-wrap__label">Phone</label>
         </div>
         <div class="input-wrap callback__textarea-wrap">
@@ -43,7 +43,7 @@
         </div>
         <div class="input-wrap callback__checkbox-wrap">
           <div class="form-checkbox">
-            <input id="privacy-check" class="form-checkbox__check" type="checkbox" name="privacy policy" checked>
+            <input id="privacy-check" class="form-checkbox__check" type="checkbox" name="privacy policy" checked required>
             <label for="privacy-check" class="form-checkbox__text">I have read the <a class="form-checkbox__link">PRIVACY POLICY</a> and I consent to the processing of personal information for the purposes indicated.</label>
           </div>
         </div>

@@ -29,6 +29,11 @@
     opacity: 0;
   }
 
+  &::selection {
+    background-color: var(--palette-cod-gray);
+    color: var(--palette-white);
+  }
+
   &:focus,
   &:not(:placeholder-shown) {
     ~ label {
