@@ -10,6 +10,10 @@ const beautify = require('js-beautify').html;
 module.exports = function (config) {
   const isProd = process.env.ELEVENTY_RUN_MODE === 'build';
 
+  config.setServerOptions({
+    showAllHosts: true
+  })
+
   config.addPlugin(resourcesPlugin);
   config.addPlugin(stylesPlugin);
   config.addPlugin(scriptsPlugin);
