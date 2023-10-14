@@ -34,13 +34,17 @@ export default class LivingartCallback extends HTMLElement {
     if (!isValid) {
       event.preventDefault();
 
-      const headerHeight = this.header.offsetHeight;
-      // eslint-disable-next-line max-len
-      const rectTopElement = this.form.getBoundingClientRect().top + window.scrollY - headerHeight;
-      window.scroll({
-        top: rectTopElement,
-      });
+      this.scrollUp();
     }
+  }
+
+  scrollUp() {
+    const headerHeight = this.header.offsetHeight;
+    // eslint-disable-next-line max-len
+    const rectTopElement = this.form.getBoundingClientRect().top + window.scrollY - headerHeight;
+    window.scroll({
+      top: rectTopElement,
+    });
   }
 
   addValidators() {
@@ -53,7 +57,7 @@ export default class LivingartCallback extends HTMLElement {
     }, 'Please, enter a correct email. Special symbols and cyrillic alphabet are not allowed. For example, test123@gmail.com');
 
     Pristine.addValidator('livingart-phone', (value) => {
-      if (this.phoneInput.regex.test(value)) {
+      if (value === '' || this.phoneInput.regex.test(value)) {
         return true;
       }
 
