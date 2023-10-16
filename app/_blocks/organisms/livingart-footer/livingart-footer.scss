@@ -60,6 +60,10 @@
     letter-spacing: rem(-2.4);
     text-transform: uppercase;
 
+    @include media('1700', max) {
+      @include font-size(50, 50);
+    }
+
     @include media('600', max) {
       @include font-size(30, 30);
     }

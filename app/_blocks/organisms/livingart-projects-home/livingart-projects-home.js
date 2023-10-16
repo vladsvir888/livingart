@@ -4,6 +4,7 @@ function projectsHomeSlider() {
   if (!sliderElement) return;
 
   const sliderParams = {
+    speed: 800,
     slidesPerView: 2,
     spaceBetween: 10,
     navigation: {
@@ -14,8 +15,12 @@ function projectsHomeSlider() {
       el: '.projects-home__pagination',
     },
     breakpoints: {
-      901: {
+      601: {
+        slidesPerView: 3,
+      },
+      1025: {
         slidesPerView: 'auto',
+        slidesPerGroup: 1,
       },
       1201: {
         slidesPerView: 'auto',

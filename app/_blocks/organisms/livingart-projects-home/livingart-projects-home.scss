@@ -12,33 +12,10 @@
   }
 
   &__slide {
-    width: rem(305);
-    height: rem(520);
-
-    @include media('600', max) {
-      height: rem(320);
-    }
+    width: 16.3%;
 
     &--big {
-      width: rem(940);
-      height: rem(725);
-
-      @include media('1400', max) {
-        width: rem(600);
-        height: rem(600);
-      }
-
-      @include media('1200', max) {
-        height: rem(520);
-      }
-
-      @include media('600', max) {
-        height: rem(320);
-      }
-    }
-
-    img {
-      @include img(cover);
+      width: 49.3%;
     }
   }
 
