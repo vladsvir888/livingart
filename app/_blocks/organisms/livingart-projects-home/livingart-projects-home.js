@@ -7,6 +7,7 @@ function projectsHomeSlider() {
     speed: 800,
     slidesPerView: 2,
     spaceBetween: 10,
+    loop: true,
     navigation: {
       prevEl: '.projects-home__nav-button--prev',
       nextEl: '.projects-home__nav-button--next',
