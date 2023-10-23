@@ -1,34 +1,5 @@
 .projects-block {
   margin-top: rem(60);
-
-  &__nav-buttons {
-    @include flex-center-x;
-
-    column-gap: rem(60);
-    margin-top: rem(60);
-
-    @include media('600', max) {
-      margin-top: rem(20);
-      column-gap: rem(20);
-    }
-  }
-
-  &__nav-button {
-    @include h6;
-
-    column-gap: rem(12);
-    padding: rem(5) rem(18);
-    border-radius: var(--bdrs50);
-    border: rem(1) solid var(--palette-alto);
-    cursor: pointer;
-
-    > svg {
-      width: rem(26);
-      height: rem(16);
-      fill: transparent;
-      stroke: var(--palette-alto);
-    }
-  }
 }
 
 .projects {

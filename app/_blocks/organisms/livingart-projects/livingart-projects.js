@@ -14,8 +14,8 @@ function projectsSlider() {
       fill: 'row',
     },
     navigation: {
-      prevEl: '.projects-block__nav-button--prev',
-      nextEl: '.projects-block__nav-button--next',
+      prevEl: '.nav-buttons__button--prev',
+      nextEl: '.nav-buttons__button--next',
     },
     breakpoints: {
       601: {

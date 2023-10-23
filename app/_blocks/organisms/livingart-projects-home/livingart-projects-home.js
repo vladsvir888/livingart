@@ -7,7 +7,6 @@ function projectsHomeSlider() {
     speed: 800,
     slidesPerView: 2,
     spaceBetween: 10,
-    loop: true,
     navigation: {
       prevEl: '.projects-home__nav-button--prev',
       nextEl: '.projects-home__nav-button--next',
@@ -22,8 +21,15 @@ function projectsHomeSlider() {
       1025: {
         slidesPerView: 'auto',
         slidesPerGroup: 1,
+        spaceBetween: 6,
       },
       1201: {
+        slidesPerView: 'auto',
+        slidesPerGroup: 4,
+        spaceBetween: 7,
+      },
+      1601: {
+        spaceBetween: 10,
         slidesPerView: 'auto',
         slidesPerGroup: 4,
       },

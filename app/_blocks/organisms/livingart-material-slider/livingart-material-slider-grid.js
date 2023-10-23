@@ -13,6 +13,10 @@ function materialSliderGrid() {
       rows: 2,
       fill: 'row',
     },
+    navigation: {
+      prevEl: '.nav-buttons__button--prev',
+      nextEl: '.nav-buttons__button--next',
+    },
     breakpoints: {
       601: {
         slidesPerView: 4,
