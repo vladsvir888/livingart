@@ -1,11 +1,11 @@
 function initScrollSpy() {
   const header = document.querySelector('.header');
   const headerHeight = header.offsetHeight;
-  const headings = document.querySelectorAll('.text-block [data-heading]');
-  const navElements = document.querySelectorAll('.info-section__button');
+  const navBlock = document.querySelector('.info-section__nav');
+  const headings = document.querySelectorAll('.text-block h2');
   let activeHeadingIndicator = '';
 
-  if (!headings.length || !navElements.length || !window.matchMedia('(min-width: 901px)').matches) return;
+  if (!headings.length || !navBlock || !window.matchMedia('(min-width: 901px)').matches) return;
 
   function callback(entries) {
     entries.forEach((entry) => {
@@ -28,6 +28,22 @@ function initScrollSpy() {
   headings.forEach((heading) => {
     observer.observe(heading);
   });
+
+  function generateNavElements() {
+    let templateString = '';
+
+    headings.forEach((heading, index) => {
+      templateString += `<a class="info-section__button ${index === 0 ? 'active' : ''}" href="#${heading.classList[0]}">${heading.textContent}</a>`;
+    });
+
+    navBlock.insertAdjacentHTML('afterbegin', templateString);
+  }
+
+  generateNavElements();
+
+  const navElements = document.querySelectorAll('.info-section__button');
+
+  if (!navElements.length) return;
 
   navElements.forEach((navElement) => {
     navElement?.addEventListener('click', (event) => {
