@@ -4,6 +4,7 @@
 
   @include media('900', max) {
     padding-top: rem(100);
+    padding-bottom: 0;
   }
 
   &__title {
