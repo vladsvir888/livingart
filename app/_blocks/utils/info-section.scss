@@ -1,5 +1,6 @@
 .info-section {
   padding-top: rem(200);
+  padding-bottom: rem(100);
 
   @include media('900', max) {
     padding-top: rem(100);
@@ -12,6 +13,40 @@
 
     @include media('900', max) {
       margin-bottom: rem(40);
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: rem(320) 1fr;
+    gap: rem(20);
+
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__nav {
+    position: sticky;
+    top: 80px;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(8);
+
+    @include media('900', max) {
+      display: none;
+    }
+  }
+
+  &__button {
+    @include text18;
+
+    cursor: pointer;
+
+    &.active {
+      text-decoration: underline;
+      text-underline-offset: rem(5);
     }
   }
 }

@@ -50,7 +50,7 @@
   }
 
   p {
-    @include text18;
+    @include text24;
 
     &:not(:last-child) {
       margin-bottom: rem(24);
@@ -63,7 +63,7 @@
   }
 
   ul {
-    @include text18;
+    @include text24;
 
     list-style: disc;
     padding-left: rem(32);
