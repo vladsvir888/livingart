@@ -1,0 +1,75 @@
+.text-block {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    &:not(:last-child) {
+      margin-bottom: rem(45);
+
+      @include media('600', max) {
+        margin-bottom: rem(25);
+      }
+    }
+
+    &:not(:first-child) {
+      margin-top: rem(120);
+
+      @include media('900', max) {
+        margin-top: rem(45);
+      }
+    }
+  }
+
+  h2 {
+    @include h2;
+
+    @include media('900', max) {
+      @include font-size(80, 80);
+    }
+  }
+
+  h3 {
+    @include h3;
+
+    @include media('900', max) {
+      @include font-size(70, 70);
+    }
+  }
+
+  h4 {
+    @include h4;
+  }
+
+  h5 {
+    @include h5;
+  }
+
+  h6 {
+    @include h6;
+  }
+
+  p {
+    @include text18;
+
+    &:not(:last-child) {
+      margin-bottom: rem(24);
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    text-underline-offset: rem(2);
+  }
+
+  ul {
+    @include text18;
+
+    list-style: disc;
+    padding-left: rem(32);
+
+    &:not(:last-child) {
+      margin-bottom: rem(24);
+    }
+  }
+}

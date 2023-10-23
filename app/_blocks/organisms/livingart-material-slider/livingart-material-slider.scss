@@ -7,14 +7,6 @@
     }
   }
 
-  &--secondary {
-    padding-bottom: rem(672);
-
-    @include media('1400', max) {
-      padding-bottom: 0;
-    }
-  }
-
   &__popup-button {
     cursor: pointer;
   }

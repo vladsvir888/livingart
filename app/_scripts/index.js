@@ -18,6 +18,7 @@ import countStart from '../_blocks/molecules/livingart-number-card/livingart-num
 // eslint-disable-next-line no-unused-vars
 import LivingartCallback from '../_blocks/organisms/livingart-callback/livingart-callback';
 import './vue';
+import materialSliderGrid from '../_blocks/organisms/livingart-material-slider/livingart-material-slider-grid';
 
 register();
 sal();
@@ -32,4 +33,5 @@ document.addEventListener('DOMContentLoaded', () => {
   projectsCabinetrySlider();
   projectsSlider();
   countStart();
+  materialSliderGrid();
 });

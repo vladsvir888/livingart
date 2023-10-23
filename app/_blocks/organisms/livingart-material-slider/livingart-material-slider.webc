@@ -32,7 +32,7 @@
         </p>
       </div>
     </div>
-    <swiper-container class="materials-slider__slider" init="false">
+    <swiper-container :class="slider.sliderClass || ''" init="false">
       <swiper-slide webc:for="slide of slider.slides" class="materials-slider__slide">
         <livingart-button webc:if="slide.button" @is-button="true" v-on:click="store.isPopupShow = true" class="materials-slider__popup-button" aria-label="Open popup">
           <span class="img-hover-effect">

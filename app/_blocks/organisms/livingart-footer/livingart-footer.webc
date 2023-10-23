@@ -30,9 +30,9 @@
         </p>
       </div>
       <div class="footer__links">
-        <livingart-button class="button--with-decoration footer__link">Privacy Policy</livingart-button>
-        <livingart-button class="button--with-decoration footer__link">Cookie Policy</livingart-button>
-        <livingart-button class="button--with-decoration footer__link">Cookie preferences</livingart-button>
+        <livingart-button href="/privacy-policy" class="button--with-decoration footer__link">Privacy Policy</livingart-button>
+        <livingart-button href="/cookie-policy" class="button--with-decoration footer__link">Cookie Policy</livingart-button>
+        <livingart-button href="/cookie-preferences" class="button--with-decoration footer__link">Cookie preferences</livingart-button>
       </div>
     </div>
   </div>

@@ -1,0 +1,54 @@
+<livingart-base webc:nokeep>
+  <section class="info-section">
+    <div class="container">
+      <h1 class="info-section__title">Privacy policy</h1>
+      <div class="text-block">
+        <h4>Why we process your information</h4>
+        <p>
+          We generally process your information when we need to do so to fulfill a contractual obligation (for example, to process your subscription payments to use the Shopify platform), or where we or someone we work with needs to use your personal information for a reason related to their business (for example, to provide you with a service). Laws in the European Economic Area (“EEA”) and in the United Kingdom (“UK”) call these reasons “legitimate interests.” These “legitimate interests” include:
+        </p>
+        <ul>
+          <li>
+            preventing risk and fraud
+          </li>
+          <li>
+            answering questions or providing other types of support
+          </li>
+          <li>
+            helping merchants find and use apps through our app store
+          </li>
+          <li>
+            providing and improving our products and services
+          </li>
+          <li>
+            providing reporting and analytics
+          </li>
+          <li>
+            testing out features or additional services
+          </li>
+          <li>
+            assisting with marketing, advertising, or other communications
+          </li>
+        </ul>
+        <p>
+          We only process personal information for these “legitimate interests” after considering the potential risks to your privacy and balancing any risks with certain measures—for example, by providing clear transparency into our privacy practices, offering you control over your personal information where appropriate, limiting the information we keep, limiting what we do with your information, who we send your information to, how long we keep your information, or the technical measures we use to protect your information.
+        </p>
+        <h4>
+          Your rights over your information
+        </h4>
+        <p>
+          If you are a merchant, partner, Shop user, Shopify employee, website visitor or other individual that Shopify has a direct relationship with, please submit your data subject request through our <a href="#">online portal</a>. Please note that if you send us a request relating to your personal information, we have to make sure that it is you before we can respond. In order to do so, we may use a third party to collect and verify identification documents. Further information about rights available to US residents can be found below under the header “United States Regional Privacy Notice”.
+        </p>
+        <h4>
+          Where we send your information
+        </h4>
+        <p>
+          Depending on whether you are a merchant, customer, partner, user or visitor, please refer to our supplemental privacy policies, as relevant.
+        </p>
+        <p>
+          If you are located in the <a href="#">EEA</a>, the UK, or <b>Switzerland</b>, your personal information is controlled by our Irish affiliate, Shopify International Ltd. Your information is then sent to other Shopify locations and to service providers who may be located in other regions, including Canada (where we are based) and the United States. When we send your personal information outside of the EEA, UK or Switzerland, we do so in accordance with applicable law.
+        </p>
+      </div>
+    </div>
+  </section>
+</livingart-base>

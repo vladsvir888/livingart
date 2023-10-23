@@ -60,6 +60,12 @@ $mouse-device: '(hover: hover)';
   text-transform: uppercase;
   letter-spacing: rem(-5.12);
   font-weight: 300;
+
+  @include media('600', max) {
+    @include font-size(45, 45);
+
+    letter-spacing: rem(-1.12);
+  }
 }
 
 @mixin h2 {

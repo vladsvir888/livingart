@@ -1,0 +1,13 @@
+.not-found {
+  padding-top: rem(250);
+
+  &__container {
+    @include flex-center-column;
+
+    row-gap: rem(5)
+  }
+
+  &__num {
+    @include h4;
+  }
+}

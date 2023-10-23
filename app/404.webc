@@ -1,0 +1,7 @@
+---
+permalink: 404.html
+---
+
+<livingart-base webc:nokeep>
+  <livingart-not-found></livingart-not-found>
+</livingart-base>

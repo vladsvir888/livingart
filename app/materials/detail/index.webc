@@ -13,10 +13,10 @@
   }
 
   const slider = {
-    class: 'materials-slider--secondary',
     header: {
       type: 2
     },
+    sliderClass: 'materials-slider__slider-grid',
     slides: [
       {
         button: true,
@@ -58,6 +58,48 @@
         button: true,
         img: {
           src: './app/_images/materials-detail/01.jpg'
+        }
+      },
+      {
+        button: true,
+        img: {
+          src: './app/_images/materials-detail/02.jpg'
+        }
+      },
+      {
+        button: true,
+        img: {
+          src: './app/_images/materials-detail/03.jpg'
+        }
+      },
+      {
+        button: true,
+        img: {
+          src: './app/_images/materials-detail/04.jpg'
+        }
+      },
+      {
+        button: true,
+        img: {
+          src: './app/_images/materials-detail/05.jpg'
+        }
+      },
+      {
+        button: true,
+        img: {
+          src: './app/_images/materials-detail/06.jpg'
+        }
+      },
+      {
+        button: true,
+        img: {
+          src: './app/_images/materials-detail/05.jpg'
+        }
+      },
+      {
+        button: true,
+        img: {
+          src: './app/_images/materials-detail/06.jpg'
         }
       },
     ]

@@ -1,0 +1,17 @@
+.info-section {
+  padding-top: rem(200);
+
+  @include media('900', max) {
+    padding-top: rem(100);
+  }
+
+  &__title {
+    @include h1;
+
+    margin-bottom: rem(100);
+
+    @include media('900', max) {
+      margin-bottom: rem(40);
+    }
+  }
+}
