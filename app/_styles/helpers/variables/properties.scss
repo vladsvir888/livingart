@@ -18,7 +18,7 @@
 
   // containers
   --container-width: #{rem(1920)};
-  --container-padding: #{rem(10)};
+  --container-padding: #{rem(20)};
 
   // transitions
   --transition300ms: 0.3s;
@@ -49,6 +49,7 @@
     --indent240: #{rem(40)};
     --indent140: #{rem(40)};
     --indent40: #{rem(12)};
+    --container-padding: #{rem(10)};
   }
 }
 

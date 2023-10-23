@@ -17,21 +17,16 @@ function projectsHomeSlider() {
     breakpoints: {
       601: {
         slidesPerView: 3,
-      },
-      1025: {
-        slidesPerView: 'auto',
         slidesPerGroup: 1,
-        spaceBetween: 6,
+      },
+      901: {
+        slidesPerView: 4,
+        slidesPerGroup: 1,
       },
       1201: {
         slidesPerView: 'auto',
         slidesPerGroup: 4,
-        spaceBetween: 7,
-      },
-      1601: {
-        spaceBetween: 10,
-        slidesPerView: 'auto',
-        slidesPerGroup: 4,
+        spaceBetween: 0,
       },
     },
   };

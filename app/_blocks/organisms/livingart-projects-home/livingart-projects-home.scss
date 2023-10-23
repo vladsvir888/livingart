@@ -6,16 +6,25 @@
   }
 
   &__slider {
+    --slide-gap: #{rem(10)};
+
     @include media('1200', max) {
       padding-bottom: rem(40);
     }
   }
 
   &__slide {
-    width: 16.3%;
+    --slide-span: 1;
+    --slide-count: 6;
+
+    width: calc(((100% - var(--slide-gap) * (var(--slide-count) - 1)) / var(--slide-count) * var(--slide-span)) + (var(--slide-span) - 1) * var(--slide-gap));
 
     &--big {
-      width: 49.3%;
+      --slide-span: 3;
+    }
+
+    &:not(:last-child) {
+      margin-right: var(--slide-gap);
     }
   }
 
