@@ -4,7 +4,7 @@
       <h1 class="info-section__title">Privacy policy</h1>
       <div class="info-section__wrapper">
         <nav class="info-section__nav"></nav>
-        <div class="text-block">
+        <div class="text-block info-section__text-block">
           <h2 class="one">Why we process your information</h2>
           <p>
             We generally process your information when we need to do so to fulfill a contractual obligation (for example, to process your subscription payments to use the Shopify platform), or where we or someone we work with needs to use your personal information for a reason related to their business (for example, to provide you with a service). Laws in the European Economic Area (“EEA”) and in the United Kingdom (“UK”) call these reasons “legitimate interests.” These “legitimate interests” include:

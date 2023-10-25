@@ -2,7 +2,7 @@
   padding-top: rem(200);
   padding-bottom: rem(100);
 
-  @include media('900', max) {
+  @include media('1200', max) {
     padding-top: rem(100);
     padding-bottom: 0;
   }
@@ -12,19 +12,14 @@
 
     margin-bottom: rem(100);
 
-    @include media('900', max) {
+    @include media('1200', max) {
       margin-bottom: rem(40);
     }
   }
 
   &__wrapper {
-    display: grid;
-    grid-template-columns: rem(320) 1fr;
+    display: flex;
     gap: rem(20);
-
-    @media (max-width: 900px) {
-      grid-template-columns: 1fr;
-    }
   }
 
   &__nav {
@@ -34,9 +29,18 @@
     display: flex;
     flex-direction: column;
     row-gap: rem(8);
+    width: rem(320);
 
-    @include media('900', max) {
+    @include media('1200', max) {
       display: none;
+    }
+  }
+
+  &__text-block {
+    width: calc(100% - #{rem(320)});
+
+    @include media('1200', max) {
+      width: 100%;
     }
   }
 

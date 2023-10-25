@@ -1,0 +1,27 @@
+<script webc:setup>
+  const hero = {
+    title: 'Heading',
+    bgimage: `
+      .hero {
+        background-image: url('/assets/images/hero/05.jpg');
+        background-image: image-set(
+          url('/assets/images/hero/05.webp'),
+          url('/assets/images/hero/05.jpg')
+        );
+      }
+    `,
+  }
+</script>
+
+<livingart-base webc:nokeep>
+  <livingart-hero :hero="hero"></livingart-hero>
+
+  <section class="container section">
+    <div class="text-block">
+      <h2>WHY WE PROCESS YOUR INFORMATION</h2>
+      <p>We only process personal information for these “legitimate interests” after considering the potential risks to your privacy and balancing any risks with certain measures—for example, by providing clear transparency into our privacy practices, offering you control over your personal information where appropriate, limiting the information we keep, limiting what we do with your information, who we send your information to, how long we keep your information, or the technical measures we use to protect your information.</p>
+      <p>We only process personal information for these “legitimate interests” after considering the potential risks to your privacy and balancing any risks with certain measures—for example, by providing clear transparency into our privacy practices, offering you control over your personal information where appropriate, limiting the information we keep, limiting what we do with your information, who we send your information to, how long we keep your information, or the technical measures we use to protect your information.</p>
+      <eleventy-image src="./app/_images/address/01.jpg" alt="" loading="lazy" width="1920" height="754"></eleventy-image>
+    </div>
+  </section>
+</livingart-base>

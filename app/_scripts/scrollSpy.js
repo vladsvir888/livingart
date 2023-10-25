@@ -5,7 +5,7 @@ function initScrollSpy() {
   const headings = document.querySelectorAll('.text-block h2');
   let activeHeadingIndicator = '';
 
-  if (!headings.length || !navBlock || !window.matchMedia('(min-width: 901px)').matches) return;
+  if (!headings.length || !navBlock || !window.matchMedia('(min-width: 1201px)').matches) return;
 
   function callback(entries) {
     entries.forEach((entry) => {
