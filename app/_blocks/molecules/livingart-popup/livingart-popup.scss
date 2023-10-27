@@ -1,5 +1,9 @@
 .popup {
-  --width: #{rem(1410)};
+  --width: 73vw;
+
+  @include media('900', max) {
+    --width: 100vw;
+  }
 
   color: var(--palette-gray-2);
 
@@ -31,11 +35,11 @@
     display: grid;
     grid-template-columns: 55% 1fr;
 
-    @include media('1700', max) {
-      position: relative;
+    @include media('1200', max) {
+      @include font-size(30, 30);
     }
 
-    @include media('767', max) {
+    @include media('600', max) {
       grid-template-columns: 1fr;
     }
   }
@@ -45,11 +49,11 @@
 
     padding: rem(60);
 
-    @include media('1200', max) {
-      padding: rem(40);
+    @include media('1400', max) {
+      padding: rem(30);
     }
 
-    @include media('767', max) {
+    @include media('600', max) {
       padding: rem(10);
     }
   }
@@ -63,6 +67,8 @@
     border-bottom: rem(1) solid var(--palette-gray-3);
 
     @include media('1200', max) {
+      @include font-size(35, 35);
+
       padding-bottom: rem(20);
       margin-bottom: rem(20);
     }
@@ -79,7 +85,7 @@
       &:not(:last-child) {
         margin-bottom: rem(40);
 
-        @include media('900', max) {
+        @include media('1200', max) {
           margin-bottom: rem(20);
         }
       }
@@ -88,15 +94,14 @@
 
   &__close {
     position: absolute;
-    top: rem(20);
+    top: rem(48);
     right: rem(84);
     cursor: pointer;
     color: var(--palette-white);
 
-    @include media('1700', max) {
-      right: rem(10);
-      top: rem(10);
-      color: var(--palette-cod-gray);
+    @include media('900', max) {
+      top: rem(20);
+      right: rem(20);
     }
 
     > svg {
@@ -112,7 +117,7 @@
   }
 
   &__img {
-    max-height: 93vh;
+    max-height: 86vh;
     object-fit: cover;
   }
 }
