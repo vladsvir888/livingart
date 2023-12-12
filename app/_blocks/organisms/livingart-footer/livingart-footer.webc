@@ -1,12 +1,12 @@
 <footer class="footer">
   <div class="container">
     <div class="footer__grid">
-      <p class="footer__follow">
+      <div class="footer__follow">
         @follow us
-      </p>
-      <p class="footer__text">
+      </div>
+      <div class="footer__text">
         For more references and updates join our instagram
-      </p>
+      </div>
       <div class="footer__posts">
         <eleventy-image class="footer__posts-img" src="./app/_images/footer/01.jpg" alt="" loading="lazy"></eleventy-image>
         <eleventy-image class="footer__posts-img" src="./app/_images/footer/02.jpg" alt="" loading="lazy"></eleventy-image>
@@ -21,13 +21,13 @@
         <img class="footer__logo-img" src="/assets/images/icons/logo.svg" alt="Home" loading="lazy" width="390" height="80">
       </a>
       <div class="footer__info">
-        <p class="footer__address">
+        <div class="footer__address">
           325 Eddystone Ave, North York, ON M3N 1H8
-        </p>
+        </div>
         <livingart-button class="button--with-decoration footer__phone" href="tel:+19057619090">+1 905-761-9090</livingart-button>
-        <p class="footer__developer">
+        <div class="footer__developer">
           Design and development — <livingart-button href="https://miks-soft.com/" class="button--with-decoration" target="_blank">Miks Soft</livingart-button>
-        </p>
+        </div>
       </div>
       <div class="footer__links">
         <livingart-button href="/privacy-policy" class="button--with-decoration footer__link">Privacy Policy</livingart-button>

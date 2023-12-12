@@ -5,9 +5,9 @@
         <h2 class="section-header__title" data-sal="slide-up">
           Bespoke
         </h2>
-        <p class="section-header__text" data-sal="slide-up">
+        <div class="section-header__text" data-sal="slide-up">
           A unique style for kitchen systems with character: in the industry
-        </p>
+        </div>
       </div>
       <div class="section-header__button-wrap" data-sal="slide-up">
         <livingart-button class="button--with-arrow button--with-hover" href="/bespoke">

@@ -1,7 +1,11 @@
 .section-header {
   $this: &;
 
-  padding-bottom: var(--indent40);
+  padding-bottom: rem(40);
+
+  @include media('600', max) {
+    padding-bottom: rem(12);
+  }
 
   &__container {
     display: flex;

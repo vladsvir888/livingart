@@ -1,4 +1,4 @@
-<section class="section section--inner salon">
+<section class="section salon">
   <div class="container">
     <div class="section-header">
       <div class="section-header__title" data-sal="slide-up">
@@ -16,8 +16,8 @@
         <eleventy-image class="salon__img" src="./app/_images/salon/03.jpg" alt="" loading="lazy"></eleventy-image>
       </span>
     </div>
-    <p class="salon__text" data-sal="slide-up">
+    <div class="salon__text" data-sal="slide-up">
       Modulnova, in continuous search of quality and innovation, designs and manufactures contemporary kitchens, modern living and bathrooms, improving the life within the living spaces.
-    </p>
+    </div>
   </div>
 </section>

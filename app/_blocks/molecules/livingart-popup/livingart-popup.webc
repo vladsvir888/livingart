@@ -10,7 +10,7 @@
     </div>
     <div class="popup__content">
       <h2 @text="popup.title" class="popup__title"></h2>
-      <p @text="popup.text1" class="popup__subtitle"></p>
+      <div @text="popup.text1" class="popup__subtitle"></div>
       <div class="popup__texts">
         <p @text="popup.text2"></p>
         <p @text="popup.text3"></p>

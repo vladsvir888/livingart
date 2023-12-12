@@ -5,9 +5,9 @@
         <h2 class="section-header__title" data-sal="slide-up">
           Materials
         </h2>
-        <p class="section-header__text" data-sal="slide-up">
+        <div class="section-header__text" data-sal="slide-up">
           A unique style for kitchen systems with character: in the industry
-        </p>
+        </div>
       </div>
     </div>
     <div class="materials__grid">
@@ -34,9 +34,9 @@
           <eleventy-image class="materials__img" src="./app/_images/materials-home/07.jpg" alt="" loading="lazy"></eleventy-image>
         </div>
         <div class="materials__content">
-          <p class="materials__text" data-sal="slide-right">
+          <div class="materials__text" data-sal="slide-right">
             Beautiful to see and long-lasting, Arredo3 countertops “withstand” your lifestyle.
-          </p>
+          </div>
           <div class="materials__button-wrap" data-sal="slide-right">
             <livingart-button class="button--with-arrow button--with-hover materials__button" href="/materials">
               Go to catalog

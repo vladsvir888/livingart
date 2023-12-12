@@ -1,4 +1,4 @@
-<section class="section section--inner bespoke-slider">
+<section class="section bespoke-slider">
   <div class="container">
     <div class="section-header">
       <h2 class="section-header__title" @html="slider.title" data-sal="slide-up"></h2>

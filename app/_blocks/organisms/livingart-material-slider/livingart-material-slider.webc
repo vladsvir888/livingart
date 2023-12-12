@@ -1,4 +1,4 @@
-<section class="section section--inner materials-slider" :class="slider.class || ''">
+<section class="section materials-slider" :class="slider.class || ''">
   <div class="container">
     <header webc:if="slider.header.type === 1" class="section-header">
       <div class="section-header__container">
@@ -27,9 +27,9 @@
             Back
           </livingart-button>
         </div>
-        <p class="section-header__text" data-sal="slide-up">
+        <div class="section-header__text" data-sal="slide-up">
           Laminates are hot pressed impregnated papers.The avant-garde of the Cleaf’s laminates collection is given by the various typology (HPL – CPL – Hyperflex), sizes and thicknesses available in the same textures and decoratives of the faced panels.
-        </p>
+        </div>
       </div>
     </div>
     <swiper-container :class="slider.sliderClass || ''" init="false">

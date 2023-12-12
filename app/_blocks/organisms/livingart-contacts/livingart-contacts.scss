@@ -1,7 +1,8 @@
 .contacts {
   @include center;
 
-  margin-top: rem(176);
+  min-height: rem(754);
+  margin-top: var(--section-indent);
   padding: rem(60) rem(178);
   background-repeat: no-repeat;
   background-position: center center;
@@ -9,45 +10,32 @@
   background-attachment: fixed;
 
   @include media('1200', max) {
-    padding: rem(60) rem(120);
-  }
-
-  @include media('900', max) {
-    padding: rem(60);
-    margin-top: rem(88);
+    padding: rem(30);
   }
 
   @include media('600', max) {
-    padding: rem(30) rem(10);
+    min-height: rem(500);
   }
 
   &__content {
-    @include h6;
+    @include font-size(32, 32);
     @include flex-column;
 
     row-gap: rem(40);
     padding: rem(60);
-    min-height: rem(634);
     width: rem(620);
     background-color: var(--palette-cod-gray);
     align-items: flex-start;
 
     @include media('1200', max) {
       width: 100%;
-      padding: rem(30);
     }
 
     @include media('600', max) {
-      min-height: rem(400);
+      @include font-size(20, 20);
+
+      padding: rem(20);
       row-gap: rem(20);
     }
-  }
-
-  &__address {
-    max-width: rem(442);
-  }
-
-  &__phone {
-    margin-top: auto;
   }
 }

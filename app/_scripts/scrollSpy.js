@@ -10,11 +10,12 @@ function initScrollSpy() {
   function callback(entries) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        document.querySelector('.info-section__button.active').classList.remove('active');
+        const activeElement = document.querySelector('.info-section__button.active');
+        if (activeElement) activeElement.classList.remove('active');
         // eslint-disable-next-line prefer-destructuring
         activeHeadingIndicator = entry.target.classList[0];
         document
-          .querySelector(`.info-section__nav [href="#${activeHeadingIndicator}"]`)
+          .querySelector(`.info-section__button[href="#${activeHeadingIndicator}"]`)
           .classList.add('active');
       }
     });

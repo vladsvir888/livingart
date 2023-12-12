@@ -24,5 +24,4 @@
   <livingart-info-block></livingart-info-block>
   <livingart-salon></livingart-salon>
   <livingart-grid-block :grid-block="gridBlock"></livingart-grid-block>
-  <livingart-numbers></livingart-numbers>
 </livingart-base>

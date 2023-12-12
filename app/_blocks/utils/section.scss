@@ -1,7 +1,3 @@
 .section {
-  padding-top: var(--indent240);
-
-  &--inner {
-    padding-top: var(--indent140);
-  }
+  padding-top: var(--section-indent);
 }

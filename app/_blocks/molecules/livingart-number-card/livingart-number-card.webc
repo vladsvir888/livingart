@@ -1,6 +1,0 @@
-<div class="number-card" data-sal="slide-up" :style="`--sal-delay: ${delay || 200}ms;`">
-  <span class="number-card__num">
-    <span @text="num"></span>+
-  </span>
-  <p @text="text" class="number-card__text"></p>
-</div>

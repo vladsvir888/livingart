@@ -1,46 +1,10 @@
-.input-wrap {
-  position: relative;
-
-  &__label {
-    position: absolute;
-    left: rem(24);
-    top: rem(20);
-    color: var(--palette-gray);
-    transform-origin: 0 0;
-    pointer-events: none;
-    transition-duration: translate, scale;
-    transition-duration: var(--transition300ms);
-  }
-}
-
 .input {
   width: 100%;
   padding: rem(20) rem(24);
-  background-color: var(--palette-solid);
+  background-color: var(--palette-cod-gray);
   border: rem(1) solid var(--palette-dove-gray);
   border-radius: 0;
   color: var(--palette-gray);
-
-  &:focus-visible {
-    outline-color: var(--palette-gray-3);
-  }
-
-  &::placeholder {
-    opacity: 0;
-  }
-
-  &::selection {
-    background-color: var(--palette-cod-gray);
-    color: var(--palette-white);
-  }
-
-  &:focus,
-  &:not(:placeholder-shown) {
-    ~ label {
-      translate: 0% -80%;
-      scale: 0.65;
-    }
-  }
 }
 
 .form-checkbox {
