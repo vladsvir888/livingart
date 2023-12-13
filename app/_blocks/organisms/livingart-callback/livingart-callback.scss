@@ -48,6 +48,14 @@
     }
   }
 
+  &__button-wrap {
+    @include flex-center-x;
+
+    @include media('601', min) {
+      grid-column: span 2;
+    }
+  }
+
   &__button {
     @include link;
 

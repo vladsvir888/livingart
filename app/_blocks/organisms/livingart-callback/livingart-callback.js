@@ -34,16 +34,13 @@ export default class LivingartCallback extends HTMLElement {
     if (!isValid) {
       event.preventDefault();
 
-      this.scrollUp();
+      LivingartCallback.scrollUp();
     }
   }
 
-  scrollUp() {
-    const headerHeight = this.header.offsetHeight;
-    // eslint-disable-next-line max-len
-    const rectTopElement = this.form.getBoundingClientRect().top + window.scrollY - headerHeight;
+  static scrollUp() {
     window.scroll({
-      top: rectTopElement,
+      top: 0,
     });
   }
 

@@ -14,6 +14,7 @@
   --palette-gray-2: #7e7e7e;
   --palette-gray-3: #8b8b8b;
   --palette-solid: #efefef;
+  --palette-light-gray: #e0e0e0;
 
   // containers
   --container-width: #{rem(1920)};
@@ -38,6 +39,7 @@
   --sal-delay: 200ms;
 
   @include media('600', max) {
+    --section-indent: #{rem(50)};
     --container-padding: #{rem(10)};
   }
 }
