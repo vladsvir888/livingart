@@ -6,7 +6,7 @@
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: rem(10);
 
-    @include media('1400', max) {
+    @include media('900', max) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
@@ -16,32 +16,17 @@
       grid-column: span 2;
       grid-row: span 2;
 
-      #{$this}__img {
-        height: rem(930);
-        object-fit: cover;
-
-        @include media('767', max) {
-          height: rem(600);
-        }
-
-        @include media('600', max) {
-          height: rem(300);
-        }
+      > span {
+        aspect-ratio: 187 / 186;
       }
+    }
+
+    > span {
+      aspect-ratio: 231 / 230;
     }
   }
 
   &__img {
-    width: 100%;
-    height: rem(460);
-    object-fit: cover;
-
-    @include media('767', max) {
-      height: rem(300);
-    }
-
-    @include media('600', max) {
-      height: rem(150);
-    }
+    @include img(cover);
   }
 }
