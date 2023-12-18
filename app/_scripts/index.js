@@ -11,7 +11,6 @@ import getScrollbarWidth from './helpers/getScrollbarWidth';
 import projectsHomeSlider from '../_blocks/organisms/livingart-projects-home/livingart-projects-home';
 import materialSlider from '../_blocks/organisms/livingart-material-slider/livingart-material-slider';
 import bespokeSlider from '../_blocks/organisms/livingart-bespoke-slider/livingrant-bespoke-slider';
-import bespokeSlider2 from '../_blocks/organisms/livingart-bespoke-slider-two/livingart-bespoke-slider-two';
 import projectsCabinetrySlider from '../_blocks/organisms/livingart-projects-cabinetry/livingart-projects-cabinetry';
 import projectsSlider from '../_blocks/organisms/livingart-projects/livingart-projects';
 // eslint-disable-next-line no-unused-vars
@@ -29,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
   projectsHomeSlider();
   materialSlider();
   bespokeSlider();
-  bespokeSlider2();
   projectsCabinetrySlider();
   projectsSlider();
   materialSliderGrid();

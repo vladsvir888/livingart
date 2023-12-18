@@ -10,4 +10,10 @@
   &__popup-button {
     cursor: pointer;
   }
+
+  &__img {
+    @include img(cover);
+
+    aspect-ratio: 1 / 1;
+  }
 }

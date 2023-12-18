@@ -2,7 +2,7 @@
   @include flex-center-x;
 
   column-gap: rem(60);
-  margin-top: rem(60);
+  margin-top: rem(80);
 
   @include media('600', max) {
     margin-top: rem(20);
@@ -10,10 +10,10 @@
   }
 
   &__button {
-    @include h6;
+    @include link;
 
     column-gap: rem(12);
-    padding: rem(5) rem(18);
+    padding: rem(8) rem(18);
     border-radius: var(--bdrs50);
     border: rem(1) solid var(--palette-alto);
     cursor: pointer;

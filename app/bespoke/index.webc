@@ -6,7 +6,7 @@
   }
 
   const slider1 = {
-    title: '<b>pure</b> line',
+    title: 'pure <span>line</span>',
     slides: [
       {
         img: {
@@ -22,7 +22,23 @@
   }
 
   const slider2 = {
-    title: '<b>art</b> line',
+    title: 'nature <span>line</span>',
+    slides: [
+      {
+        img: {
+          src: './app/_images/bespoke/06.jpg'
+        }
+      },
+      {
+        img: {
+          src: './app/_images/bespoke/02.jpg'
+        }
+      }
+    ]
+  }
+
+  const slider3 = {
+    title: 'art <span>line</span>',
     slides: [
       {
         img: {
@@ -41,6 +57,6 @@
 <livingart-base webc:nokeep>
   <livingart-hero :hero="hero"></livingart-hero>
   <livingart-bespoke-slider :slider="slider1"></livingart-bespoke-slider>
-  <livingart-bespoke-slider-two></livingart-bespoke-slider-two>
   <livingart-bespoke-slider :slider="slider2"></livingart-bespoke-slider>
+  <livingart-bespoke-slider :slider="slider3"></livingart-bespoke-slider>
 </livingart-base>

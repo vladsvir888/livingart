@@ -3,16 +3,9 @@
     <header webc:if="slider.header.type === 1" class="section-header">
       <div class="section-header__container">
         <div class="section-header__wrap">
-          <h2 @text="slider.title" class="section-header__title" data-sal="slide-up"></h2>
-        </div>
-        <div class="section-header__button-wrap" data-sal="slide-up">
-          <livingart-button class="button--with-arrow button--with-hover" href="/materials/detail">
-            Explore
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 16" aria-hidden="true">
-              <path d="M17 1L24 8L17 15"/>
-              <path d="M24 8H0"/>
-            </svg>
-          </livingart-button>
+          <h2 class="section-header__title" data-sal="slide-up">
+            <slot name="button"></slot>
+          </h2>
         </div>
       </div>
     </header>

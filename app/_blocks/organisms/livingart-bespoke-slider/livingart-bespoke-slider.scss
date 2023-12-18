@@ -1,5 +1,7 @@
 .bespoke-slider {
   &__img {
-    width: 100%;
+    @include img(cover);
+
+    aspect-ratio: 47 / 20;
   }
 }

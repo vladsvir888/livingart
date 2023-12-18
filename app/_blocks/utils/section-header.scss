@@ -40,6 +40,10 @@
 
   &__title {
     @include h4;
+
+    > span {
+      font-weight: 100;
+    }
   }
 
   &__text {

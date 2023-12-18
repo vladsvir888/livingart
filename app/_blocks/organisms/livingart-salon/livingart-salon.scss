@@ -12,10 +12,6 @@
     gap: rem(20);
     margin-bottom: rem(60);
 
-    > span {
-      aspect-ratio: 31 / 20;
-    }
-
     @include media('900', max) {
       width: unset;
       grid-template-columns: 1fr;
@@ -26,5 +22,7 @@
 
   &__img {
     @include img(cover);
+
+    aspect-ratio: 31 / 20;
   }
 }

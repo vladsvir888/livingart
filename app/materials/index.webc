@@ -13,7 +13,6 @@
   }
 
   const slider1 = {
-    title: 'wood',
     header: {
       type: 1
     },
@@ -39,21 +38,10 @@
           src: './app/_images/materials/wood/04.jpg'
         }
       },
-      {
-        img: {
-          src: './app/_images/materials/wood/05.jpg'
-        }
-      },
-      {
-        img: {
-          src: './app/_images/materials/wood/06.jpg'
-        }
-      },
     ]
   }
 
   const slider2 = {
-    title: 'Glass',
     header: {
       type: 1
     },
@@ -79,26 +67,10 @@
           src: './app/_images/materials/glass/04.jpg'
         }
       },
-      {
-        img: {
-          src: './app/_images/materials/glass/05.jpg'
-        }
-      },
-      {
-        img: {
-          src: './app/_images/materials/glass/06.jpg'
-        }
-      },
-      {
-        img: {
-          src: './app/_images/materials/glass/01.jpg'
-        }
-      },
     ]
   }
 
   const slider3 = {
-    title: 'Stone',
     header: {
       type: 1
     },
@@ -143,7 +115,6 @@
   }
 
   const slider4 = {
-    title: 'Metal',
     class: 'materials-slider--last',
     header: {
       type: 1
@@ -191,8 +162,16 @@
 
 <livingart-base webc:nokeep>
   <livingart-hero :hero="hero"></livingart-hero>
-  <livingart-material-slider :slider="slider1"></livingart-material-slider>
-  <livingart-material-slider :slider="slider2"></livingart-material-slider>
-  <livingart-material-slider :slider="slider3"></livingart-material-slider>
-  <livingart-material-slider :slider="slider4"></livingart-material-slider>
+  <livingart-material-slider :slider="slider1">
+    <livingart-button slot="button" href="/materials/detail" class="button--with-decoration">Wood</livingart-button>
+  </livingart-material-slider>
+  <livingart-material-slider :slider="slider2">
+    <livingart-button slot="button" href="/materials/detail" class="button--with-decoration">Glass</livingart-button>
+  </livingart-material-slider>
+  <livingart-material-slider :slider="slider3">
+    <livingart-button slot="button" href="/materials/detail" class="button--with-decoration">Stone</livingart-button>
+  </livingart-material-slider>
+  <livingart-material-slider :slider="slider4">
+    <livingart-button slot="button" href="/materials/detail" class="button--with-decoration">Metal</livingart-button>
+  </livingart-material-slider>
 </livingart-base>

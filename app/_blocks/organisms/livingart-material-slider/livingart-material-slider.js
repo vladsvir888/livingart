@@ -11,11 +11,11 @@ function materialSlider() {
         601: {
           slidesPerView: 3,
         },
-        1025: {
-          slidesPerView: 4,
-        },
+        // 1025: {
+        //   slidesPerView: 4,
+        // },
         1401: {
-          slidesPerView: 6,
+          slidesPerView: 4,
         },
       },
     };

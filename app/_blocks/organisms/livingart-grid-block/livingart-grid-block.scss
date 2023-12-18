@@ -16,17 +16,15 @@
       grid-column: span 2;
       grid-row: span 2;
 
-      > span {
+      #{$this}__img {
         aspect-ratio: 187 / 186;
       }
-    }
-
-    > span {
-      aspect-ratio: 231 / 230;
     }
   }
 
   &__img {
     @include img(cover);
+
+    aspect-ratio: 231 / 230;
   }
 }

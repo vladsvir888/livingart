@@ -117,7 +117,9 @@
   }
 
   &__img {
+    @include img(cover);
+
     max-height: 86vh;
-    object-fit: cover;
+    aspect-ratio: 13 / 15;
   }
 }
