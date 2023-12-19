@@ -28,9 +28,9 @@ module.exports = function (config) {
     outputDir: './build/assets/images/',
   });
 
-  // config.setServerOptions({
-  //   domDiff: false,
-  // });
+  config.setServerOptions({
+    domDiff: false,
+  });
 
   if (isProd) {
     config.addTransform('beautify', async function (content) {

@@ -4,14 +4,11 @@
       <swiper-slide webc:for="project of projects.items" class="projects__slide">
         <article class="projects__card">
           <livingart-button v-on:click="store.isPopupShow = true" @is-button="true" class="projects__card-button" aria-label="Open popup">
-            <eleventy-image class="projects__card-img" :src="project.img.src" alt="" loading="lazy"></eleventy-image>
+            <span class="img-hover-effect">
+              <eleventy-image class="projects__card-img" :src="project.img.src" alt="" loading="lazy"></eleventy-image>
+            </span>
           </livingart-button>
           <h2 @text="project.title" class="projects__card-title" data-sal="slide-up"></h2>
-          <div class="projects__card-texts" data-sal="slide-up">
-            <p>Toronto</p>
-            <p>76 Storeys</p>
-            <p>789 Units</p>
-          </div>
         </article>
       </swiper-slide>
     </swiper-container>

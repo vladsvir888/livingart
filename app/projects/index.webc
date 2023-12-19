@@ -74,6 +74,18 @@
         },
         title: 'WONDER CONDOS'
       },
+      {
+        img: {
+          src: './app/_images/projects/01.jpg'
+        },
+        title: 'ONE BLOOR'
+      },
+      {
+        img: {
+          src: './app/_images/projects/02.jpg'
+        },
+        title: 'GARRISON POINT 1 & 2'
+      },
     ]
   }
 

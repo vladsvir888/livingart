@@ -94,6 +94,8 @@
 
   &__close {
     position: absolute;
+    top: 0;
+    right: 0;
     top: rem(48);
     right: rem(84);
     cursor: pointer;

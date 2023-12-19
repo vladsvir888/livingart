@@ -8,7 +8,7 @@ function projectsSlider() {
   const sliderParams = {
     modules: [Grid],
     slidesPerView: 1,
-    spaceBetween: 11,
+    spaceBetween: 20,
     grid: {
       rows: 2,
       fill: 'row',
@@ -33,7 +33,7 @@ function projectsSlider() {
         },
       },
       1201: {
-        slidesPerView: 4,
+        slidesPerView: 5,
         grid: {
           rows: 2,
           fill: 'row',

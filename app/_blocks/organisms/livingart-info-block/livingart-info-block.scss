@@ -1,15 +1,12 @@
 .info-block {
   &__container {
-    display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    grid-template-areas:
-      'title title title title title title title . . . . .'
-      'text text text text text text text . logo logo logo logo';
-    gap: rem(80) rem(10);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: rem(80);
+    max-width: rem(1565);
 
     @include media('1200', max) {
-      @include flex-column;
-
       row-gap: rem(40);
     }
 
@@ -21,22 +18,16 @@
   &__title {
     @include h4;
 
-    grid-area: title;
+    max-width: rem(1093);
   }
 
   &__text {
     @include text24;
-
-    grid-area: text;
 
     > * {
       &:not(:last-child) {
         margin-bottom: rem(25);
       }
     }
-  }
-
-  &__logo {
-    grid-area: logo;
   }
 }

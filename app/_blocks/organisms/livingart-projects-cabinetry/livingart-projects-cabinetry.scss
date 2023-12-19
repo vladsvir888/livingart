@@ -12,4 +12,10 @@
   &__slider {
     width: calc(100% + var(--container-padding));
   }
+
+  &__img {
+    @include img(cover);
+
+    aspect-ratio: 31 / 20;
+  }
 }
