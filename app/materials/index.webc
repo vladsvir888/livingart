@@ -96,21 +96,6 @@
           src: './app/_images/materials/stone/04.jpg'
         }
       },
-      {
-        img: {
-          src: './app/_images/materials/stone/05.jpg'
-        }
-      },
-      {
-        img: {
-          src: './app/_images/materials/stone/06.jpg'
-        }
-      },
-      {
-        img: {
-          src: './app/_images/materials/stone/01.jpg'
-        }
-      },
     ]
   }
 
@@ -139,21 +124,6 @@
       {
         img: {
           src: './app/_images/materials/metal/04.jpg'
-        }
-      },
-      {
-        img: {
-          src: './app/_images/materials/metal/05.jpg'
-        }
-      },
-      {
-        img: {
-          src: './app/_images/materials/metal/06.jpg'
-        }
-      },
-      {
-        img: {
-          src: './app/_images/materials/metal/01.jpg'
         }
       },
     ]

@@ -1,7 +1,36 @@
+<script webc:setup>
+  const cards = [
+    {
+      title: 'wood',
+      img: {
+        src: './app/_images/materials-home/01.jpg'
+      }
+    },
+    {
+      title: 'glass',
+      img: {
+        src: './app/_images/materials-home/02.jpg'
+      }
+    },
+    {
+      title: 'stone',
+      img: {
+        src: './app/_images/materials-home/03.jpg'
+      }
+    },
+    {
+      title: 'metal',
+      img: {
+        src: './app/_images/materials-home/04.jpg'
+      }
+    }
+  ];
+</script>
+
 <section class="section materials">
   <div class="container">
-    <div class="section-header">
-      <div class="section-header__wrap">
+    <div class="section-header section-header--grid">
+      <div class="section-header__container">
         <h2 class="section-header__title" data-sal="slide-up">
           Materials
         </h2>
@@ -11,43 +40,16 @@
       </div>
     </div>
     <div class="materials__grid">
-      <div class="materials__item materials__item--1">
-        <eleventy-image class="materials__img" src="./app/_images/materials-home/01.jpg" alt="" loading="lazy"></eleventy-image>
-      </div>
-      <div class="materials__item materials__item--2">
-        <eleventy-image class="materials__img" src="./app/_images/materials-home/02.jpg" alt="" loading="lazy"></eleventy-image>
-      </div>
-      <div class="materials__item materials__item--3">
-        <eleventy-image class="materials__img" src="./app/_images/materials-home/03.jpg" alt="" loading="lazy"></eleventy-image>
-      </div>
-      <div class="materials__item materials__item--4">
-        <eleventy-image class="materials__img" src="./app/_images/materials-home/04.jpg" alt="" loading="lazy"></eleventy-image>
-      </div>
-      <div class="materials__item materials__item--5">
-        <eleventy-image class="materials__img" src="./app/_images/materials-home/05.jpg" alt="" loading="lazy"></eleventy-image>
-      </div>
-      <div class="materials__item materials__item--6">
-        <eleventy-image class="materials__img" src="./app/_images/materials-home/06.jpg" alt="" loading="lazy"></eleventy-image>
-      </div>
-      <div class="materials__item materials__item--7">
-        <div class="materials__img-wrap">
-          <eleventy-image class="materials__img" src="./app/_images/materials-home/07.jpg" alt="" loading="lazy"></eleventy-image>
-        </div>
-        <div class="materials__content">
-          <div class="materials__text" data-sal="slide-right">
-            Beautiful to see and long-lasting, Arredo3 countertops “withstand” your lifestyle.
-          </div>
-          <div class="materials__button-wrap" data-sal="slide-right">
-            <livingart-button class="button--with-arrow button--with-hover materials__button" href="/materials">
-              Go to catalog
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 16" aria-hidden="true">
-                <path d="M17 1L24 8L17 15"/>
-                <path d="M24 8H0"/>
-              </svg>
-            </livingart-button>
-          </div>
-        </div>
-      </div>
+      <livingart-material-card webc:for="card of cards" :item="card"></livingart-material-card>
+    </div>
+    <div class="materials__button-wrapper">
+      <livingart-button class="button--with-arrow button--with-hover" href="/materials">
+        Go to catalog
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 16" aria-hidden="true">
+          <path d="M17 1L24 8L17 15"/>
+          <path d="M24 8H0"/>
+        </svg>
+      </livingart-button>
     </div>
   </div>
 </section>

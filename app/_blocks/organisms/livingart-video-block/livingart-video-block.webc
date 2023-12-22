@@ -1,13 +1,11 @@
 <section class="section video-block">
-  <header class="section-header">
+  <header class="section-header section-header--grid">
     <div class="container section-header__container">
-      <div class="section-header__wrap">
-        <h2 class="section-header__title" data-sal="slide-up">
-          Bespoke
-        </h2>
-        <div class="section-header__text" data-sal="slide-up">
-          A unique style for kitchen systems with character: in the industry
-        </div>
+      <h2 class="section-header__title" data-sal="slide-up">
+        Bespoke
+      </h2>
+      <div class="section-header__text" data-sal="slide-up">
+        A unique style for kitchen systems with character: in the industry
       </div>
       <div class="section-header__button-wrap" data-sal="slide-up">
         <livingart-button class="button--with-arrow button--with-hover" href="/bespoke">
@@ -21,7 +19,7 @@
     </div>
   </header>
   <div class="video-block__video-wrap">
-    <video
+    <!-- <video
       v-bind="store.isBespokeVideoPlay ? $el.play() : $el.pause()"
       id="video"
       class="video-block__video"
@@ -41,6 +39,7 @@
       aria-label="Pause video"
       v-bind:aria-pressed="store.isBespokeVideoPlay ? false : true"
       aria-controls="video"
-    ></livingart-button>
+    ></livingart-button> -->
+    <eleventy-image class="video-block__image" src="./app/_images/video-block/01.jpg" alt="" loading="lazy"></eleventy-image>
   </div>
 </section>

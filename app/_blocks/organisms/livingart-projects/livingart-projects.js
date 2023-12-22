@@ -6,6 +6,7 @@ function projectsSlider() {
   if (!sliderElement) return;
 
   const sliderParams = {
+    speed: 800,
     modules: [Grid],
     slidesPerView: 1,
     spaceBetween: 20,

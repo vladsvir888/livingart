@@ -6,6 +6,7 @@ function materialSliderGrid() {
   if (!sliderElement) return;
 
   const sliderParams = {
+    speed: 800,
     modules: [Grid],
     spaceBetween: 10,
     slidesPerView: 2,

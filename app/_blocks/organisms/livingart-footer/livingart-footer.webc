@@ -2,7 +2,7 @@
   <div class="container">
     <div class="footer__grid">
       <a href="/" class="footer__logo">
-        <img class="footer__logo-img" src="/assets/images/icons/footer-logo.svg" alt="Home" loading="lazy" width="298" height="61">
+        <img class="footer__logo-img" src="/assets/images/icons/logo.svg" alt="Home" loading="lazy" width="310" height="56">
       </a>
       <div class="footer__address">325 Eddystone Ave, North York, ON M3N 1H8</div>
       <livingart-button class="button--with-decoration footer__phone" href="tel:+19057619090">+1 905-761-9090</livingart-button>

@@ -1,14 +1,12 @@
 <section class="section projects-home">
   <div class="container projects-home__container">
-    <header class="section-header">
+    <header class="section-header section-header--grid">
       <div class="section-header__container">
-        <div class="section-header__wrap">
-          <h2 class="section-header__title" data-sal="slide-up">
-            Projects
-          </h2>
-          <div class="section-header__text" data-sal="slide-up">
-            A unique style for kitchen systems with character: in the industry
-          </div>
+        <h2 class="section-header__title" data-sal="slide-up">
+          Projects
+        </h2>
+        <div class="section-header__text" data-sal="slide-up">
+          A unique style for kitchen systems with character: in the industry
         </div>
         <div class="section-header__button-wrap" data-sal="slide-up">
           <livingart-button class="button--with-arrow button--with-hover" href="/projects">
@@ -22,29 +20,29 @@
       </div>
     </header>
     <swiper-container class="projects-home__slider" init="false">
-      <swiper-slide class="projects-home__slide projects-home__slide--big">
-        <eleventy-image src="./app/_images/projects-home/01.jpg" alt="" loading="lazy"></eleventy-image>
+      <swiper-slide class="projects-home__slide">
+        <eleventy-image class="projects-home__slide-image" src="./app/_images/projects-home/01.jpg" alt="" loading="lazy"></eleventy-image>
       </swiper-slide>
       <swiper-slide class="projects-home__slide">
-        <eleventy-image src="./app/_images/projects-home/02.jpg" alt="" loading="lazy"></eleventy-image>
+        <eleventy-image class="projects-home__slide-image" src="./app/_images/projects-home/02.jpg" alt="" loading="lazy"></eleventy-image>
       </swiper-slide>
       <swiper-slide class="projects-home__slide">
-        <eleventy-image src="./app/_images/projects-home/03.jpg" alt="" loading="lazy"></eleventy-image>
+        <eleventy-image class="projects-home__slide-image" src="./app/_images/projects-home/03.jpg" alt="" loading="lazy"></eleventy-image>
       </swiper-slide>
       <swiper-slide class="projects-home__slide">
-        <eleventy-image src="./app/_images/projects-home/04.jpg" alt="" loading="lazy"></eleventy-image>
-      </swiper-slide>
-      <swiper-slide class="projects-home__slide projects-home__slide--big">
-        <eleventy-image src="./app/_images/projects-home/01.jpg" alt="" loading="lazy"></eleventy-image>
+        <eleventy-image class="projects-home__slide-image" src="./app/_images/projects-home/04.jpg" alt="" loading="lazy"></eleventy-image>
       </swiper-slide>
       <swiper-slide class="projects-home__slide">
-        <eleventy-image src="./app/_images/projects-home/02.jpg" alt="" loading="lazy"></eleventy-image>
+        <eleventy-image class="projects-home__slide-image" src="./app/_images/projects-home/01.jpg" alt="" loading="lazy"></eleventy-image>
       </swiper-slide>
       <swiper-slide class="projects-home__slide">
-        <eleventy-image src="./app/_images/projects-home/03.jpg" alt="" loading="lazy"></eleventy-image>
+        <eleventy-image class="projects-home__slide-image" src="./app/_images/projects-home/02.jpg" alt="" loading="lazy"></eleventy-image>
       </swiper-slide>
       <swiper-slide class="projects-home__slide">
-        <eleventy-image src="./app/_images/projects-home/04.jpg" alt="" loading="lazy"></eleventy-image>
+        <eleventy-image class="projects-home__slide-image" src="./app/_images/projects-home/03.jpg" alt="" loading="lazy"></eleventy-image>
+      </swiper-slide>
+      <swiper-slide class="projects-home__slide">
+        <eleventy-image class="projects-home__slide-image" src="./app/_images/projects-home/04.jpg" alt="" loading="lazy"></eleventy-image>
       </swiper-slide>
     </swiper-container>
     <div class="projects-home__slider-controls">

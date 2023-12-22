@@ -16,17 +16,10 @@ function projectsHomeSlider() {
     },
     breakpoints: {
       601: {
-        slidesPerView: 3,
-        slidesPerGroup: 1,
-      },
-      901: {
         slidesPerView: 4,
-        slidesPerGroup: 1,
       },
       1201: {
-        slidesPerView: 'auto',
-        slidesPerGroup: 4,
-        spaceBetween: 0,
+        slidesPerView: 6,
       },
     },
   };

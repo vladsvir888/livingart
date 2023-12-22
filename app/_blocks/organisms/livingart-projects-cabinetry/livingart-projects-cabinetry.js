@@ -4,6 +4,7 @@ function projectsCabinetrySlider() {
   if (!sliderElement) return;
 
   const sliderParams = {
+    speed: 800,
     spaceBetween: 10,
     slidesPerView: 1,
     navigation: {

@@ -1,0 +1,19 @@
+.material-card {
+  position: relative;
+
+  &__text {
+    @include h6;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &__image {
+    @include img(cover);
+
+    aspect-ratio: 1 / 1;
+  }
+}

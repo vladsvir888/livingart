@@ -17,7 +17,7 @@
       </ul>
     </nav>
     <a href="/" class="header__logo" data-sal="slide-up">
-      <img src="/assets/images/icons/header-logo.svg" alt="Home" width="120" height="30">
+      <img src="/assets/images/icons/logo.svg" alt="Home" width="124" height="22">
     </a>
     <nav class="header__nav" aria-label="Meta">
       <ul class="header__list">

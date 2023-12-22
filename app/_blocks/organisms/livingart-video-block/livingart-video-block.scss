@@ -49,4 +49,10 @@
 
     pointer-events: none;
   }
+
+  &__image {
+    @include img(cover);
+
+    aspect-ratio: 12 / 5;
+  }
 }

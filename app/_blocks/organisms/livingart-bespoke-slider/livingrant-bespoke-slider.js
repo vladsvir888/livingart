@@ -5,7 +5,7 @@ function bespokeSlider() {
 
   sliderElements.forEach((sliderElement) => {
     const sliderParams = {
-      // spaceBetween: 10,
+      speed: 800,
       navigation: {
         prevEl: sliderElement?.querySelector('.cursor-nav-button--prev'),
         nextEl: sliderElement?.querySelector('.cursor-nav-button--next'),

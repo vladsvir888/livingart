@@ -7,6 +7,31 @@
     padding-bottom: rem(12);
   }
 
+  &--grid {
+    #{$this} {
+      @include media('1201', min) {
+        &__container {
+          display: grid;
+          grid-template-columns: repeat(12, 1fr);
+        }
+
+        &__title {
+          grid-column: span 3;
+        }
+
+        &__text {
+          grid-column: span 6;
+          justify-self: center;
+        }
+
+        &__button-wrap {
+          grid-column: span 3;
+          justify-self: end;
+        }
+      }
+    }
+  }
+
   &__container {
     display: flex;
     align-items: flex-end;
@@ -21,17 +46,6 @@
         max-width: rem(935);
       }
     }
-
-    @include media('600', max) {
-      gap: rem(10);
-    }
-  }
-
-  &__wrap {
-    display: flex;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    gap: rem(20) rem(160);
 
     @include media('600', max) {
       gap: rem(10);
