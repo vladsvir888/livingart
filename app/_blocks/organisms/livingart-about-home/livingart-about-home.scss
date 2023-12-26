@@ -1,105 +1,60 @@
 .about-home {
   $this: &;
 
-  padding-bottom: rem(58);
-
-  @include media('1400', max) {
-    padding-bottom: 0;
-  }
-
   &__content {
     display: flex;
-    align-items: flex-start;
-    gap: rem(40) rem(88);
+    gap: rem(40) rem(133);
     margin-top: rem(60);
 
-    @include media('1400', max) {
-      margin-top: rem(30);
-    }
-
-    @include media('1200', max) {
-      flex-wrap: wrap;
-      gap: rem(20);
+    @include media('1024', max) {
+      flex-direction: column-reverse;
+      margin-top: 0;
     }
   }
 
   &__content-wrap {
-    margin-left: rem(70);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: rem(935);
+    margin-left: rem(113);
 
     @include media('1400', max) {
       margin-left: 0;
-    }
-
-    @include media('1200', max) {
-      width: 45%;
-    }
-
-    @include media('600', max) {
-      width: 100%;
     }
   }
 
   &__text {
     @include text24;
-
-    max-width: rem(472);
-
-    &--1 {
-      @include media('1200', max) {
-        width: 45%;
-      }
-
-      @include media('600', max) {
-        width: 100%;
-      }
-    }
   }
 
   &__button {
-    @include link;
-
-    display: inline-flex;
-    align-items: center;
-    column-gap: rem(72);
-    margin-top: rem(100);
-
-    @include media('1200', max) {
-      margin-top: rem(40);
-    }
-
-    @include media('600', max) {
-      column-gap: rem(30);
-      margin-top: rem(20);
-    }
-
-    > svg {
-      width: rem(48);
-      height: rem(20);
-      stroke: currentcolor;
-      fill: transparent;
-
-      @include media('600', max) {
-        width: rem(30);
-      }
-    }
+    margin-top: rem(28);
   }
 
   &__img-wrap {
     &--1 {
       width: calc(100% + var(--container-padding) * 2);
       margin-left: calc(var(--container-padding) * -1);
+
+      #{$this}__img {
+        width: 100%;
+        height: rem(620);
+        aspect-ratio: 96 / 31;
+      }
     }
 
     &--2 {
       margin-top: rem(-350);
+      flex-shrink: 0;
 
-      @include media('1400', max) {
-        margin-top: 0;
-      }
-
-      @include media('1200', max) {
-        margin: 0 auto;
+      #{$this}__img {
+        aspect-ratio: 463 / 600;
       }
     }
+  }
+
+  &__img {
+    object-fit: cover;
   }
 }
