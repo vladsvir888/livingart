@@ -2,6 +2,7 @@
   const hero = {
     class: 'hero--video',
     title: 'Bespoke',
+    titleWithText: true,
     video: true
   }
 

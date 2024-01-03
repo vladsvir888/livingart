@@ -25,13 +25,6 @@
       }
     }
 
-    &-title {
-      margin-top: rem(20);
-      font-weight: 500;
-      font-size: rem(16);
-      text-transform: uppercase;
-    }
-
     &-img {
       @include img(cover);
 

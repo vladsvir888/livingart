@@ -2,17 +2,17 @@
   <div class="container header__container">
     <nav class="header__nav" aria-label="Main">
       <ul class="header__list">
-        <li class="header__item">
-          <livingart-button href="/" class="button--with-decoration header__link" data-sal="slide-up">home</livingart-button>
+        <li class="header__item" data-sal="slide-up">
+          <livingart-button href="/" class="button--with-decoration header__link">home</livingart-button>
         </li>
-        <li class="header__item">
-          <livingart-button href="/bespoke" class="button--with-decoration header__link" data-sal="slide-up">Bespoke</livingart-button>
+        <li class="header__item" data-sal="slide-up">
+          <livingart-button href="/bespoke" class="button--with-decoration header__link">Bespoke</livingart-button>
         </li>
-        <li class="header__item">
-          <livingart-button href="/projects" class="button--with-decoration header__link" data-sal="slide-up">Projects</livingart-button>
+        <li class="header__item" data-sal="slide-up">
+          <livingart-button href="/projects" class="button--with-decoration header__link">Projects</livingart-button>
         </li>
-        <li class="header__item">
-          <livingart-button href="/materials" class="button--with-decoration header__link" data-sal="slide-up">Materials</livingart-button>
+        <li class="header__item" data-sal="slide-up">
+          <livingart-button href="/materials" class="button--with-decoration header__link">Materials</livingart-button>
         </li>
       </ul>
     </nav>
@@ -21,14 +21,14 @@
     </a>
     <nav class="header__nav" aria-label="Meta">
       <ul class="header__list">
-        <li class="header__item">
-          <livingart-button href="/about" class="button--with-decoration header__link" data-sal="slide-up">About company</livingart-button>
+        <li class="header__item" data-sal="slide-up">
+          <livingart-button href="/about" class="button--with-decoration header__link">About company</livingart-button>
         </li>
-        <li class="header__item">
-          <livingart-button href="/contact" class="button--with-decoration header__link" data-sal="slide-up">contact</livingart-button>
+        <li class="header__item" data-sal="slide-up">
+          <livingart-button href="/contact" class="button--with-decoration header__link">contact</livingart-button>
         </li>
-        <li class="header__item">
-          <livingart-button href="https://www.instagram.com/livingart_kitchens/" class="button--with-decoration header__link" target="_blank" data-sal="slide-up">Instagram</livingart-button>
+        <li class="header__item" data-sal="slide-up">
+          <livingart-button href="https://www.instagram.com/livingart_kitchens/" class="button--with-decoration header__link" target="_blank">Instagram</livingart-button>
         </li>
       </ul>
     </nav>

@@ -5,9 +5,6 @@
   class="popup"
 >
   <div class="popup__wrap">
-    <div class="popup__img-wrap">
-      <eleventy-image class="popup__img" :src="popup.image.src" alt="" loading="lazy"></eleventy-image>
-    </div>
     <div class="popup__content">
       <h2 @text="popup.title" class="popup__title"></h2>
       <div @text="popup.text1" class="popup__subtitle"></div>
@@ -15,6 +12,9 @@
         <p @text="popup.text2"></p>
         <p @text="popup.text3"></p>
       </div>
+    </div>
+    <div class="popup__img-wrap">
+      <eleventy-image class="popup__img" :src="popup.image.src" alt="" loading="lazy"></eleventy-image>
     </div>
     <livingart-button
       v-on:click="store.isPopupShow = false"

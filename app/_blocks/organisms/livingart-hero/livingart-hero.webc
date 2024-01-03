@@ -7,7 +7,25 @@
     webc:if="hero.title"
     class="container hero__container"
   >
+    <div webc:if="hero.titleWithText" class="hero__title-wrapper">
+      <h1
+        @text="hero.title"
+        class="hero__title"
+        data-sal="slide-up"
+      ></h1>
+      <div class="hero__title-text">
+        PURE <span>LINE</span>
+      </div>
+      <div class="hero__title-text">
+        NATURE <span>LINE</span>
+      </div>
+      <div class="hero__title-text">
+        ART <span>LINE</span>
+      </div>
+    </div>
+
     <h1
+      webc:else
       @text="hero.title"
       class="hero__title"
       data-sal="slide-up"

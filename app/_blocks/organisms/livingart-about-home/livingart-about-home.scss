@@ -50,6 +50,10 @@
 
       #{$this}__img {
         aspect-ratio: 463 / 600;
+
+        @include media('600', max) {
+          margin: 0 auto;
+        }
       }
     }
   }

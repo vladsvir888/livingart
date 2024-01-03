@@ -51,6 +51,14 @@
 
   &__link {
     @include link;
+
+    transition: opacity var(--transition500ms);
+
+    @media #{$mouse-device} {
+      &:hover {
+        opacity: 0.5;
+      }
+    }
   }
 
   &__burger {

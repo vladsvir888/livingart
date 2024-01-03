@@ -1,0 +1,24 @@
+// Для оптимизации в этот файл вынесены только используемые классы из библиотеки
+[data-sal] {
+  transition-delay: 0s;
+  transition-delay: var(--sal-delay, 0s);
+  transition-duration: 0.2s;
+  transition-duration: var(--sal-duration, 0.2s);
+  transition-timing-function: ease;
+  transition-timing-function: var(--sal-easing, ease);
+}
+
+[data-sal|="slide"] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+[data-sal="slide-up"] {
+  transform: translateY(20%);
+}
+
+[data-sal|="slide"].sal-animate,
+body.sal-disabled [data-sal|="slide"] {
+  opacity: 1;
+  transform: none;
+}

@@ -8,7 +8,6 @@ import sal from 'sal.js';
 
 import getScrollbarWidth from './helpers/getScrollbarWidth';
 
-import projectsHomeSlider from '../_blocks/organisms/livingart-projects-home/livingart-projects-home';
 import materialSlider from '../_blocks/organisms/livingart-material-slider/livingart-material-slider';
 import bespokeSlider from '../_blocks/organisms/livingart-bespoke-slider/livingrant-bespoke-slider';
 import projectsCabinetrySlider from '../_blocks/organisms/livingart-projects-cabinetry/livingart-projects-cabinetry';
@@ -25,7 +24,6 @@ sal();
 document.addEventListener('DOMContentLoaded', () => {
   document.documentElement.style.setProperty('--scrollbar-width', `${getScrollbarWidth()}px`);
 
-  projectsHomeSlider();
   materialSlider();
   bespokeSlider();
   projectsCabinetrySlider();

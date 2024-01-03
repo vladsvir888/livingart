@@ -1,5 +1,11 @@
 import Pristine from 'pristinejs';
 
+function scollUp() {
+  window.scroll({
+    top: 0,
+  });
+}
+
 export default class LivingartCallback extends HTMLElement {
   connectedCallback() {
     this.form = this.querySelector('.callback__form');
@@ -34,14 +40,8 @@ export default class LivingartCallback extends HTMLElement {
     if (!isValid) {
       event.preventDefault();
 
-      LivingartCallback.scrollUp();
+      scollUp();
     }
-  }
-
-  static scrollUp() {
-    window.scroll({
-      top: 0,
-    });
   }
 
   addValidators() {

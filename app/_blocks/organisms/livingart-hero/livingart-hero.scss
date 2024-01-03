@@ -35,9 +35,10 @@
         display: grid;
       }
 
-      &__title {
+      &__title-wrapper {
         position: relative;
         grid-area: 1 / 1;
+        margin: auto 0;
       }
 
       &__video-wrap {
@@ -96,6 +97,14 @@
 
     @include media('600', max) {
       word-wrap: break-word;
+    }
+
+    &-text {
+      @include text24;
+
+      > span {
+        font-weight: 100;
+      }
     }
   }
 }
