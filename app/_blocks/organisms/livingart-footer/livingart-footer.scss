@@ -1,14 +1,54 @@
 .footer {
+  $this: &;
+
   margin-top: var(--section-indent);
   text-align: center;
   color: var(--palette-light-gray);
 
+  &.show {
+    #{$this}__grid,
+    #{$this}__links {
+      &::before,
+      &::after {
+        width: 50%;
+      }
+    }
+  }
+
+  &__grid,
+  &__links {
+    position: relative;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 0;
+      width: 0;
+      height: rem(1);
+      background-color: var(--palette-tundora);
+      transition: width var(--transition800ms) ease-in-out;
+      content: '';
+    }
+
+    &::before {
+      left: 50%;
+    }
+
+    &::after {
+      right: 50%;
+    }
+  }
+
   &__grid {
     @include flex-center-column;
 
-    row-gap: rem(36);
     padding: rem(20) 0 rem(40);
-    border-top: rem(1) solid var(--palette-tundora);
+
+    > * {
+      &:not(:last-child) {
+        padding-bottom: rem(36);
+      }
+    }
   }
 
   &__developer {
@@ -22,6 +62,5 @@
     width: 100%;
     gap: rem(20) rem(90);
     padding-top: rem(36);
-    border-top: rem(1) solid var(--palette-tundora);
   }
 }

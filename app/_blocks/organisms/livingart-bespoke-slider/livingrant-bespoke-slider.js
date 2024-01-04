@@ -10,6 +10,10 @@ function bespokeSlider() {
         prevEl: sliderElement?.querySelector('.cursor-nav-button--prev'),
         nextEl: sliderElement?.querySelector('.cursor-nav-button--next'),
       },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
     };
 
     Object.assign(sliderElement, sliderParams);

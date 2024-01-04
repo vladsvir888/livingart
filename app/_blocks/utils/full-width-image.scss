@@ -1,0 +1,5 @@
+.full-width-image {
+  @include img(cover);
+
+  aspect-ratio: 12 / 5;
+}

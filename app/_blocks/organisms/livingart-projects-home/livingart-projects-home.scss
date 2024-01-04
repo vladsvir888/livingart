@@ -1,9 +1,3 @@
 .projects-home {
   $this: &;
-
-  &__image {
-    @include img(cover);
-
-    aspect-ratio: 12 / 5;
-  }
 }

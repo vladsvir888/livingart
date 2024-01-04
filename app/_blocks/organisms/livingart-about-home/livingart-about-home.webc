@@ -11,13 +11,15 @@
         <div class="about-home__text" data-sal="slide-up">
           The history of Italian design is, in part, also the history of the Boffi family, who were able to establish connections with what would later become iconic names in the international landscape of interior systems. But one must proceed in order; there’s a narrative thread leading back to a small artisan workshop in the province of Monza Brianza.
         </div>
-        <livingart-button class="button--with-arrow button--with-hover about-home__button" href="/materials">
-          Read about us
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 16" aria-hidden="true">
-            <path d="M17 1L24 8L17 15"/>
-            <path d="M24 8H0"/>
-          </svg>
-        </livingart-button>
+        <div class="about-home__button-wrap" data-sal="slide-up">
+          <livingart-button class="button--with-arrow button--with-hover about-home__button" href="/materials">
+            Read about us
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 16" aria-hidden="true">
+              <path d="M17 1L24 8L17 15"/>
+              <path d="M24 8H0"/>
+            </svg>
+          </livingart-button>
+        </div>
       </div>
       <div class="about-home__img-wrap about-home__img-wrap--2">
         <eleventy-image class="about-home__img about-home__img--2" src="./app/_images/about-home/02.jpg" loading="lazy" alt=""></eleventy-image>

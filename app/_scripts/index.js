@@ -17,6 +17,7 @@ import LivingartCallback from '../_blocks/organisms/livingart-callback/livingart
 import './vue';
 import materialSliderGrid from '../_blocks/organisms/livingart-material-slider/livingart-material-slider-grid';
 import initScrollSpy from './scrollSpy';
+import initAnimation from './animation';
 
 register();
 sal();
@@ -30,4 +31,5 @@ document.addEventListener('DOMContentLoaded', () => {
   projectsSlider();
   materialSliderGrid();
   initScrollSpy();
+  initAnimation();
 });

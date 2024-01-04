@@ -1,0 +1,42 @@
+<script webc:setup>
+  const hero = {
+    class: 'hero--video',
+    title: 'Pure line',
+    video: true
+  }
+</script>
+
+<livingart-base webc:nokeep>
+  <livingart-hero :hero="hero"></livingart-hero>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__container section-header__container--2">
+          <div class="section-header__button-wrap" data-sal="slide-up">
+            <livingart-button class="button--with-arrow button--with-hover section-header__back-button" href="/bespoke">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 16" aria-hidden="true">
+                <path d="M8 1L1 8L8 15"/>
+                <path d="M1 8H25"/>
+              </svg>
+              Back
+            </livingart-button>
+          </div>
+          <div class="section-header__text" data-sal="slide-up">
+            Laminates are hot pressed impregnated papers.The avant-garde of the Cleaf’s laminates collection is given by the various typology (HPL – CPL – Hyperflex), sizes and thicknesses available in the same textures and decoratives of the faced panels.
+          </div>
+        </div>
+      </div>
+
+      <eleventy-image class="full-width-image" src="./app/_images/video-block/01.jpg" alt="" loading="lazy"></eleventy-image>
+
+      <eleventy-image class="full-width-image" src="./app/_images/video-block/01.jpg" alt="" loading="lazy"></eleventy-image>
+
+      <eleventy-image class="full-width-image" src="./app/_images/video-block/01.jpg" alt="" loading="lazy"></eleventy-image>
+
+      <eleventy-image class="full-width-image" src="./app/_images/video-block/01.jpg" alt="" loading="lazy"></eleventy-image>
+
+      <eleventy-image class="full-width-image" src="./app/_images/video-block/01.jpg" alt="" loading="lazy"></eleventy-image>
+    </div>
+  </section>
+</livingart-base>

@@ -1,6 +1,6 @@
 <a href="/materials/detail" class="material-card">
-  <span class="material-card__text" @text="card.title"></span>
-  <span class="img-hover-effect">
+  <div class="material-card__text" @text="card.title"></div>
+  <span class="img-hover-effect img-hover-effect--vignette">
     <eleventy-image class="material-card__image" :src="card.img.src" alt="" loading="lazy"></eleventy-image>
   </span>
 </a>

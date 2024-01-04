@@ -1,5 +1,16 @@
 .material-card {
+  $this: &;
+
   position: relative;
+
+  @media #{$mouse-device} {
+    &:hover,
+    &:focus-visible {
+      #{$this}__text {
+        opacity: 1;
+      }
+    }
+  }
 
   &__text {
     @include h6;
@@ -9,6 +20,8 @@
     left: 50%;
     z-index: 1;
     transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity var(--transition300ms);
   }
 
   &__image {

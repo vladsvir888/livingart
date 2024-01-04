@@ -19,8 +19,8 @@
         </div>
       </div>
     </header>
-    <livingart-button href="/projects">
-      <eleventy-image class="projects-home__image" src="./app/_images/video-block/01.jpg" alt="" loading="lazy"></eleventy-image>
+    <livingart-button href="/projects" aria-label="Explore all projects">
+      <eleventy-image class="full-width-image" src="./app/_images/video-block/01.jpg" alt="" loading="lazy"></eleventy-image>
     </livingart-button>
   </div>
 </section>

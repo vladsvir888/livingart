@@ -1,6 +1,25 @@
 .img-hover-effect {
+  position: relative;
   display: block;
   overflow: hidden;
+
+  &--vignette {
+    &::before {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      transition: box-shadow var(--transition300ms);
+      content: '';
+    }
+
+    @media #{$mouse-device} {
+      &:hover {
+        &::before {
+          box-shadow: inset 0 0 rem(50) var(--palette-cod-gray);
+        }
+      }
+    }
+  }
 
   @media #{$mouse-device} {
     &:hover {

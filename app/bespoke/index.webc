@@ -1,13 +1,13 @@
 <script webc:setup>
   const hero = {
     class: 'hero--video',
-    title: 'Bespoke',
-    titleWithText: true,
+    titleWithText: {
+      title: 'Bespoke',
+    },
     video: true
   }
 
   const slider1 = {
-    title: 'pure <span>line</span>',
     slides: [
       {
         img: {
@@ -23,7 +23,6 @@
   }
 
   const slider2 = {
-    title: 'nature <span>line</span>',
     slides: [
       {
         img: {
@@ -39,7 +38,6 @@
   }
 
   const slider3 = {
-    title: 'art <span>line</span>',
     slides: [
       {
         img: {
@@ -57,7 +55,13 @@
 
 <livingart-base webc:nokeep>
   <livingart-hero :hero="hero"></livingart-hero>
-  <livingart-bespoke-slider :slider="slider1"></livingart-bespoke-slider>
-  <livingart-bespoke-slider :slider="slider2"></livingart-bespoke-slider>
-  <livingart-bespoke-slider :slider="slider3"></livingart-bespoke-slider>
+  <livingart-bespoke-slider :slider="slider1">
+    <livingart-button slot="button" href="/bespoke/detail" class="button--with-decoration">pure&nbsp;<span>line</span></livingart-button>
+  </livingart-bespoke-slider>
+  <livingart-bespoke-slider :slider="slider2">
+    <livingart-button slot="button" href="/bespoke/detail" class="button--with-decoration">nature&nbsp;<span>line</span></livingart-button>
+  </livingart-bespoke-slider>
+  <livingart-bespoke-slider :slider="slider3">
+    <livingart-button slot="button" href="/bespoke/detail" class="button--with-decoration">art&nbsp;<span>line</span></livingart-button>
+  </livingart-bespoke-slider>
 </livingart-base>

@@ -42,7 +42,7 @@
     <div class="materials__grid">
       <livingart-material-card webc:for="card of cards" :item="card"></livingart-material-card>
     </div>
-    <div class="materials__button-wrapper">
+    <div class="materials__button-wrapper" data-sal="slide-up">
       <livingart-button class="button--with-arrow button--with-hover" href="/materials">
         Go to catalog
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 16" aria-hidden="true">

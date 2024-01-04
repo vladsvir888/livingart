@@ -1,18 +1,26 @@
-<footer class="footer">
+<footer class="footer animate-element" data-sal="">
   <div class="container">
     <div class="footer__grid">
-      <a href="/" class="footer__logo">
+      <a href="/" class="footer__logo" data-sal="slide-up">
         <img class="footer__logo-img" src="/assets/images/icons/logo.svg" alt="Home" loading="lazy" width="310" height="56">
       </a>
-      <div class="footer__address">325 Eddystone Ave, North York, ON M3N 1H8</div>
-      <livingart-button class="button--with-decoration footer__phone" href="tel:+19057619090">+1 905-761-9090</livingart-button>
-      <div class="footer__developer">
+      <div class="footer__address" data-sal="slide-up">325 Eddystone Ave, North York, ON M3N 1H8</div>
+      <div class="footer__phone-wrapper" data-sal="slide-up">
+        <livingart-button class="button--with-decoration footer__phone" href="tel:+19057619090">+1 905-761-9090</livingart-button>
+      </div>
+      <div class="footer__developer" data-sal="slide-up">
         Design and development —&nbsp;<livingart-button href="https://miks-soft.com/" class="button--with-decoration" target="_blank">Miks Soft</livingart-button>
       </div>
       <div class="footer__links">
-        <livingart-button href="/privacy-policy" class="button--with-decoration footer__link">Privacy Policy</livingart-button>
-        <livingart-button href="/cookie-policy" class="button--with-decoration footer__link">Cookie Policy</livingart-button>
-        <livingart-button href="/cookie-preferences" class="button--with-decoration footer__link">Cookie preferences</livingart-button>
+        <div class="footer__link-wrapper" data-sal="slide-up">
+          <livingart-button href="/privacy-policy" class="button--with-decoration footer__link">Privacy Policy</livingart-button>
+        </div>
+        <div class="footer__link-wrapper" data-sal="slide-up">
+          <livingart-button href="/cookie-policy" class="button--with-decoration footer__link">Cookie Policy</livingart-button>
+        </div>
+        <div class="footer__link-wrapper" data-sal="slide-up">
+          <livingart-button href="/cookie-preferences" class="button--with-decoration footer__link">Cookie preferences</livingart-button>
+        </div>
       </div>
     </div>
   </div>

@@ -32,7 +32,7 @@
             <eleventy-image class="materials-slider__img" :src="slide.img.src" alt="" loading="lazy"></eleventy-image>
           </span>
         </livingart-button>
-        <span webc:else class="img-hover-effect">
+        <span webc:else class="img-hover-effect img-hover-effect--vignette">
           <eleventy-image class="materials-slider__img" :src="slide.img.src" alt="" loading="lazy"></eleventy-image>
         </span>
       </swiper-slide>

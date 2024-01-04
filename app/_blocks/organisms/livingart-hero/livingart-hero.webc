@@ -2,34 +2,36 @@
   class="hero"
   :class="hero.class || ''"
   >
-  <style @html="hero.bgimage" webc:if="!hero.video" webc:keep></style>
-  <div
-    webc:if="hero.title"
-    class="container hero__container"
-  >
-    <div webc:if="hero.titleWithText" class="hero__title-wrapper">
-      <h1
-        @text="hero.title"
-        class="hero__title"
-        data-sal="slide-up"
-      ></h1>
-      <div class="hero__title-text">
-        PURE <span>LINE</span>
-      </div>
-      <div class="hero__title-text">
-        NATURE <span>LINE</span>
-      </div>
-      <div class="hero__title-text">
-        ART <span>LINE</span>
-      </div>
-    </div>
 
+  <style @html="hero.bgimage" webc:if="!hero.video" webc:keep></style>
+
+  <div class="container hero__container">
     <h1
-      webc:else
+      webc:if="hero.title"
       @text="hero.title"
       class="hero__title"
       data-sal="slide-up"
     ></h1>
+
+    <div
+      webc:if="hero.titleWithText"
+      class="hero__title-wrapper"
+    >
+      <h1
+        @text="hero.titleWithText.title"
+        class="hero__title"
+        data-sal="slide-up"
+      ></h1>
+      <div class="hero__title-text" data-sal="slide-up">
+        PURE <span>LINE</span>
+      </div>
+      <div class="hero__title-text" data-sal="slide-up">
+        NATURE <span>LINE</span>
+      </div>
+      <div class="hero__title-text" data-sal="slide-up">
+        ART <span>LINE</span>
+      </div>
+    </div>
 
     <div webc:if="hero.video" class="hero__video-wrap">
       <video
@@ -55,4 +57,6 @@
       ></livingart-button>
     </div>
   </div>
+
+  <div class="hero__line"></div>
 </div>

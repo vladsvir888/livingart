@@ -12,47 +12,14 @@
 
     position: absolute;
     inset: 0;
-    width: 100%;
-    height: 100%;
     opacity: 0;
     cursor: pointer;
     transition: opacity var(--transition300ms);
-  }
-
-  &__video-button-wrap {
-    @include flex-center;
-
-    width: rem(64);
-    height: rem(64);
-    border-radius: 50%;
-    background-color: var(--palette-white);
-
-    @include media('600', max) {
-      width: rem(40);
-      height: rem(40);
-    }
-
-    > svg {
-      width: rem(12);
-      height: rem(16);
-      fill: var(--palette-cod-gray);
-
-      @include media('600', max) {
-        width: rem(8);
-        height: rem(12);
-      }
-    }
   }
 
   &__video {
     @include img(cover);
 
     pointer-events: none;
-  }
-
-  &__image {
-    @include img(cover);
-
-    aspect-ratio: 12 / 5;
   }
 }

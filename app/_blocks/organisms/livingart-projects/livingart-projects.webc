@@ -4,7 +4,7 @@
       <swiper-slide webc:for="project of projects.items" class="projects__slide">
         <div class="projects__card">
           <livingart-button v-on:click="store.isPopupShow = true" @is-button="true" class="projects__card-button" aria-label="Open popup">
-            <span class="img-hover-effect">
+            <span class="img-hover-effect img-hover-effect--vignette">
               <eleventy-image class="projects__card-img" :src="project.img.src" alt="" loading="lazy"></eleventy-image>
             </span>
           </livingart-button>
