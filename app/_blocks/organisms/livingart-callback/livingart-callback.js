@@ -1,12 +1,6 @@
 import Pristine from 'pristinejs';
 import scroll from '../../../_scripts/helpers/scroll';
 
-// function scollUp() {
-//   window.scroll({
-//     top: 0,
-//   });
-// }
-
 export default class LivingartCallback extends HTMLElement {
   connectedCallback() {
     this.form = this.querySelector('.callback__form');
