@@ -1,15 +1,17 @@
+import createIntersectionObserver from './helpers/createIntersectionObserver';
+
 export default function initAnimation() {
-  const animationElements = document.querySelectorAll('.footer');
+  const animationElements = document.querySelectorAll('.animate-element');
 
   if (!animationElements.length) return;
 
-  animationElements.forEach((animationElement) => {
-    animationElement.addEventListener('sal:in', ({ detail }) => {
-      const { target } = detail;
-
-      if (!target.classList.contains('animate-element')) return;
-
-      target.classList.add('show');
+  function callback(entries) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
     });
-  });
+  }
+
+  createIntersectionObserver(animationElements, callback);
 }

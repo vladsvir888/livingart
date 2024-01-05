@@ -1,10 +1,11 @@
 import Pristine from 'pristinejs';
+import scroll from '../../../_scripts/helpers/scroll';
 
-function scollUp() {
-  window.scroll({
-    top: 0,
-  });
-}
+// function scollUp() {
+//   window.scroll({
+//     top: 0,
+//   });
+// }
 
 export default class LivingartCallback extends HTMLElement {
   connectedCallback() {
@@ -40,7 +41,9 @@ export default class LivingartCallback extends HTMLElement {
     if (!isValid) {
       event.preventDefault();
 
-      scollUp();
+      scroll({
+        top: 0,
+      });
     }
   }
 

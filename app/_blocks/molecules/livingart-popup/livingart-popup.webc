@@ -6,9 +6,9 @@
 >
   <div class="popup__wrap">
     <div class="popup__content">
-      <h2 @text="popup.title" class="popup__title"></h2>
-      <div @text="popup.text1" class="popup__subtitle"></div>
-      <div class="popup__texts">
+      <h2 @text="popup.title" class="popup__title" data-sal="slide-up"></h2>
+      <div @text="popup.text1" class="popup__subtitle" data-sal="slide-up"></div>
+      <div class="popup__texts" data-sal="slide-up">
         <p @text="popup.text2"></p>
         <p @text="popup.text3"></p>
       </div>
