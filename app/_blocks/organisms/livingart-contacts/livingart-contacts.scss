@@ -15,6 +15,7 @@
 
   @include media('600', max) {
     min-height: rem(500);
+    background-attachment: unset;
   }
 
   &__content {
