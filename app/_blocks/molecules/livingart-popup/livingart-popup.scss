@@ -27,13 +27,13 @@
 
   &::part(body) {
     padding: 0;
-    overflow: unset;
+
+    // overflow: unset;
   }
 
   &__wrap {
     @include h6;
 
-    position: relative;
     display: grid;
     grid-template-columns: 40% 1fr;
 
@@ -85,11 +85,20 @@
     @include media('767', max) {
       @include font-size(30, 30);
     }
+
+    @include media('600', max) {
+      padding-bottom: rem(10);
+      margin-bottom: rem(10);
+    }
   }
 
   &__subtitle {
     margin-bottom: rem(20);
     padding-top: rem(40);
+
+    @include media('600', max) {
+      padding-top: rem(10);
+    }
   }
 
   &__texts {
@@ -102,20 +111,24 @@
         @include media('1200', max) {
           margin-bottom: rem(20);
         }
+
+        @include media('600', max) {
+          margin-bottom: rem(10);
+        }
       }
     }
   }
 
   &__close {
     position: absolute;
-    right: rem(-130);
-    top: rem(-21);
+    top: rem(48);
+    right: rem(84);
     cursor: pointer;
     color: var(--palette-white);
 
     @include media('1200', max) {
-      right: 0;
-      top: rem(-42);
+      top: rem(10);
+      right: rem(20);
     }
 
     > svg {
