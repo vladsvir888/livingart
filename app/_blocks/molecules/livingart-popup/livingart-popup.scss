@@ -1,9 +1,5 @@
 .popup {
-  --width: 73vw;
-
-  @include media('1200', max) {
-    --width: 100vw;
-  }
+  --width: #{rem(810)};
 
   color: var(--palette-gray-2);
 
@@ -12,12 +8,17 @@
     background-color: var(--palette-cod-gray);
   }
 
-  &::part(overlay) {
-    --sl-overlay-background-color: var(--palette-black-a40);
-  }
-
   &:not(:defined) {
     display: none;
+  }
+
+  &::part(base) {
+    align-items: flex-start;
+    margin-top: rem(80);
+  }
+
+  &::part(overlay) {
+    --sl-overlay-background-color: var(--palette-black-a40);
   }
 
   &::part(panel) {
@@ -30,121 +31,62 @@
   }
 
   &__wrap {
-    @include h6;
-
+    position: relative;
     display: grid;
-    grid-template-columns: 40% 1fr;
-
-    @include media('1200', max) {
-      @include font-size(30, 30);
-    }
-
-    @include media('767', max) {
-      @include font-size(20, 20);
-    }
+    grid-template-columns: 25% 1fr;
+    gap: rem(20);
+    padding: rem(35);
 
     @include media('600', max) {
       grid-template-columns: 1fr;
-    }
-  }
-
-  &__content {
-    @include flex-column;
-
-    padding: rem(60);
-
-    @include media('1400', max) {
-      padding: rem(30);
-    }
-
-    @include media('767', max) {
       padding: rem(20);
-    }
-
-    @include media('600', max) {
-      padding: rem(10);
     }
   }
 
   &__title {
-    @include h5;
+    @include text20;
 
-    padding-bottom: rem(40);
-    color: var(--palette-black);
-    border-bottom: rem(1) solid var(--palette-gray-3);
-
-    @include media('1200', max) {
-      @include font-size(35, 35);
-
-      padding-bottom: rem(20);
-      margin-bottom: rem(20);
-    }
-
-    @include media('767', max) {
-      @include font-size(30, 30);
-    }
-
-    @include media('600', max) {
-      padding-bottom: rem(10);
-      margin-bottom: rem(10);
-    }
+    padding-top: rem(12);
+    padding-bottom: rem(2);
+    font-weight: 700;
   }
 
   &__subtitle {
-    margin-bottom: rem(20);
-    padding-top: rem(40);
+    @include text18;
+
+    padding-bottom: rem(30);
 
     @include media('600', max) {
-      padding-top: rem(10);
+      padding-bottom: rem(10);
     }
   }
 
   &__texts {
-    margin-top: auto;
-
     > * {
       &:not(:last-child) {
-        margin-bottom: rem(40);
-
-        @include media('1200', max) {
-          margin-bottom: rem(20);
-        }
-
-        @include media('600', max) {
-          margin-bottom: rem(10);
-        }
+        padding-bottom: rem(5);
       }
     }
   }
 
   &__close {
     position: absolute;
-    top: rem(48);
-    right: rem(84);
+    top: rem(10);
+    right: rem(10);
     cursor: pointer;
-    color: var(--palette-white);
-
-    @include media('1200', max) {
-      top: rem(10);
-      right: rem(20);
-    }
+    color: var(--palette-tundora);
 
     > svg {
-      width: rem(44);
-      height: rem(44);
-      stroke: currentcolor;
-
-      @include media('1200', max) {
-        width: rem(30);
-        height: rem(30);
-      }
+      width: rem(20);
+      height: rem(20);
+      stroke: currentColor;
     }
   }
 
   &__img {
     @include img(cover);
 
-    max-height: 86vh;
-    aspect-ratio: 13 / 15;
+    // max-height: 86vh;
+    aspect-ratio: 1 / 1;
   }
 }

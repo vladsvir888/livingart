@@ -22,4 +22,8 @@
 
     pointer-events: none;
   }
+
+  &__image {
+    aspect-ratio: 12 / 5;
+  }
 }

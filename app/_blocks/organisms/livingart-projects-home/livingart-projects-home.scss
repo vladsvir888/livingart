@@ -1,3 +1,7 @@
 .projects-home {
   $this: &;
+
+  &__image {
+    aspect-ratio: 28 / 17;
+  }
 }

@@ -41,6 +41,6 @@
       v-bind:aria-pressed="store.isBespokeVideoPlay ? false : true"
       aria-controls="video"
     ></livingart-button> -->
-    <eleventy-image class="full-width-image" src="./app/_images/video-block/01.jpg" alt="" loading="lazy"></eleventy-image>
+    <eleventy-image class="full-width-image video-block__image" src="./app/_images/video-block/01.jpg" alt="" loading="lazy"></eleventy-image>
   </div>
 </section>
