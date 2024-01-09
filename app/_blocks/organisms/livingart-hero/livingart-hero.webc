@@ -23,13 +23,13 @@
         data-sal="slide-up"
       ></h1>
       <div class="hero__title-text" data-sal="slide-up">
-        PURE <span>LINE</span>
+        <livingart-button class="button--with-decoration hero__title-button" href="/bespoke/detail">PURE&nbsp;<span>LINE</span></livingart-button>
       </div>
       <div class="hero__title-text" data-sal="slide-up">
-        NATURE <span>LINE</span>
+        <livingart-button class="button--with-decoration hero__title-button" href="/bespoke/detail">NATURE&nbsp;<span>LINE</span></livingart-button>
       </div>
       <div class="hero__title-text" data-sal="slide-up">
-        ART <span>LINE</span>
+        <livingart-button class="button--with-decoration hero__title-button" href="/bespoke/detail">ART&nbsp;<span>LINE</span></livingart-button>
       </div>
     </div>
 

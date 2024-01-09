@@ -156,6 +156,10 @@ body {
   color: var(--palette-white);
   background-color: var(--palette-cod-gray);
   overflow-x: hidden;
+
+  &.sl-scroll-lock .header {
+    padding-right: var(--sl-scroll-lock-size);
+  }
 }
 
 .header {

@@ -75,6 +75,12 @@
         display: grid;
       }
 
+      &__title-wrapper {
+        @include flex-column;
+
+        row-gap: rem(10);
+      }
+
       &__title-wrapper,
       &__title {
         position: relative;
@@ -127,9 +133,13 @@
     &-text {
       @include text24;
 
-      > span {
-        font-weight: 100;
-      }
+      // > span {
+      //   font-weight: 100;
+      // }
+    }
+
+    &-button {
+      z-index: 1;
     }
   }
 }

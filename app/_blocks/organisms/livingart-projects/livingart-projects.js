@@ -6,6 +6,10 @@ function projectsSlider() {
   if (!sliderElement) return;
 
   const sliderParams = {
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     speed: 800,
     modules: [Grid],
     slidesPerView: 1,
